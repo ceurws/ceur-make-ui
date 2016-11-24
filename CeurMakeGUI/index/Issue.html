@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Ceur Make</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <style>
+  .error {
+
+    color:red;
+    display: none;        
+  }
+  </style>
+</head>
+<body>
+  <nav class="blue-grey darken-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">CEUR Make</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html"> Home</a></li>
+        <li><a href="Proceedings.html"> Proceedings</a></li>
+        <li><a href="Publish.html"> Publish</a></li>
+        <li><a href="Issue.html"> Issues</a></li>
+
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center blue-grey-text">Scientific Proceedings With Ceur Make (SPCM)</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">CEUR MAKE WEB INTERFACE</h5>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div class="section">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Title</th>
+              <th>Detail</th>
+            </tr>
+          </thead>
+          <tbody id="addIssue">
+            <tr>
+              <td>Rohan</td>
+              <td>Date Format is not clear</td>
+              <td>Date should be in dd/mm/yyyy format which is a standard rather than yyyy/mm/dd.</td>
+            </tr>
+            <tr>
+              <td>Jhon</td>
+              <td>Accept files from other vendors like easy char.</td>
+              <td>Proceeding resources must be also accepted from the other vendors such as axy and llc.</td>
+            </tr>
+            <tr>
+              <td>Austin</td>
+              <td>Improve the xml formatting.</td>
+              <td>Xml files should be more fancy visually.</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+    <div class="section">
+      <h4>Report an Issue</h4>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="nameEditor0" type="text" class="validate">
+          <label for="nameEditor0">Enter Your Name</label>
+          <span id="nameEditorError0" class="error" style="display:none">Please enter alphabets or numbers only.</span>
+        </div>
+        <div class="input-field col s12">
+          <input id="titleEditor0" type="text" class="validate">
+          <label for="titleEditor0">Enter Issue Title</label>
+          <span id="titleEditorError0" class="error" style="display:none">Please enter alphabets or numbers only.</span>
+        </div>
+        <div class="input-field col s12">
+          <input id="detailEditor0" type="text" class="validate">
+          <label for="detailEditor0">Enter Detail Related To The Issue</label>
+          <span id="detailEditorError0" class="error" style="display:none">Please enter alphabets or numbers only.</span>
+        </div>
+        <div class="col s12">
+          <br/>
+          <br/>
+          <button class="btn waves-effect waves-light col s12" type="submit" name="action" onclick="sendIssue();">Submit
+            <i class="material-icons right">send</i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+   <footer class="page-footer blue-grey darken-2">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">CEUR-WS</h5>
+          <p class="grey-text text-lighten-4">CEUR-WS.org is an online publication service for editors of scientific proceedings, in particular workshop proceedings.</p>
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Important</h5>
+          <ul>
+            <li><a class="white-text" href="http://ceur-ws.org/HOWTOSUBMIT.html">How to Submit</a></li>
+            <li><a class="white-text" href="http://ceur-ws.org/HOWTOSUBMIT.html#FAQ">FAQ</a></li>
+            <li><a class="white-text" href="https://github.com/ceurws/ceur-make">Ceur Make</a></li>
+            <li><a class="white-text" href="http://ceur-ws.org/index.html">Old</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">General</h5>
+          <ul>
+            <li><a class="white-text" href="http://ceur-ws.org/ceurws-timeline.txt">Timeline</a></li>
+            <li><a class="white-text" href="https://ceurws.wordpress.com/">Blog</a></li>
+            <li><a class="white-text" href="http://ceur-ws.org/CEURWS-TEAM.html">Team</a></li>
+            <li><a class="white-text" href="http://ceur-ws.org/CEURWS-VALUES.html">Core Values</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Copyrights @ <a class="orange-text text-lighten-3" href="http://ceur-ws.org">Ceur Make 2016</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script>
+    var alphaNumeric = new RegExp(/^[a-z\d\-_\s]+$/i);
+    
+    function sendIssue( )
+    { 
+      var temp = 0 ;
+     
+      if( !(alphaNumeric.test(document.getElementById('nameEditor0').value )) )
+      {
+        document.getElementById('nameEditorError0').style.display = "initial" ;
+        temp++;
+      }else
+        document.getElementById('nameEditorError0').style.display = "none" ;
+      
+      if( !(alphaNumeric.test(document.getElementById('titleEditor0').value )) )
+      {
+        document.getElementById('titleEditorError0').style.display = "initial" ;
+        temp++;
+      }else
+        document.getElementById('titleEditorError0').style.display = "none" ; 
+      
+      if( !(alphaNumeric.test(document.getElementById('detailEditor0').value )) )
+      {
+        document.getElementById('detailEditorError0').style.display = "initial" ;
+        temp++;
+      }else
+        document.getElementById('detailEditorError0').style.display = "none" ;
+      
+      if( temp === 0 )
+      {
+          sendFormOneData = 
+          {
+              name: document.getElementById('nameEditor0').value  ,
+              issueTitle: document.getElementById('titleEditor0').value,
+              issueDetail: document.getElementById('detailEditor0').value,
+          } ;
+        
+          var data = JSON.stringify(sendFormOneData);
+          var xhr = new XMLHttpRequest();
+          xhr.open("POST", "scripts/index.php", !0);
+          xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+          xhr.send(data);
+          xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) 
+            {
+                jsondata = xhr.responseText;
+                console.log(jsondata);
+                Materialize.toast('Your Issue has been posted.', 4000, 'rounded') // 'rounded' is the 
+                afterIssueCreation( );
+            }
+        }
+        
+      }else
+      {
+        temp = 0 ;  
+      }
+      
+    }
+    
+    function afterIssueCreation( )
+    {
+      var newTr = document.createElement('tr');
+      newTr.innerHTML="<td>"+(document.getElementById('nameEditor0').value )+"</td><td>"+(document.getElementById('titleEditor0').value)+"</td><td>"+(document.getElementById('detailEditor0').value)+"</td>" ;
+      document.getElementById('addIssue').appendChild(newTr) ;
+      
+    }
+    
+  </script>
+
+  </body>
+</html>
