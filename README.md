@@ -1,6 +1,4 @@
 # CEUR Make Graphical User Interface ( ceur-make-ui )
-##Web-based user interface for ceur-make
-
 CEUR Make Graphical User Interface is a usable web frontend for supporting the workflow of publishing proceedings of 
 scientific workshops.
 
