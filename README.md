@@ -50,8 +50,62 @@ The following figure shows the general software architecture of the web applicat
 The file structure of each individual layer and the code blocks are presented in the following sections:
 
 ####Interface Layer
+The following figure shows the interface layer of the CEUR Make Graphical User Interface:
 ![alt tag](https://github.com/ceurws/ceur-make-ui/blob/master/ReferenceDocuments/Images/htmlcssfilestructure.png)
 
+The CSS directory maintains the styling files for the whole web interface and the HTML module contains user interaction web pages.
+**Index.html**, **Issue.html**, **Publish.html** and **Proceedings.html** are fairly simple web pages that caters a single use case. 
+The *magic of generating the resources for publishing proceedings at CEUR-WS.org* either happens using **PublishPage.html** or using **EasyChair.html**. Both of the later mentioned files are similar in programming structure and they take *functional programming* approach with *camel case* naming conventions. The following are the *main coding blocks* in the two files:
+
++ **Wizards Initiation & Defining:** The following code represents the two functions used to initialize and define the stepwise wizards:
+```
+//Workshop.xml Creation
+$("#wizard").steps({});
+
+//Table of Contents Creation
+$("#wizard").steps({});
+```
++ **Display Funtions:** Following are the main display functions as shown in the code below:
+```
+//display after Table of Contents Creation
+afterTocCreation();
+
+//display after Workshop Creation
+afterWorkshopCreation();
+```
++ **Output Resource Creation:** Functions for the output artifacts creation are shown in the code below:
+```
+//Copyrights form creation function
+copyrightsFormCreation();
+
+//Index.html, BibTex, Zip Archive creation function
+afterResourceCreation();
+```
++ **Loading Preset Data:** Functions for the loading data in drop down menu are shown in the code section below:
+```
+//Countries Dropdown Load
+selectForCountries();
+
+//Languages Dropdown Load
+selectForLanguage();
+```
+
++ **Title Capialization Rules:** Function that maintains title capitalization rules with the cases included is shown below:
+```
+String.prototype.toTitleCase = function() { } 
+```
+
++ **Form Validation:** Functions that maintains form validations are shown below:
+```
+
+//Workshop Form Validators:
+validatingMetaData(); //general metadata validation 1st Step
+validatingConference(); //conference metadata related validation 2nd Step
+validatingEditors(); // editors metadata related validation 3rd step
+
+//Table of Contents Validators:
+tocvalidate(); //Step two validator, Step one does not require validation in case of toc
+```
 ####Middleware Layer
 ![alt tag](https://github.com/ceurws/ceur-make-ui/blob/master/ReferenceDocuments/Images/middlewareceurgui.png)
 
