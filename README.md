@@ -23,13 +23,16 @@ In order to install it on your local machine and start playing with the code, th
 You can either go with one of these bundles or set up one of your own choice that can help you running with the AMP( Apache, MySQL and PHP ) stack. Once the bundle is installed on your local machine, you can clone the [ceur-make-ui](https://github.com/ceurws/ceur-make-ui) code into **htdocs** directory in case of XAMP or MAMP and **www** directory in case of WAMP.
 
 ##Up and Running
-Once you are done installing the AMP stack and cloning the ceur-make-ui code in the concerned directory that is **htdocs** or **www**, you can go to the following path in the ceur-make-ui directory:
+Once you are done installing the AMP stack and cloning the ceur-make-ui code in the concerned directory that is **htdocs** or **www** as explained in the previous section, you can go to the following path in the ceur-make-ui directory:
 
 *ceur-make-ui/CeurMakeGUI/index/* 
 
 Once, you are in the index directory, you can double click the index.html to run in the browser or you can code editor of your choice to start playing with the code. Advanced techniques to use the code are discussed in the next section.
 
-##How to Use
+##How to Play with the Code
+Previous section described the technique to get started with the code and in this section we describe the advanced techniques to play with different files in the code. 
+
+![alt tag](https://github.com/ceurws/ceur-make-ui/blob/master/ReferenceDocuments/Images/architecture.png)
 
 
 
