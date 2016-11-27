@@ -107,7 +107,10 @@ validatingEditors(); // editors metadata related validation 3rd step
 tocvalidate(); //Step two validator, Step one does not require validation in case of toc
 ```
 ####Middleware Layer
+The following figure shows the middleware layer of the CEUR Make Graphical User Interface:
 ![alt tag](https://github.com/ceurws/ceur-make-ui/blob/master/ReferenceDocuments/Images/middlewareceurgui.png)
+
+Middleware lauer is divided into three main parent modules that are **scripts**, **CEUR Make GUI workflow** and **EasyChair workflow**. Scripts section consists of general scripts used for developing CEUR Make Graphical User Interface, currently we use only one that is Github connect(scripts/index.php) to report issues at our repository. CEUR Make GUI Workflow and Easy Chair workflow have similar file structure. Both the modules have *Generate User Folder* scripts that generates user session locally. Both the modules also have *Workshop Generate* that creates the Workshop.xml file. *Doc file* in CEUR Make GUI Workflow module creates Table of Contents(toc.xml). *Extract and Managing Extract* scripts in EasyChair workflow are used to upload and unarchive EasyChair resources and to create toc.xml from those resources.
 
 ####Storage Layer
 The following figure shows the storage layer of the CEUR Make Graphical User Interface:
