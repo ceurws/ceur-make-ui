@@ -37,8 +37,15 @@ The following figure shows the general software architecture of the web applicat
 
 ![alt tag](https://github.com/ceurws/ceur-make-ui/blob/master/ReferenceDocuments/Images/architecture.png)
 
+**Interface Layer** consists of all the presentation elements. It is responsible in displaying visual elements, handling the dependencies on external libraries for user interface elements, styling the web pages and managing the user interactions with the web pages. **Middleware Layer** is responsible in generating artifacts that are required for publishing at CEUR Workshop Proceedings. **Storage Layer** stores the files that are created temporarily on the server.
 
+The file structure of each individual layer and the code blocks are presented in the following sections:
 
+####Interface Layer
+
+####Middleware Layer
+
+####Storage Layer
 
 ##Contributors
 [Dr. Christoph Lange](https://langec.wordpress.com/)
