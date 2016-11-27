@@ -38,6 +38,8 @@ The external libraries used to develop the CEUR Make Graphical User Interface ar
 + [Materializecss](http://materializecss.com/): Materialize.css was used to develop the interface based on Google's [material design](https://material.google.com/) principles. Throughout the project, Materialize.css is used to develop material design based look and feel.
 + [jQuery Steps](http://www.jquery-steps.com/): jQuery Steps is used to create stepwise forms for creating xml format based required artifacts which are the Table of Contents file and Workshop file.
 
+It would be good for any **GEEK** willing to play *with the code* to know these libraries in advance, that would make code understanding very easy for him/her.
+
 ###Software Architecture
 The following figure shows the general software architecture of the web application:
 
@@ -54,7 +56,13 @@ The file structure of each individual layer and the code blocks are presented in
 ![alt tag](https://github.com/ceurws/ceur-make-ui/blob/master/ReferenceDocuments/Images/middlewareceurgui.png)
 
 ####Storage Layer
+The following figure shows the storage layer of the CEUR Make Graphical User Interface:
 ![alt tag](https://github.com/ceurws/ceur-make-ui/blob/master/ReferenceDocuments/Images/ceurmakeguistorage.png)
+
+The storage layer is divided into three main parent directories described below:
++ **Standard Store**: This directory stores files that are used to store standard dataset in JSON format. For example, all the countries of the world and all the languages of the world. This is important to present user with all the options of countries and languages while user is filling in details for metadata of Table of Contents and Workshop files.
++ **UserDirectories**: This directory maintains the sessions of the users while they use CEUR Make Graphical User Interface workflow for creating workshop proceedings.
++ **EasyChair**: This directory maintains the sessions of the users while they use EasyChair resources based workflow for creating workshop proceedings.
 
 ##Contributors
 [Dr. Christoph Lange](https://langec.wordpress.com/)
