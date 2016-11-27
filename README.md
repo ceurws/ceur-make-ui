@@ -27,17 +27,18 @@ Once you are done installing the AMP stack and cloning the ceur-make-ui code in 
 
 *ceur-make-ui/CeurMakeGUI/index/* 
 
-Once, you are in the index directory, you can double click the index.html to run in the browser or you can code editor of your choice to start playing with the code. Advanced techniques to use the code are discussed in the next section.
+Once, you are in the index directory, you can double click the index.html to run in the browser or you can choose a code editor of your own choice to start playing with the code. Advanced techniques to use the code are discussed in the next section.
 
 ##How to Play with the Code
-Previous section described the technique to get started with the code and in this section we describe the advanced techniques to play with different files in the code. 
+Previous section described the technique to get started with the code and in this section we will describe the advanced techniques to play with different files in the code. 
 
+###Software Architecture
 ![alt tag](https://github.com/ceurws/ceur-make-ui/blob/master/ReferenceDocuments/Images/architecture.png)
 
 
 
 ##Contributors
-[Christoph Lange](https://langec.wordpress.com/)
+[Dr. Christoph Lange](https://langec.wordpress.com/)
 
 [Rohan Asmat](https://www.linkedin.com/in/rohanasmat?trk=nav_responsive_tab_profile)
 
