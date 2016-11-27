@@ -2,9 +2,9 @@
 *"CEUR Make Graphical User Interface is a usable web frontend for supporting the workflow of publishing proceedings of 
 scientific workshops"*
 
-CEUR Make Graphical User Interface or ceur-make-ui is a graphical user interface for [ceur-make](https://github.com/ceurws/ceur-make). CEUR Make Graphical User Interface tries to automate the workflow for publishing proceedings at [CEUR-WS.org](http://ceur-ws.org/) by providing a usable web frontend. It is a standalone software that could be used on any platform through browser. For development purposes, please refer to the [Up and Running]() section. 
+CEUR Make Graphical User Interface or ceur-make-ui is a graphical user interface for [ceur-make](https://github.com/ceurws/ceur-make). CEUR Make Graphical User Interface tries to automate the workflow for publishing proceedings at [CEUR-WS.org](http://ceur-ws.org/) by providing a usable web frontend. It is a standalone software that could be used on any platform through browser. For development purposes, please refer to the **Up and Running** section. 
 
-The live version will be up at the end of *December 2016*. Stay tuned for the link to the live address.
+**The live version will be up at the end of *December 2016*. Stay tuned for the link to the live address.**
 
 ##Key Advantages
 
@@ -27,13 +27,16 @@ Once you are done installing the AMP stack and cloning the ceur-make-ui code in 
 
 *ceur-make-ui/CeurMakeGUI/index/* 
 
-Once, you are in the index directory, you can double click the index.html to run in the browser or you can choose a code editor of your own choice to start playing with the code. Advanced techniques to use the code are discussed in the next section.
+After you are in the index directory, you can double click the index.html to run in the browser or you can choose a code editor of your own choice to start playing with the code. Advanced techniques to use the code are discussed in the next section.
 
 ##How to Play with the Code
-Previous section described the technique to get started with the code and in this section we will describe the advanced techniques to play with different files in the code. 
+Previous section described the technique to get started with the code and in this section we will describe the advanced techniques to play with different files in the code. First we describe the general software architecture of the ceur-make-ui and than we will discuss the file structure in different layers of the application along with the code blocks programmers can start to play with.
 
 ###Software Architecture
+The following figure shows the general software architecture of the web application:
+
 ![alt tag](https://github.com/ceurws/ceur-make-ui/blob/master/ReferenceDocuments/Images/architecture.png)
+
 
 
 
