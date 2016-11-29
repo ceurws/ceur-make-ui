@@ -110,7 +110,7 @@ tocvalidate(); //Step two validator, Step one does not require validation in cas
 The following figure shows the middleware layer of the CEUR Make Graphical User Interface:
 ![alt tag](https://github.com/ceurws/ceur-make-ui/blob/master/ReferenceDocuments/Images/middlewareceurgui.png)
 
-Middleware lauer is divided into three main parent modules that are **scripts**, **CEUR Make GUI workflow** and **EasyChair workflow**. Scripts section consists of general scripts used for developing CEUR Make Graphical User Interface, currently we use only one that is Github connect(scripts/index.php) to report issues at our repository. CEUR Make GUI Workflow and Easy Chair workflow have similar file structure. Both the modules have *Generate User Folder* scripts that generates user session locally. Both the modules also have *Workshop Generate* that creates the Workshop.xml file. *Doc file* in CEUR Make GUI Workflow module creates Table of Contents(toc.xml). *Extract and Managing Extract* scripts in EasyChair workflow are used to upload and unarchive EasyChair resources and to create toc.xml from those resources.
+Middleware layer is divided into three main parent modules that are **scripts**, **CEUR Make GUI workflow** and **EasyChair workflow**. Scripts section consists of general scripts used for developing CEUR Make Graphical User Interface, currently we use only one that is Github connect(scripts/index.php) to report issues at our repository. CEUR Make GUI Workflow and Easy Chair workflow have similar file structure. Both the modules have *Generate User Folder* scripts that generates user session locally. Both the modules also have *Workshop Generate* that creates the Workshop.xml file. *Doc file* in CEUR Make GUI Workflow module creates Table of Contents(toc.xml). *Extract and Managing Extract* scripts in EasyChair workflow are used to upload and unarchive EasyChair resources and to create toc.xml from those resources.
 
 ####Storage Layer
 The following figure shows the storage layer of the CEUR Make Graphical User Interface:
@@ -122,9 +122,9 @@ The storage layer is divided into three main parent directories described below:
 + **EasyChair**: This directory maintains the sessions of the users while they use EasyChair resources based workflow for creating workshop proceedings.
 
 ##Contributors
-[Dr. Christoph Lange](https://langec.wordpress.com/)
-
 [Rohan Asmat](https://www.linkedin.com/in/rohanasmat?trk=nav_responsive_tab_profile)
+
+[Dr. Christoph Lange](https://langec.wordpress.com/)
 
 ##License
 This code is licensed under [GPL version 3](https://github.com/ceurws/ceur-make-ui/blob/master/LICENSE) or any later version.
