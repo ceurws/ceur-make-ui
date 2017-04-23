@@ -25,7 +25,7 @@ After you are in the index directory, you can double click the index.html to run
 
 Following steps are essential before the software is completely running on your web browser using apache server:
 + Extract the output.zip folder from the path: ceur-make-ui/CEURMakeGUI/index/output.zip
-+ Changing path in Makefile.vars to the path of SAXON-HE 9 as located in ceur-make-ui/CEURMakeGUI/index/saxon/saxon9he.jar
++ Extract the saxon folder from the path: ceur-make-ui/CEURMakeGUI/index/saxon.zip. Then Change the path in Makefile.vars to the path of SAXON-HE 9 as located in ceur-make-ui/CEURMakeGUI/index/saxon/saxon9he.jar
 + In order for CEUR Make and CEUR Make GUI to be able to write files on server, you should own everything in htdocs/www folder. Please follow sample [link](http://constant.co.za/fix-permissions-on-xampp-osx/) for Mac OSX.
 + In order for you as a user who is owning everything at htdocs/www, you should grant sudo access to yourself, One way to do this is to give yourself root level rights using the following terminal level command: superuser ALL=(ALL) NOPASSWD:ALL . Possilble alternatives could be to grant sudo to php scripts or particular commands.
 
