@@ -1,0 +1,134 @@
+\begin{thebibliography}{10}
+
+\bibitem{BN:IJCAR-2010}
+Sascha B{\"o}hme and Tobias Nipkow.
+\newblock {Sledgehammer: Judgement Day}.
+\newblock In J{\"u}rgen Giesel and Reiner H{\"a}hnle, editors, {\em Proc.\ of
+  the 5th IJCAR, Edinburgh}, volume 6173 of {\em LNAI}, pages 107--121.
+  Springer, 2010.
+
+\bibitem{GK:CPP-2015}
+Thibault Gauthier and Cezary Kaliszyk.
+\newblock {Premise Selection and External Provers for HOL4}.
+\newblock In {\em Proceedings of the 2015 Conference on Certified Programs and
+  Proofs}, pages 49--57, New York, NY, USA, 2015. ACM.
+
+\bibitem{HHMNOZ:Kepler-2011}
+Thomas~C. Hales, John Harrison, Sean McLaughlin, Tobias Nipkow, Steven Obua,
+  and Roland Zumkeller.
+\newblock A revision of the proof of the {K}epler conjecture.
+\newblock In Jeffrey~C. Lagarias, editor, {\em The {K}epler Conjecture}, pages
+  341--376. Springer, 2011.
+
+\bibitem{HV:CADE-2011}
+Kry\v{s}tof Hoder and Andrei Voronkov.
+\newblock {Sine Qua Non for Large Theory Reasoning}.
+\newblock In Nikolaj Bj{\o}rner and Viorica Sofronie-Stokkermans, editors, {\em
+  Proc.\ of the 23rd CADE, Wroclav}, volume 6803 of {\em LNAI}, pages 299--314.
+  Springer, 2011.
+
+\bibitem{KU:JAR-2014}
+Cezary Kaliszyk and Josef Urban.
+\newblock Learning-assisted automated reasoning with {Flyspeck}.
+\newblock {\em Journal of Automated Reasoning}, 53(2):173--213, 2014.
+
+\bibitem{KE:SOSP-2009}
+Gerwin Klein, Kevin Elphinstone, Gernot Heiser, June Andronick, David Cock,
+  Philip Derrin, Dhammika Elkaduwe, Kai Engelhardt, Rafal Kolanski, Michael
+  Norrish, Thomas Sewell, Harvey Tuch, and Simon Winwood.
+\newblock {seL4}: Formal verification of an {OS} kernel.
+\newblock In {\em Proc.\ of the 22nd ACM Symposium on Principles of Operating
+  Systems (SOSPS)}, Big Sky, Montana, USA, October 2009. ACM.
+
+\bibitem{KLTUH:CADE-2012}
+Daniel K{\"u}hlwein, Twan van Laarhoven, Evgeni Tsivtsivadze, Josef Urban, and
+  Tom Heskes.
+\newblock Overview and evaluation of premise selection techniques for large
+  theory mathematics.
+\newblock In Bernhard Gramlich, Ulrike Sattler, and Dale Miller, editors, {\em
+  Proc.\ of the 6th IJCAR, Manchester}, volume 7364 of {\em LNAI}, pages
+  378--392. Springer, 2012.
+
+\bibitem{McCune:JAR-1997}
+William McCune.
+\newblock {Solution of the Robbins problem}.
+\newblock {\em Journal of Automated Reasoning}, 19(3):263--276, 1997.
+
+\bibitem{McCune:Wos-1997}
+W.W. McCune.
+\newblock {33 Basic Test Problems: A Practical Evaluation of Some
+  Paramodulation Strategies}.
+\newblock In R.~Veroff, editor, {\em Automated Reasoning and its Applications:
+  Essays in Honor of Larry Wos}, chapter~5, pages 71--114. MIT Press, 1997.
+
+\bibitem{MP:JAR-2009}
+Jia Meng and Lawrence~C. Paulson.
+\newblock Translating higher-order clauses to first-order clauses.
+\newblock {\em Journal of Automated Reasoning}, 40(1):35--60, 2008.
+
+\bibitem{MP:JAL-2007}
+Jia Meng and Lawrence~C. Paulson.
+\newblock Lightweight relevance filtering for machine-generated resolution
+  problems.
+\newblock {\em Journal of Applied Logics}, 7(1):41--57, 2009.
+
+\bibitem{PNL:AAAIWS-2002}
+Adam Pease, Ian Niles, and John Li.
+\newblock {The Suggested Upper Merged Ontology: A Large Ontology for the
+  Semantic Web and its Applications}.
+\newblock In {\em Working Notes of the AAAI-2002 Workshop on Ontologies and the
+  Semantic Web}, 2002.
+
+\bibitem{PS:IJCAR-2014}
+Adam Pease and Stephan Schulz.
+\newblock {Knowledge Engineering for Large Ontologies with Sigma KEE 3.0}.
+\newblock In Stephane Demri, Deepak Kapur, and Christoph Weidenbach, editors,
+  {\em Proc.\ of the 7th IJCAR, Vienna}, volume 8562 of {\em LNAI}, pages
+  519--525. Springer, 2014.
+
+\bibitem{RRG:CO-2005}
+Deepak Ramachandran, Pace Reagan, and Keith Goolsbey.
+\newblock {First-orderized ResearchCyc: Expressiveness and Efficiency in a
+  Common Sense Knowledge Base}.
+\newblock In Pavel Shvaiko, editor, {\em Proc.\ of the AAAI Workshop on
+  Contexts and Ontologies: Theory, Practice and Applications (C\&O-2005)},
+  2005.
+
+\bibitem{Schulz:AICOM-2002}
+S.~Schulz.
+\newblock {E -- A Brainiac Theorem Prover}.
+\newblock {\em Journal of AI Communications}, 15(2/3):111--126, 2002.
+
+\bibitem{Schulz:LPAR-2013}
+Stephan Schulz.
+\newblock {System Description: E~1.8}.
+\newblock In Ken McMillan, Aart Middeldorp, and Andrei Voronkov, editors, {\em
+  Proc.\ of the 19th LPAR, Stellenbosch}, volume 8312 of {\em LNCS}. Springer,
+  2013.
+
+\bibitem{Sutcliffe:JAR-2009}
+Geoff Sutcliffe.
+\newblock {The TPTP Problem Library and Associated Infrastructure: The FOF and
+  CNF Parts, v3.5.0}.
+\newblock {\em Journal of Automated Reasoning}, 43(4):337--362, 2009.
+
+\bibitem{Sutcliffe:LPAR-2010}
+Geoff Sutcliffe.
+\newblock The {TPTP World} - infrastructure for automated reasoning.
+\newblock In E.~Clarke and A.~Voronkov, editors, {\em {Proc.\ of the 16th LPAR,
+  Dakar}}, number 6355 in LNAI, pages 1--12. Springer, 2010.
+
+\bibitem{SSSU:TPTP-ANS}
+Geoff Sutcliffe, Mark Stickel, Stephan Schulz, and Josef Urban.
+\newblock {Answer Extraction for TPTP}.
+\newblock
+  \url{http://www.cs.miami.edu/~tptp/TPTP/Proposals/AnswerExtraction.html}.
+\newblock (acccessed 2013-07-08).
+
+\bibitem{TB:IJCAI-1985}
+Andrzej Trybulec and Howard~A. Blair.
+\newblock Computer assisted reasoning with {MIZAR}.
+\newblock In {\em Proc.\ of the 9th IJCAI, Los Angeles}, volume~85, pages
+  26--28. Morgan Kaufmann, 1985.
+
+\end{thebibliography}

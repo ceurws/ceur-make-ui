@@ -1,0 +1,140 @@
+\begin{thebibliography}{10}
+
+\bibitem{Baader2001}
+F.~Baader and W.~Snyder.
+\newblock Unification theory.
+\newblock In {\em Handbook of Automated Reasoning (in 2 volumes)}, pages
+  445--532. 2001.
+
+\bibitem{Bachmair1994}
+L.~Bachmair and H.~Ganzinger.
+\newblock {Rewrite-Based Equational Theorem Proving with Selection and
+  Simplification}.
+\newblock {\em J. Log. Comput.}, 4(3):217--247, 1994.
+
+\bibitem{Barrett2011}
+C.~Barrett, C.~L. Conway, M.~Deters, L.~Hadarean, D.~Jovanovi{\'{c}}, T.~King,
+  A.~Reynolds, and C.~Tinelli.
+\newblock {CVC4}.
+\newblock In G.~Gopalakrishnan and S.~Qadeer, editors, {\em Computer Aided
+  Verification: 23rd International Conference, CAV 2011, Snowbird, UT, USA,
+  July 14-20, 2011. Proceedings}, pages 171--177, Berlin, Heidelberg, 2011.
+  Springer Berlin Heidelberg.
+
+\bibitem{Barrett2009}
+C.~Barrett, R.~Sebastiani, S.~Seshia, and C.~Tinelli.
+\newblock {Satisfiability Modulo Theories}.
+\newblock In A.~Biere, M.~J.~H. Heule, H.~van Maaren, and T.~Walsh, editors,
+  {\em Handbook of Satisfiability}, volume 185 of {\em Frontiers in Artificial
+  Intelligence and Applications}, chapter~26, pages 825--885. IOS Press, Feb.
+  2009.
+
+\bibitem{Barrett2010}
+C.~Barrett, A.~Stump, and C.~Tinelli.
+\newblock {The SMT-LIB Standard: Version 2.0}.
+\newblock In A.~Gupta and D.~Kroening, editors, {\em Proceedings of the 8th
+  International Workshop on Satisfiability Modulo Theories (Edinburgh, UK)},
+  2010.
+
+\bibitem{Bouton2009}
+T.~Bouton, D.~C.~B. de~Oliveira, D.~D{\'{e}}harbe, and P.~Fontaine.
+\newblock {veriT}: {A}n {O}pen, {T}rustable and {E}fficient {SMT-S}olver.
+\newblock In {\em Automated Deduction - CADE-22, 22nd International Conference
+  on Automated Deduction, Montreal, Canada, August 2-7, 2009. Proceedings},
+  pages 151--156, 2009.
+
+\bibitem{deMoura2007}
+L.~de~Moura and N.~Bj{\o}rner.
+\newblock {Efficient E-Matching for SMT Solvers}.
+\newblock In F.~Pfenning, editor, {\em Automated Deduction – CADE-21}, volume
+  4603 of {\em Lecture Notes in Computer Science}, pages 183--198. Springer
+  Berlin Heidelberg, 2007.
+
+\bibitem{deMoura2008-z3}
+L.~M. de~Moura and N.~Bj{\o}rner.
+\newblock {{Z3:} An Efficient {SMT} Solver}.
+\newblock In {\em Tools and Algorithms for the Construction and Analysis of
+  Systems, 14th International Conference, {TACAS} 2008, Held as Part of the
+  Joint European Conferences on Theory and Practice of Software, {ETAPS} 2008,
+  Budapest, Hungary, March 29-April 6, 2008. Proceedings}, pages 337--340,
+  2008.
+
+\bibitem{Deharbe2013}
+D.~D{\'e}harbe, P.~Fontaine, D.~Le~Berre, and B.~Mazure.
+\newblock {Computing Prime Implicants}.
+\newblock In {\em {FMCAD - Formal Methods in Computer-Aided Design 2013}},
+  pages 46--52, Portland, United States, Oct. 2013. {IEEE}.
+
+\bibitem{Detlefs2005}
+D.~Detlefs, G.~Nelson, and J.~B. Saxe.
+\newblock {Simplify: A Theorem Prover for Program Checking}.
+\newblock {\em J. ACM}, 52(3):365--473, May 2005.
+
+\bibitem{Ge2007}
+Y.~Ge, C.~Barrett, and C.~Tinelli.
+\newblock {Solving Quantified Verification Conditions Using Satisfiability
+  Modulo Theories}.
+\newblock In F.~Pfenning, editor, {\em Automated Deduction – CADE-21}, volume
+  4603 of {\em Lecture Notes in Computer Science}, pages 167--182. Springer
+  Berlin Heidelberg, 2007.
+
+\bibitem{Leino2005}
+K.~R.~M. Leino, M.~Musuvathi, and X.~Ou.
+\newblock {A Two-tier Technique for Supporting Quantifiers in a Lazily
+  Proof-explicating Theorem Prover}.
+\newblock In {\em Proceedings of the 11th International Conference on Tools and
+  Algorithms for the Construction and Analysis of Systems}, TACAS'05, pages
+  334--348, Berlin, Heidelberg, 2005. Springer-Verlag.
+
+\bibitem{deMoura2008}
+L.~Moura and N.~Bj{\o}rner.
+\newblock {Engineering DPLL(T) + Saturation}.
+\newblock In {\em Proceedings of the 4th International Joint Conference on
+  Automated Reasoning}, IJCAR '08, pages 475--490, Berlin, Heidelberg, 2008.
+  Springer-Verlag.
+
+\bibitem{Nelson1980}
+G.~Nelson and D.~C. Oppen.
+\newblock {Fast Decision Procedures Based on Congruence Closure}.
+\newblock {\em J. ACM}, 27(2):356--364, Apr. 1980.
+
+\bibitem{Nieuwenhuis2007}
+R.~Nieuwenhuis and A.~Oliveras.
+\newblock {Fast congruence closure and extensions}.
+\newblock {\em Information and Computation}, 205(4):557 -- 580, 2007.
+\newblock Special Issue: 16th International Conference on Rewriting Techniques
+  and Applications.
+
+\bibitem{Nieuwenhuis2001-har}
+R.~Nieuwenhuis and A.~Rubio.
+\newblock {Paramodulation-Based Theorem Proving}.
+\newblock In A.~Robinson and A.~Voronkov, editors, {\em Handbook of automated
+  reasoning}, volume~1, pages 371--443. 2001.
+
+\bibitem{Otten2010}
+J.~Otten.
+\newblock {Restricting backtracking in connection calculi}.
+\newblock {\em {AI} Commun.}, 23(2-3):159--182, 2010.
+
+\bibitem{Reger2015}
+G.~Reger, D.~Tishkovsky, and A.~Voronkov.
+\newblock {Cooperating Proof Attempts}.
+\newblock In {\em Automated Deduction - {CADE-25} - 25th International
+  Conference on Automated Deduction, Berlin, Germany, August 1-7, 2015,
+  Proceedings}, pages 339--355, 2015.
+
+\bibitem{Reynolds2014}
+A.~Reynolds, C.~Tinelli, and L.~de~Moura.
+\newblock {Finding Conflicting Instances of Quantified Formulas in SMT}.
+\newblock In {\em Proceedings of the 14th Conference on Formal Methods in
+  Computer-Aided Design}, FMCAD '14, pages 31:195--31:202, Austin, TX, 2014.
+  FMCAD Inc.
+
+\bibitem{Tiwari2000}
+A.~Tiwari, L.~Bachmair, and H.~Ruess.
+\newblock {Rigid E-Unification Revisited}.
+\newblock In D.~McAllester, editor, {\em Automated Deduction - CADE-17}, volume
+  1831 of {\em Lecture Notes in Computer Science}, pages 220--234. Springer
+  Berlin Heidelberg, 2000.
+
+\end{thebibliography}

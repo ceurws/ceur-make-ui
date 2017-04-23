@@ -16,6 +16,7 @@ function recurse_copy($src,$dst) {
     closedir($dir);
 }
 
+
 $sourceFolderName = 'output';
 
 $folderName = uniqid(gethostname());
@@ -23,6 +24,7 @@ $fullFolderName = "userDirectories/".$folderName;
 mkdir($fullFolderName, 0777);
 
 recurse_copy($sourceFolderName, $fullFolderName."/output");
+
 
 echo $folderName;
 

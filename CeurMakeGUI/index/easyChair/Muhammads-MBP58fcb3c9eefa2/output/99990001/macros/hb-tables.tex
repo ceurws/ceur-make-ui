@@ -1,0 +1,52 @@
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{multirow}
+
+% ***************** tables
+
+% counting lines/columns (see
+% http://tex.stackexchange.com/questions/65649/counters-for-use-in-array-tabular-cells)
+
+\newcounter{tabrow}
+\newcounter{fdef}
+
+% Environment for functions definitions with parameterized number of displaymath
+% columns after labelled one; counter is set to optional arg, default 0
+\newenvironment{funcdef}[2][0]
+{
+\setcounter{fdef}{#1}
+\def\arraystretch{1.2}
+\begin{center}
+\begin{tabular}{>{(\refstepcounter{fdef}\thefdef)}r*{#2}{>{$\displaystyle} l <{$}}}
+}
+{
+\end{tabular}
+\end{center}
+}
+
+\newenvironment{conds}[2][0]
+{
+\setcounter{fdef}{#1}
+\def\arraystretch{1.2}\small
+% \begin{tabular}{>{(\refstepcounter{fdef}\thefdef)}r*{#2}l}
+\begin{tabular}{>{(\refstepcounter{fdef}\roman{fdef})}c*{#2}l}
+}
+{
+\end{tabular}
+}
+
+
+% Column that takes width (left justified): L{1cm}, e.g.
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash$} p{#1} <{$}}
+
+% Column with math mode in displaystyle
+\newcolumntype{F}[1]{>{$\displaystyle} #1 <{$}}
+
+% Allows to break like in cell; first arg is $t,b,c$, for alignment with other cells
+\newcommand{\specialcell}[2][c]{%
+  \begin{tabular}[#1]{@{}l@{}}#2\end{tabular}}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

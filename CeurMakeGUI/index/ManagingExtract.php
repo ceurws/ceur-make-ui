@@ -3,14 +3,14 @@
 
 header('Content-type: application/json');
 $json = file_get_contents('php://input');
- 
+
 $array = json_decode($json, true);
 
 function chownr($path, $owner)
 {
     if (!is_dir($path))
         return chown($path, $owner);
- 
+
     $dh = opendir($path);
     while (($file = readdir($dh)) !== false)
 	{
@@ -25,9 +25,9 @@ function chownr($path, $owner)
                 return FALSE;
         }
     }
- 
+
     closedir($dh);
- 
+
     if(chown($path, $owner))
         return TRUE;
     else
@@ -54,19 +54,19 @@ $fileName=$array['fileName'];
 $session=$array['sessions'];
 
 function recurse_copy($src,$dst) {
-  $dir = opendir($src); 
-  @mkdir($dst); 
-  while(false !== ( $file = readdir($dir)) ) { 
-      if (( $file != '.' ) && ( $file != '..' )) { 
-         if ( is_dir($src . '/' . $file) ) { 
-             recurse_copy($src . '/' . $file,$dst . '/' . $file); 
-         } 
-         else { 
-             copy($src . '/' . $file,$dst . '/' . $file); 
-         } 
-      } 
-  } 
- closedir($dir); 
+  $dir = opendir($src);
+  @mkdir($dst);
+  while(false !== ( $file = readdir($dir)) ) {
+      if (( $file != '.' ) && ( $file != '..' )) {
+         if ( is_dir($src . '/' . $file) ) {
+             recurse_copy($src . '/' . $file,$dst . '/' . $file);
+         }
+         else {
+             copy($src . '/' . $file,$dst . '/' . $file);
+         }
+      }
+  }
+ closedir($dir);
 }
 
 function Delete($path)
@@ -96,14 +96,14 @@ $src = "easyChair/".$fileName."/";
 
 /* Full path to the destination directory */
 $dst = "easyChair/".$session."/output";
- 
+
 recurse_copy($src,$dst);
 Delete($src) ;
 
 $delExtra = "easyChair/__MACOSX/";
 Delete($delExtra) ;
 
-$path="/Applications/XAMPP/xamppfiles/htdocs/ceur-make-ui/ceurMakeGUI/index/easyChair/".$session."/output/" ;
+$path="easyChair/".$session."/output/" ;
 chownr($path,"everyone");
 $dir = opendir($path);
 //chmod_r("easyChair/".$session."/output/",0777,0777);

@@ -1,0 +1,133 @@
+\begin{thebibliography}{BKPU16}
+
+\bibitem[Avi03]{avigad2003-skolem}
+Jeremy Avigad.
+\newblock Eliminating definitions and {Skolem} functions in first-order logic.
+\newblock {\em {ACM} Trans. Comput. Log.}, 4(3):402--415, 2003.
+
+\bibitem[BKPU16]{blanchette2016-qed}
+Jasmin~Christian Blanchette, Cezary Kaliszyk, Lawrence~C. Paulson, and Josef
+  Urban.
+\newblock Hammering towards {QED}.
+\newblock {\em J. Formalized Reasoning}, 9(1):101--148, 2016.
+
+\bibitem[Bla12]{blanchette2012-thesis}
+Jasmin~C. Blanchette.
+\newblock {\em Automatic Proofs and Refutations for Higher-Order Logic}.
+\newblock PhD thesis, Universit{\"a}t M{\"u}nchen, 2012.
+
+\bibitem[dN05]{nivelle2005-translation}
+Hans de~Nivelle.
+\newblock Translation of resolution proofs into short first-order proofs
+  without choice axioms.
+\newblock {\em Inf. Comput.}, 199(1-2):24--54, 2005.
+
+\bibitem[Har96]{harrison1996-meson}
+John Harrison.
+\newblock Optimizing proof search in model elimination.
+\newblock In Michael~A. McRobbie and John~K. Slaney, editors, {\em Automated
+  Deduction - CADE-13, 13th International Conference on Automated Deduction,
+  New Brunswick, NJ, USA, July 30 - August 3, 1996, Proceedings}, volume 1104
+  of {\em Lecture Notes in Computer Science}, pages 313--327. Springer, 1996.
+
+\bibitem[HB39]{hilbert1939-mathematik}
+David Hilbert and Paul Bernays.
+\newblock {\em Grundlagen der Mathematik II}.
+\newblock Springer-Verlag, 1939.
+
+\bibitem[Hur03]{hurd2003-metis}
+Joe Hurd.
+\newblock First-order proof tactics in higher-order logic theorem provers.
+\newblock In {\em Design and Application of Strategies/Tactics in Higher Order
+  Logics, number NASA/CP-2003-212448 in NASA Technical Reports}, pages 56--68,
+  2003.
+
+\bibitem[KPU16]{kaliszyk2016-misabelle}
+Cezary Kaliszyk, Karol Pąk, and Josef Urban.
+\newblock Towards a {Mizar} environment for {Isabelle}: Foundations and
+  language.
+\newblock In Jeremy Avigad and Adam Chlipala, editors, {\em Proceedings of the
+  5th {ACM} {SIGPLAN} Conference on Certified Programs and Proofs, Saint
+  Petersburg, FL, USA, January 20-22, 2016}, pages 58--65. {ACM}, 2016.
+
+\bibitem[KUV15]{kaliszyk2015-leancop}
+Cezary Kaliszyk, Josef Urban, and Jir{\'{\i}} Vyskocil.
+\newblock Certified connection tableaux proofs for {HOL} {L}ight and {TPTP}.
+\newblock In Xavier Leroy and Alwen Tiu, editors, {\em Proceedings of the 2015
+  Conference on Certified Programs and Proofs, {CPP} 2015, Mumbai, India,
+  January 15-17, 2015}, pages 59--66. {ACM}, 2015.
+
+\bibitem[KV13]{kovacs2013-vampire}
+Laura Kovács and Andrei Voronkov.
+\newblock First-order theorem proving and {V}ampire.
+\newblock In Natasha Sharygina and Helmut Veith, editors, {\em Computer Aided
+  Verification - 25th International Conference, {CAV} 2013, Saint Petersburg,
+  Russia, July 13-19, 2013. Proceedings}, volume 8044 of {\em Lecture Notes in
+  Computer Science}, pages 1--35. Springer, 2013.
+
+\bibitem[Mil83]{miller1983-phd}
+Dale~A. Miller.
+\newblock {\em Proofs in Higher-Order Logic}.
+\newblock PhD thesis, Carnegie Mellon University, 1983.
+
+\bibitem[NPW02]{nipkow2002-isabelle}
+Tobias Nipkow, Lawrence~C. Paulson, and Markus Wenzel.
+\newblock {\em Isabelle/HOL - {A} Proof Assistant for Higher-Order Logic},
+  volume 2283 of {\em Lecture Notes in Computer Science}.
+\newblock Springer, 2002.
+
+\bibitem[NW01]{nonnengart2001-cnf}
+Andreas Nonnengart and Christoph Weidenbach.
+\newblock Computing small clause normal forms.
+\newblock In John~Alan Robinson and Andrei Voronkov, editors, {\em Handbook of
+  Automated Reasoning (in 2 volumes)}, pages 335--367. Elsevier and {MIT}
+  Press, 2001.
+
+\bibitem[OB03]{otten2003-leancop}
+Jens Otten and Wolfgang Bibel.
+\newblock {leanCoP}: lean connection-based theorem proving.
+\newblock {\em J. Symb. Comput.}, 36(1-2):139--161, 2003.
+
+\bibitem[Ott08]{otten2008-leancop}
+Jens Otten.
+\newblock {leanCoP} 2.0 and {ileanCoP} 1.2: High performance lean theorem
+  proving in classical and intuitionistic logic (system descriptions).
+\newblock In Alessandro Armando, Peter Baumgartner, and Gilles Dowek, editors,
+  {\em Automated Reasoning, 4th International Joint Conference, {IJCAR} 2008,
+  Sydney, Australia, August 12-15, 2008, Proceedings}, volume 5195 of {\em
+  Lecture Notes in Computer Science}, pages 283--291. Springer, 2008.
+
+\bibitem[Ott11]{otten2011-nonclausal}
+Jens Otten.
+\newblock A non-clausal connection calculus.
+\newblock In Kai Br{\"{u}}nnler and George Metcalfe, editors, {\em Automated
+  Reasoning with Analytic Tableaux and Related Methods - 20th International
+  Conference, {TABLEAUX} 2011, Bern, Switzerland, July 4-8, 2011. Proceedings},
+  volume 6793 of {\em Lecture Notes in Computer Science}, pages 226--241.
+  Springer, 2011.
+
+\bibitem[Pau93]{paulson1993-set}
+Lawrence~C. Paulson.
+\newblock Set theory for verification: {I}. {F}rom foundations to functions.
+\newblock {\em J. Autom. Reasoning}, 11(3):353--389, 1993.
+
+\bibitem[Pau99]{paulson1999-blast}
+Lawrence~C. Paulson.
+\newblock A generic tableau prover and its integration with {Isabelle}.
+\newblock {\em J. {UCS}}, 5(3):73--87, 1999.
+
+\bibitem[Pfe87]{pfenning1987-phd}
+Frank Pfenning.
+\newblock {\em Proof Transformations in Higher-Order Logic}.
+\newblock PhD thesis, Carnegie Mellon University, 1987.
+
+\bibitem[Sch13]{schulz2013-e}
+Stephan Schulz.
+\newblock System description: {E} 1.8.
+\newblock In Kenneth~L. McMillan, Aart Middeldorp, and Andrei Voronkov,
+  editors, {\em Logic for Programming, Artificial Intelligence, and Reasoning -
+  19th International Conference, LPAR-19, Stellenbosch, South Africa, December
+  14-19, 2013. Proceedings}, volume 8312 of {\em Lecture Notes in Computer
+  Science}, pages 735--743. Springer, 2013.
+
+\end{thebibliography}

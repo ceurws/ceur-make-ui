@@ -19,13 +19,13 @@ foreach($array as $value )
 {
     //creating the title node
     $title = $newsXML->addChild('title');
-    
+
     //creating the child nodes of title
     $title->addChild('id' , $value['title']['id']);
     $title->addChild('acronym', $value['title']['acronym']);
     $title->addChild('volume', $value['title']['volume']);
     $title->addChild('full', $value['title']['full'] );
-        
+
     //creating other child nodes that have no further childs
     $newsXML->addChild('number', $value['number']) ;
     $newsXML->addChild('homepage', $value['homepage']) ;
@@ -35,18 +35,18 @@ foreach($array as $value )
 
     //creating the conference node and its elements
     $conference = $newsXML->addChild('conference') ;
-    
+
     $conference->addChild('acronym',$value['conference']['acronym']);
     $conference->addChild('full',$value['conference']['full']);
     $conference->addChild('homepage',$value['conference']['homepage']);
 
     //traversing the editors node and creating parent node
     $editors = $newsXML->addChild('editors') ;
-    
+
     foreach( $value['editors'] as $temp )
     {
        $editor = $editors->addChild('editor');
-        
+
        $editor->addChild('name', $temp['name']) ;
        $editor->addChild('affiliation', $temp['affiliation']) ;
        $editor->addChild('country', $temp['country']) ;

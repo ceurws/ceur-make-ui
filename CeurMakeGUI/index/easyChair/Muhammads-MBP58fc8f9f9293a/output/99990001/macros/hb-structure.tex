@@ -1,0 +1,47 @@
+\usepackage{enumitem}
+\usepackage{changepage}
+
+\newcommand{\smarginpar}[1]{\marginpar{\scriptsize{#1}}}
+
+% **************** Chapter that does not count and resets sections
+\newcommand{\revchapter}[2][]{
+    \setcounter{section}{0}
+    % \chapter*{#2}
+    \chapter[#2: #1]{#2\\[2ex]\Large#1}
+}
+
+% **************** Centered itemize/enumeration
+
+\newlength{\mylongest}
+% \setlength{\mylongest}{\widthof{The longest label I will need}}
+\setlength{\mylongest}{\widthof{Gim}}
+\addtolength{\mylongest}{\labelsep}
+\SetLabelAlign{CenterWithParen}{\makebox[\mylongest]{(#1)}}
+
+\newenvironment{enumcenter}{
+\begin{enumerate}[style=unboxed,align=CenterWithParen,labelwidth=\mylongest,leftmargin=!,label=\textbf{\roman*}]
+}{
+  \end{enumerate}
+}
+
+% **************** Digressions as blocks right shifted and with text guards
+
+\makeatletter
+\newenvironment{digression}[1][Beginning of digression]{\par
+\pushQED{\emph{End of digression}}%
+\normalfont \topsep6\p@\@plus6\p@\relax
+\trivlist
+\item\relax
+{\itshape
+#1\@addpunct{.}}\hspace\labelsep\ignorespaces \\[1ex]
+\begin{adjustwidth}{2ex}{0pt}
+}{%
+\end{adjustwidth}
+\ \\\popQED\endtrivlist\@endpefalse
+}
+\makeatother
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

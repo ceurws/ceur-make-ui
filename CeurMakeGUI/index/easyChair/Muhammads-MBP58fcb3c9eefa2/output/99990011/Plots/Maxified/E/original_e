@@ -1,0 +1,327 @@
+Unsatisfiable/HWV009-1.p success 0.01 0.00system 0:00.06elapsed 26%CPU (0avgtext+0avgdata 13216maxresident)k
+Unsatisfiable/HWV009-2.p success 0.01 0.00system 0:00.05elapsed 34%CPU (0avgtext+0avgdata 14576maxresident)k
+Unsatisfiable/HWV009-3.p success 0.02 0.00system 0:00.05elapsed 34%CPU (0avgtext+0avgdata 14528maxresident)k
+Unsatisfiable/HWV009-4.p success 0.01 0.00system 0:00.05elapsed 38%CPU (0avgtext+0avgdata 14560maxresident)k
+Unsatisfiable/HWV010-1.p success 0.01 0.00system 0:00.04elapsed 24%CPU (0avgtext+0avgdata 13136maxresident)k
+Unsatisfiable/HWV010-2.p success 0.02 0.00system 0:00.05elapsed 34%CPU (0avgtext+0avgdata 14528maxresident)k
+Unsatisfiable/HWV010-3.p success 0.02 0.00system 0:00.05elapsed 36%CPU (0avgtext+0avgdata 14528maxresident)k
+Unsatisfiable/HWV011-1.p success 0.01 0.00system 0:00.05elapsed 21%CPU (0avgtext+0avgdata 13136maxresident)k
+Unsatisfiable/HWV011-2.p success 0.01 0.00system 0:00.05elapsed 34%CPU (0avgtext+0avgdata 14544maxresident)k
+Unsatisfiable/HWV011-3.p success 0.01 0.00system 0:00.05elapsed 37%CPU (0avgtext+0avgdata 14528maxresident)k
+Unsatisfiable/HWV012-1.p success 0.00 0.00system 0:00.04elapsed 32%CPU (0avgtext+0avgdata 13264maxresident)k
+Unsatisfiable/HWV012-2.p success 0.02 0.00system 0:00.05elapsed 34%CPU (0avgtext+0avgdata 14560maxresident)k
+Unsatisfiable/HWV013-1.p success 0.01 0.00system 0:00.05elapsed 34%CPU (0avgtext+0avgdata 14080maxresident)k
+Unsatisfiable/HWV013-2.p success 0.03 0.00system 0:00.07elapsed 48%CPU (0avgtext+0avgdata 16160maxresident)k
+Unsatisfiable/HWV014-1.p success 0.01 0.00system 0:00.05elapsed 37%CPU (0avgtext+0avgdata 14160maxresident)k
+Unsatisfiable/HWV014-2.p success 0.04 0.00system 0:00.07elapsed 51%CPU (0avgtext+0avgdata 16496maxresident)k
+Unsatisfiable/HWV015-1.p success 0.01 0.00system 0:00.05elapsed 27%CPU (0avgtext+0avgdata 13488maxresident)k
+Unsatisfiable/HWV015-2.p success 0.03 0.00system 0:00.07elapsed 46%CPU (0avgtext+0avgdata 16176maxresident)k
+Unsatisfiable/HWV016-1.p success 0.20 0.00system 0:00.27elapsed 77%CPU (0avgtext+0avgdata 31312maxresident)k
+Unsatisfiable/HWV016-2.p success 0.04 0.00system 0:00.08elapsed 50%CPU (0avgtext+0avgdata 19152maxresident)k
+Unsatisfiable/HWV017-1.p success 0.04 0.00system 0:00.08elapsed 55%CPU (0avgtext+0avgdata 17184maxresident)k
+Unsatisfiable/HWV017-2.p success 0.04 0.00system 0:00.09elapsed 50%CPU (0avgtext+0avgdata 19680maxresident)k
+Unsatisfiable/HWV018-1.p success 0.02 0.00system 0:00.06elapsed 38%CPU (0avgtext+0avgdata 14848maxresident)k
+Unsatisfiable/HWV018-2.p success 0.04 0.00system 0:00.11elapsed 35%CPU (0avgtext+0avgdata 17952maxresident)k
+Unsatisfiable/HWV018-3.p success 0.02 0.00system 0:00.06elapsed 45%CPU (0avgtext+0avgdata 15360maxresident)k
+Unsatisfiable/HWV019-1.p success 0.01 0.00system 0:00.05elapsed 22%CPU (0avgtext+0avgdata 13296maxresident)k
+Unsatisfiable/HWV019-2.p success 0.01 0.00system 0:00.05elapsed 34%CPU (0avgtext+0avgdata 14576maxresident)k
+Unsatisfiable/HWV019-3.p success 0.02 0.00system 0:00.05elapsed 34%CPU (0avgtext+0avgdata 14720maxresident)k
+Unsatisfiable/HWV020-1.p success 0.02 0.00system 0:00.06elapsed 38%CPU (0avgtext+0avgdata 14992maxresident)k
+Unsatisfiable/HWV020-2.p success 0.04 0.00system 0:00.09elapsed 45%CPU (0avgtext+0avgdata 18480maxresident)k
+Unsatisfiable/HWV020-3.p success 0.02 0.00system 0:00.06elapsed 40%CPU (0avgtext+0avgdata 15600maxresident)k
+Unsatisfiable/HWV021-1.p success 0.01 0.00system 0:00.04elapsed 32%CPU (0avgtext+0avgdata 13296maxresident)k
+Unsatisfiable/HWV021-2.p success 0.02 0.00system 0:00.05elapsed 34%CPU (0avgtext+0avgdata 14720maxresident)k
+Unsatisfiable/HWV022-1.p success 0.02 0.00system 0:00.06elapsed 38%CPU (0avgtext+0avgdata 14944maxresident)k
+Unsatisfiable/HWV022-2.p success 0.03 0.00system 0:00.08elapsed 43%CPU (0avgtext+0avgdata 17200maxresident)k
+Unsatisfiable/HWV023-1.p success 0.02 0.00system 0:00.06elapsed 38%CPU (0avgtext+0avgdata 14832maxresident)k
+Unsatisfiable/HWV023-2.p success 0.03 0.00system 0:00.08elapsed 48%CPU (0avgtext+0avgdata 17056maxresident)k
+Unsatisfiable/HWV024-1.p success 0.01 0.00system 0:00.07elapsed 27%CPU (0avgtext+0avgdata 14256maxresident)k
+Unsatisfiable/HWV024-2.p fail
+Unsatisfiable/HWV025-1.p success 0.01 0.00system 0:00.06elapsed 24%CPU (0avgtext+0avgdata 13296maxresident)k
+Unsatisfiable/HWV025-2.p success 0.02 0.00system 0:00.05elapsed 34%CPU (0avgtext+0avgdata 14704maxresident)k
+Unsatisfiable/HWV025-3.p success 0.02 0.00system 0:00.05elapsed 34%CPU (0avgtext+0avgdata 14608maxresident)k
+Unsatisfiable/HWV026-1.p success 0.01 0.00system 0:00.04elapsed 32%CPU (0avgtext+0avgdata 13264maxresident)k
+Unsatisfiable/HWV026-2.p success 0.01 0.00system 0:00.05elapsed 34%CPU (0avgtext+0avgdata 14704maxresident)k
+Unsatisfiable/HWV026-3.p success 0.02 0.00system 0:00.06elapsed 30%CPU (0avgtext+0avgdata 14608maxresident)k
+Unsatisfiable/HWV027-1.p success 0.01 0.00system 0:00.05elapsed 27%CPU (0avgtext+0avgdata 13360maxresident)k
+Unsatisfiable/HWV027-2.p success 0.02 0.00system 0:00.05elapsed 34%CPU (0avgtext+0avgdata 14720maxresident)k
+Unsatisfiable/HWV028-1.p success 0.01 0.00system 0:00.04elapsed 32%CPU (0avgtext+0avgdata 13392maxresident)k
+Unsatisfiable/HWV028-2.p success 0.02 0.00system 0:00.06elapsed 42%CPU (0avgtext+0avgdata 15424maxresident)k
+Unsatisfiable/HWV029-1.p success 0.16 0.00system 0:00.21elapsed 77%CPU (0avgtext+0avgdata 25696maxresident)k
+Unsatisfiable/HWV029-2.p success 0.04 0.00system 0:00.08elapsed 50%CPU (0avgtext+0avgdata 17120maxresident)k
+Unsatisfiable/HWV030-1.p success 0.01 0.00system 0:00.04elapsed 24%CPU (0avgtext+0avgdata 13296maxresident)k
+Unsatisfiable/HWV030-2.p success 0.02 0.00system 0:00.05elapsed 36%CPU (0avgtext+0avgdata 14576maxresident)k
+Unsatisfiable/HWV031-1.p success 3.07 0.05system 0:03.19elapsed 97%CPU (0avgtext+0avgdata 268144maxresident)k
+Unsatisfiable/HWV031-2.p fail
+Unsatisfiable/HWV032-1.p success 0.01 0.00system 0:00.04elapsed 32%CPU (0avgtext+0avgdata 13296maxresident)k
+Unsatisfiable/HWV032-2.p success 0.02 0.00system 0:00.05elapsed 34%CPU (0avgtext+0avgdata 14560maxresident)k
+Unsatisfiable/HWV033-1.p success 0.28 0.01system 0:00.35elapsed 82%CPU (0avgtext+0avgdata 37072maxresident)k
+Unsatisfiable/HWV033-2.p fail
+Unsatisfiable/LDA005-1.p fail
+Unsatisfiable/LDA006-1.p fail
+Unsatisfiable/LDA007-1.p success 0.01 0.00system 0:00.04elapsed 24%CPU (0avgtext+0avgdata 12864maxresident)k
+Unsatisfiable/LDA008-1.p fail
+Unsatisfiable/LDA009-1.p fail
+Unsatisfiable/LDA010-1.p fail
+Unsatisfiable/LDA011-1.p fail
+Unsatisfiable/LDA012-1.p fail
+Unsatisfiable/LDA013-1.p fail
+Unsatisfiable/LDA014-1.p fail
+Theorem/NUM858+1.p success 0.16 0.00system 0:00.22elapsed 73%CPU (0avgtext+0avgdata 30640maxresident)k
+Theorem/NUM859+1.p success 79.60 1.34system 1:21.14elapsed 99%CPU (0avgtext+0avgdata 10678528maxresident)k
+Theorem/NUM860+1.p success 8.31 0.18system 0:08.59elapsed 98%CPU (0avgtext+0avgdata 1271504maxresident)k
+Theorem/NUM861+1.p success 27.16 0.34system 0:27.64elapsed 99%CPU (0avgtext+0avgdata 2728560maxresident)k
+Theorem/NUM862+1.p fail
+Theorem/NUM924+1.p success 0.00 0.00system 0:00.04elapsed 25%CPU (0avgtext+0avgdata 14224maxresident)k
+Theorem/NUM924+2.p success 0.07 0.00system 0:00.12elapsed 61%CPU (0avgtext+0avgdata 26432maxresident)k
+Theorem/NUM926+1.p success 2.00 0.04system 0:02.11elapsed 96%CPU (0avgtext+0avgdata 407296maxresident)k
+Theorem/NUM926+2.p fail
+Unsatisfiable/SWV002-1.p success 0.01 0.00system 0:00.05elapsed 20%CPU (0avgtext+0avgdata 12720maxresident)k
+Unsatisfiable/SWV003-1.p success 0.00 0.00system 0:00.04elapsed 19%CPU (0avgtext+0avgdata 12272maxresident)k
+Unsatisfiable/SWV005-1.p success 0.00 0.00system 0:00.04elapsed 19%CPU (0avgtext+0avgdata 12400maxresident)k
+Unsatisfiable/SWV006-1.p success 0.00 0.00system 0:00.04elapsed 16%CPU (0avgtext+0avgdata 12320maxresident)k
+Unsatisfiable/SWV007-1.p success 0.00 0.00system 0:00.04elapsed 24%CPU (0avgtext+0avgdata 12976maxresident)k
+Unsatisfiable/SWV008-1.p success 0.00 0.00system 0:00.04elapsed 19%CPU (0avgtext+0avgdata 12144maxresident)k
+Theorem/SWV022+1.p success 0.01 0.00system 0:00.04elapsed 24%CPU (0avgtext+0avgdata 12928maxresident)k
+Theorem/SWV023+1.p success 0.00 0.00system 0:00.04elapsed 24%CPU (0avgtext+0avgdata 13296maxresident)k
+Theorem/SWV024+1.p fail
+Theorem/SWV025+1.p success 8.61 0.13system 0:08.83elapsed 99%CPU (0avgtext+0avgdata 862976maxresident)k
+Theorem/SWV026+1.p success 16.35 0.20system 0:16.67elapsed 99%CPU (0avgtext+0avgdata 1369648maxresident)k
+Theorem/SWV027+1.p success 15.05 0.20system 0:15.36elapsed 99%CPU (0avgtext+0avgdata 1260208maxresident)k
+Theorem/SWV028+1.p fail
+Theorem/SWV029+1.p fail
+Theorem/SWV030+1.p success 0.04 0.00system 0:00.08elapsed 50%CPU (0avgtext+0avgdata 18256maxresident)k
+Theorem/SWV031+1.p success 0.06 0.00system 0:00.10elapsed 57%CPU (0avgtext+0avgdata 20288maxresident)k
+Theorem/SWV032+1.p success 0.14 0.00system 0:00.19elapsed 74%CPU (0avgtext+0avgdata 34272maxresident)k
+Theorem/SWV033+1.p success 1.02 0.02system 0:01.11elapsed 93%CPU (0avgtext+0avgdata 117024maxresident)k
+Theorem/SWV034+1.p fail
+Theorem/SWV035+1.p fail
+Theorem/SWV036+1.p fail
+Theorem/SWV037+1.p fail
+Theorem/SWV038+1.p success 140.47 1.38system 2:22.16elapsed 99%CPU (0avgtext+0avgdata 11341536maxresident)k
+Theorem/SWV039+1.p fail
+Theorem/SWV040+1.p fail
+Theorem/SWV041+1.p success 0.03 0.00system 0:00.07elapsed 43%CPU (0avgtext+0avgdata 16928maxresident)k
+Theorem/SWV042+1.p success 53.26 0.54system 0:54.00elapsed 99%CPU (0avgtext+0avgdata 3656208maxresident)k
+Theorem/SWV043+1.p success 0.01 0.00system 0:00.05elapsed 21%CPU (0avgtext+0avgdata 12928maxresident)k
+Theorem/SWV044+1.p fail
+Theorem/SWV045+1.p success 0.01 0.00system 0:00.05elapsed 29%CPU (0avgtext+0avgdata 13296maxresident)k
+Theorem/SWV046+1.p success 0.14 0.00system 0:00.19elapsed 79%CPU (0avgtext+0avgdata 34864maxresident)k
+Theorem/SWV047+1.p success 0.01 0.00system 0:00.05elapsed 22%CPU (0avgtext+0avgdata 13328maxresident)k
+Theorem/SWV048+1.p success 0.04 0.00system 0:00.08elapsed 53%CPU (0avgtext+0avgdata 18496maxresident)k
+Theorem/SWV049+1.p fail
+Theorem/SWV050+1.p success 0.10 0.01system 0:00.15elapsed 70%CPU (0avgtext+0avgdata 26592maxresident)k
+Theorem/SWV051+1.p fail
+Theorem/SWV052+1.p fail
+Theorem/SWV053+1.p success 59.24 0.67system 1:00.10elapsed 99%CPU (0avgtext+0avgdata 5312848maxresident)k
+Theorem/SWV054+1.p success 0.01 0.00system 0:00.04elapsed 32%CPU (0avgtext+0avgdata 13280maxresident)k
+Theorem/SWV055+1.p success 0.29 0.00system 0:00.36elapsed 82%CPU (0avgtext+0avgdata 55072maxresident)k
+Theorem/SWV056+1.p success 0.03 0.00system 0:00.07elapsed 43%CPU (0avgtext+0avgdata 16704maxresident)k
+Theorem/SWV057+1.p success 0.01 0.00system 0:00.05elapsed 21%CPU (0avgtext+0avgdata 13232maxresident)k
+Theorem/SWV058+1.p success 0.01 0.00system 0:00.04elapsed 24%CPU (0avgtext+0avgdata 13232maxresident)k
+Theorem/SWV059+1.p success 0.01 0.00system 0:00.04elapsed 24%CPU (0avgtext+0avgdata 13232maxresident)k
+Theorem/SWV060+1.p success 0.01 0.00system 0:00.04elapsed 24%CPU (0avgtext+0avgdata 12928maxresident)k
+Theorem/SWV061+1.p success 0.01 0.00system 0:00.04elapsed 24%CPU (0avgtext+0avgdata 13248maxresident)k
+Theorem/SWV062+1.p success 0.01 0.00system 0:00.04elapsed 24%CPU (0avgtext+0avgdata 12960maxresident)k
+Theorem/SWV063+1.p success 0.01 0.00system 0:00.05elapsed 21%CPU (0avgtext+0avgdata 12976maxresident)k
+Theorem/SWV064+1.p success 0.01 0.00system 0:00.04elapsed 32%CPU (0avgtext+0avgdata 13856maxresident)k
+Theorem/SWV065+1.p success 0.01 0.00system 0:00.05elapsed 29%CPU (0avgtext+0avgdata 13808maxresident)k
+Theorem/SWV066+1.p success 0.01 0.00system 0:00.05elapsed 23%CPU (0avgtext+0avgdata 12960maxresident)k
+Theorem/SWV067+1.p success 0.03 0.00system 0:00.07elapsed 43%CPU (0avgtext+0avgdata 16992maxresident)k
+Theorem/SWV068+1.p success 0.01 0.00system 0:00.05elapsed 23%CPU (0avgtext+0avgdata 13280maxresident)k
+Theorem/SWV069+1.p success 0.02 0.00system 0:00.06elapsed 42%CPU (0avgtext+0avgdata 16400maxresident)k
+Theorem/SWV070+1.p success 0.00 0.00system 0:00.04elapsed 24%CPU (0avgtext+0avgdata 12960maxresident)k
+Theorem/SWV071+1.p success 0.01 0.00system 0:00.04elapsed 24%CPU (0avgtext+0avgdata 12960maxresident)k
+Theorem/SWV072+1.p success 0.01 0.00system 0:00.04elapsed 24%CPU (0avgtext+0avgdata 12944maxresident)k
+Theorem/SWV073+1.p success 0.01 0.00system 0:00.04elapsed 24%CPU (0avgtext+0avgdata 12944maxresident)k
+Theorem/SWV074+1.p success 0.01 0.00system 0:00.05elapsed 22%CPU (0avgtext+0avgdata 12976maxresident)k
+Theorem/SWV075+1.p success 0.01 0.00system 0:00.05elapsed 22%CPU (0avgtext+0avgdata 12944maxresident)k
+Theorem/SWV076+1.p success 0.00 0.00system 0:00.05elapsed 22%CPU (0avgtext+0avgdata 12944maxresident)k
+Theorem/SWV077+1.p success 0.00 0.00system 0:00.04elapsed 24%CPU (0avgtext+0avgdata 13312maxresident)k
+Theorem/SWV078+1.p success 0.01 0.00system 0:00.04elapsed 24%CPU (0avgtext+0avgdata 13376maxresident)k
+Theorem/SWV079+1.p fail
+Theorem/SWV080+1.p success 0.01 0.00system 0:00.05elapsed 21%CPU (0avgtext+0avgdata 12928maxresident)k
+Theorem/SWV081+1.p success 0.01 0.00system 0:00.04elapsed 24%CPU (0avgtext+0avgdata 12944maxresident)k
+Theorem/SWV082+1.p success 0.00 0.00system 0:00.04elapsed 24%CPU (0avgtext+0avgdata 12928maxresident)k
+Theorem/SWV083+1.p success 0.01 0.00system 0:00.04elapsed 32%CPU (0avgtext+0avgdata 12944maxresident)k
+Theorem/SWV084+1.p success 0.00 0.00system 0:00.04elapsed 24%CPU (0avgtext+0avgdata 12944maxresident)k
+Theorem/SWV085+1.p success 0.01 0.00system 0:00.04elapsed 24%CPU (0avgtext+0avgdata 12928maxresident)k
+Theorem/SWV086+1.p success 0.01 0.00system 0:00.04elapsed 24%CPU (0avgtext+0avgdata 13248maxresident)k
+Theorem/SWV087+1.p success 0.00 0.00system 0:00.04elapsed 24%CPU (0avgtext+0avgdata 13232maxresident)k
+Theorem/SWV088+1.p success 0.01 0.00system 0:00.04elapsed 24%CPU (0avgtext+0avgdata 13264maxresident)k
+Theorem/SWV089+1.p fail
+Theorem/SWV090+1.p success 15.64 0.27system 0:16.03elapsed 99%CPU (0avgtext+0avgdata 1657840maxresident)k
+Theorem/SWV091+1.p success 13.91 0.22system 0:14.24elapsed 99%CPU (0avgtext+0avgdata 1563552maxresident)k
+Theorem/SWV092+1.p success 0.03 0.00system 0:00.06elapsed 54%CPU (0avgtext+0avgdata 16752maxresident)k
+Theorem/SWV093+1.p success 0.28 0.00system 0:00.35elapsed 84%CPU (0avgtext+0avgdata 55408maxresident)k
+Theorem/SWV094+1.p success 36.23 0.41system 0:36.82elapsed 99%CPU (0avgtext+0avgdata 3393296maxresident)k
+Theorem/SWV095+1.p success 0.61 0.02system 0:00.69elapsed 91%CPU (0avgtext+0avgdata 94656maxresident)k
+Theorem/SWV096+1.p success 0.62 0.02system 0:00.71elapsed 91%CPU (0avgtext+0avgdata 101216maxresident)k
+Theorem/SWV097+1.p success 0.26 0.00system 0:00.31elapsed 84%CPU (0avgtext+0avgdata 52256maxresident)k
+Theorem/SWV098+1.p success 0.04 0.00system 0:00.09elapsed 48%CPU (0avgtext+0avgdata 17984maxresident)k
+Theorem/SWV099+1.p success 0.44 0.00system 0:00.50elapsed 88%CPU (0avgtext+0avgdata 80128maxresident)k
+Theorem/SWV100+1.p fail
+Theorem/SWV101+1.p fail
+Theorem/SWV102+1.p success 0.28 0.00system 0:00.34elapsed 83%CPU (0avgtext+0avgdata 54656maxresident)k
+Theorem/SWV103+1.p fail
+Theorem/SWV104+1.p success 0.29 0.00system 0:00.36elapsed 83%CPU (0avgtext+0avgdata 56768maxresident)k
+Theorem/SWV105+1.p success 0.01 0.00system 0:00.04elapsed 24%CPU (0avgtext+0avgdata 13296maxresident)k
+Theorem/SWV106+1.p success 0.00 0.00system 0:00.04elapsed 24%CPU (0avgtext+0avgdata 13312maxresident)k
+Theorem/SWV107+1.p success 0.00 0.00system 0:00.04elapsed 24%CPU (0avgtext+0avgdata 13360maxresident)k
+Theorem/SWV108+1.p fail
+Theorem/SWV109+1.p fail
+Theorem/SWV110+1.p fail
+Theorem/SWV111+1.p fail
+Theorem/SWV112+1.p success 0.77 0.02system 0:00.85elapsed 92%CPU (0avgtext+0avgdata 115184maxresident)k
+Theorem/SWV113+1.p fail
+Theorem/SWV114+1.p success 1.01 0.01system 0:01.08elapsed 94%CPU (0avgtext+0avgdata 131344maxresident)k
+Theorem/SWV115+1.p success 270.80 2.37system 4:33.70elapsed 99%CPU (0avgtext+0avgdata 19903136maxresident)k
+Theorem/SWV116+1.p success 0.55 0.00system 0:00.61elapsed 90%CPU (0avgtext+0avgdata 90384maxresident)k
+Theorem/SWV117+1.p success 0.82 0.01system 0:00.89elapsed 93%CPU (0avgtext+0avgdata 116080maxresident)k
+Theorem/SWV118+1.p fail
+Theorem/SWV119+1.p success 0.01 0.00system 0:00.05elapsed 27%CPU (0avgtext+0avgdata 13296maxresident)k
+Theorem/SWV120+1.p fail
+Theorem/SWV121+1.p success 0.00 0.00system 0:00.05elapsed 22%CPU (0avgtext+0avgdata 13328maxresident)k
+Theorem/SWV122+1.p success 0.50 0.01system 0:00.57elapsed 89%CPU (0avgtext+0avgdata 82416maxresident)k
+Theorem/SWV123+1.p success 0.00 0.00system 0:00.04elapsed 24%CPU (0avgtext+0avgdata 13328maxresident)k
+Theorem/SWV124+1.p fail
+Theorem/SWV125+1.p success 0.83 0.00system 0:00.89elapsed 93%CPU (0avgtext+0avgdata 112544maxresident)k
+Theorem/SWV126+1.p success 0.00 0.00system 0:00.04elapsed 24%CPU (0avgtext+0avgdata 12928maxresident)k
+Theorem/SWV127+1.p fail
+Theorem/SWV128+1.p success 0.00 0.00system 0:00.05elapsed 28%CPU (0avgtext+0avgdata 13360maxresident)k
+Theorem/SWV130+1.p fail
+Theorem/SWV131+1.p success 0.00 0.00system 0:00.04elapsed 32%CPU (0avgtext+0avgdata 13856maxresident)k
+Theorem/SWV132+1.p success 0.01 0.00system 0:00.04elapsed 24%CPU (0avgtext+0avgdata 13584maxresident)k
+Theorem/SWV133+1.p success 0.04 0.00system 0:00.08elapsed 53%CPU (0avgtext+0avgdata 18352maxresident)k
+Theorem/SWV134+1.p success 0.03 0.00system 0:00.07elapsed 43%CPU (0avgtext+0avgdata 17104maxresident)k
+Theorem/SWV135+1.p success 0.03 0.00system 0:00.08elapsed 49%CPU (0avgtext+0avgdata 17552maxresident)k
+Theorem/SWV136+1.p success 0.03 0.00system 0:00.08elapsed 44%CPU (0avgtext+0avgdata 17616maxresident)k
+Theorem/SWV137+1.p success 0.04 0.00system 0:00.07elapsed 54%CPU (0avgtext+0avgdata 17936maxresident)k
+Theorem/SWV138+1.p success 0.04 0.00system 0:00.09elapsed 48%CPU (0avgtext+0avgdata 18320maxresident)k
+Theorem/SWV139+1.p success 0.02 0.00system 0:00.06elapsed 42%CPU (0avgtext+0avgdata 16464maxresident)k
+Theorem/SWV140+1.p success 0.02 0.00system 0:00.06elapsed 41%CPU (0avgtext+0avgdata 16448maxresident)k
+Theorem/SWV141+1.p success 0.02 0.00system 0:00.06elapsed 42%CPU (0avgtext+0avgdata 16448maxresident)k
+Theorem/SWV142+1.p success 0.02 0.00system 0:00.06elapsed 42%CPU (0avgtext+0avgdata 16448maxresident)k
+Theorem/SWV143+1.p success 0.02 0.00system 0:00.06elapsed 42%CPU (0avgtext+0avgdata 16448maxresident)k
+Theorem/SWV144+1.p success 0.02 0.00system 0:00.06elapsed 42%CPU (0avgtext+0avgdata 16432maxresident)k
+Theorem/SWV145+1.p success 0.00 0.00system 0:00.04elapsed 32%CPU (0avgtext+0avgdata 13504maxresident)k
+Theorem/SWV146+1.p success 0.01 0.00system 0:00.11elapsed 10%CPU (0avgtext+0avgdata 13504maxresident)k
+Theorem/SWV147+1.p success 0.00 0.00system 0:00.04elapsed 25%CPU (0avgtext+0avgdata 13488maxresident)k
+Theorem/SWV148+1.p success 0.01 0.00system 0:00.04elapsed 24%CPU (0avgtext+0avgdata 13536maxresident)k
+Theorem/SWV149+1.p success 0.01 0.00system 0:00.05elapsed 24%CPU (0avgtext+0avgdata 13520maxresident)k
+Theorem/SWV150+1.p success 0.00 0.00system 0:00.04elapsed 24%CPU (0avgtext+0avgdata 13552maxresident)k
+Theorem/SWV151+1.p success 0.02 0.00system 0:00.07elapsed 43%CPU (0avgtext+0avgdata 16832maxresident)k
+Theorem/SWV152+1.p success 0.03 0.00system 0:00.06elapsed 46%CPU (0avgtext+0avgdata 16848maxresident)k
+Theorem/SWV153+1.p success 0.12 0.00system 0:00.16elapsed 71%CPU (0avgtext+0avgdata 28576maxresident)k
+Theorem/SWV154+1.p success 0.01 0.00system 0:00.06elapsed 40%CPU (0avgtext+0avgdata 15936maxresident)k
+Theorem/SWV155+1.p success 0.03 0.00system 0:00.06elapsed 48%CPU (0avgtext+0avgdata 16976maxresident)k
+Theorem/SWV156+1.p success 0.02 0.01system 0:00.06elapsed 50%CPU (0avgtext+0avgdata 16928maxresident)k
+Theorem/SWV157+1.p success 0.12 0.00system 0:00.19elapsed 64%CPU (0avgtext+0avgdata 28544maxresident)k
+Theorem/SWV158+1.p success 0.02 0.00system 0:00.06elapsed 42%CPU (0avgtext+0avgdata 16512maxresident)k
+Theorem/SWV159+1.p success 0.02 0.00system 0:00.06elapsed 48%CPU (0avgtext+0avgdata 17232maxresident)k
+Theorem/SWV160+1.p success 0.03 0.00system 0:00.07elapsed 43%CPU (0avgtext+0avgdata 17120maxresident)k
+Theorem/SWV161+1.p success 0.03 0.00system 0:00.07elapsed 43%CPU (0avgtext+0avgdata 16928maxresident)k
+Theorem/SWV162+1.p success 0.03 0.00system 0:00.07elapsed 45%CPU (0avgtext+0avgdata 16928maxresident)k
+Theorem/SWV163+1.p success 0.14 0.00system 0:00.19elapsed 79%CPU (0avgtext+0avgdata 34208maxresident)k
+Theorem/SWV164+1.p success 0.16 0.00system 0:00.20elapsed 80%CPU (0avgtext+0avgdata 37440maxresident)k
+Theorem/SWV165+1.p success 0.03 0.00system 0:00.07elapsed 43%CPU (0avgtext+0avgdata 16608maxresident)k
+Theorem/SWV166+1.p success 0.03 0.00system 0:00.06elapsed 48%CPU (0avgtext+0avgdata 16528maxresident)k
+Theorem/SWV167+1.p success 0.04 0.00system 0:00.08elapsed 48%CPU (0avgtext+0avgdata 17552maxresident)k
+Theorem/SWV168+1.p success 0.04 0.00system 0:00.10elapsed 38%CPU (0avgtext+0avgdata 17744maxresident)k
+Theorem/SWV169+1.p success 0.03 0.00system 0:00.07elapsed 45%CPU (0avgtext+0avgdata 16848maxresident)k
+Theorem/SWV170+1.p success 0.03 0.00system 0:00.07elapsed 45%CPU (0avgtext+0avgdata 16672maxresident)k
+Theorem/SWV171+1.p success 0.02 0.00system 0:00.07elapsed 45%CPU (0avgtext+0avgdata 17056maxresident)k
+Theorem/SWV172+1.p success 0.03 0.00system 0:00.07elapsed 51%CPU (0avgtext+0avgdata 16960maxresident)k
+Theorem/SWV173+1.p success 0.03 0.00system 0:00.06elapsed 48%CPU (0avgtext+0avgdata 16688maxresident)k
+Theorem/SWV174+1.p success 101.00 1.05system 1:42.29elapsed 99%CPU (0avgtext+0avgdata 8241088maxresident)k
+Theorem/SWV175+1.p success 0.03 0.00system 0:00.07elapsed 45%CPU (0avgtext+0avgdata 17296maxresident)k
+Theorem/SWV176+1.p success 0.03 0.00system 0:00.07elapsed 45%CPU (0avgtext+0avgdata 16608maxresident)k
+Theorem/SWV177+1.p success 0.03 0.00system 0:00.07elapsed 43%CPU (0avgtext+0avgdata 16592maxresident)k
+Theorem/SWV178+1.p success 0.02 0.00system 0:00.06elapsed 46%CPU (0avgtext+0avgdata 16656maxresident)k
+Theorem/SWV179+1.p success 0.03 0.00system 0:00.06elapsed 46%CPU (0avgtext+0avgdata 16864maxresident)k
+Theorem/SWV180+1.p success 0.03 0.00system 0:00.06elapsed 46%CPU (0avgtext+0avgdata 16864maxresident)k
+Theorem/SWV181+1.p success 0.03 0.00system 0:00.07elapsed 48%CPU (0avgtext+0avgdata 17408maxresident)k
+Theorem/SWV182+1.p success 0.03 0.00system 0:00.08elapsed 40%CPU (0avgtext+0avgdata 16608maxresident)k
+Theorem/SWV183+1.p success 0.02 0.00system 0:00.07elapsed 43%CPU (0avgtext+0avgdata 16608maxresident)k
+Theorem/SWV184+1.p success 0.02 0.00system 0:00.06elapsed 42%CPU (0avgtext+0avgdata 16416maxresident)k
+Theorem/SWV185+1.p success 0.03 0.00system 0:00.06elapsed 48%CPU (0avgtext+0avgdata 16624maxresident)k
+Theorem/SWV186+1.p success 0.02 0.00system 0:00.06elapsed 46%CPU (0avgtext+0avgdata 16608maxresident)k
+Theorem/SWV187+1.p success 0.02 0.00system 0:00.06elapsed 40%CPU (0avgtext+0avgdata 16432maxresident)k
+Theorem/SWV188+1.p success 0.03 0.00system 0:00.07elapsed 48%CPU (0avgtext+0avgdata 17120maxresident)k
+Theorem/SWV189+1.p success 0.02 0.00system 0:00.07elapsed 43%CPU (0avgtext+0avgdata 16816maxresident)k
+Theorem/SWV190+1.p success 0.03 0.00system 0:00.08elapsed 45%CPU (0avgtext+0avgdata 17408maxresident)k
+Theorem/SWV191+1.p success 0.03 0.00system 0:00.07elapsed 48%CPU (0avgtext+0avgdata 17504maxresident)k
+Theorem/SWV192+1.p success 0.03 0.00system 0:00.07elapsed 44%CPU (0avgtext+0avgdata 17152maxresident)k
+Theorem/SWV193+1.p success 0.03 0.00system 0:00.07elapsed 43%CPU (0avgtext+0avgdata 17152maxresident)k
+Theorem/SWV194+1.p success 0.03 0.00system 0:00.06elapsed 48%CPU (0avgtext+0avgdata 17040maxresident)k
+Theorem/SWV195+1.p success 0.02 0.00system 0:00.06elapsed 48%CPU (0avgtext+0avgdata 17152maxresident)k
+Theorem/SWV196+1.p success 0.03 0.00system 0:00.06elapsed 48%CPU (0avgtext+0avgdata 17136maxresident)k
+Theorem/SWV197+1.p success 0.03 0.00system 0:00.07elapsed 43%CPU (0avgtext+0avgdata 17200maxresident)k
+Theorem/SWV198+1.p success 0.04 0.00system 0:00.07elapsed 54%CPU (0avgtext+0avgdata 17856maxresident)k
+Theorem/SWV199+1.p success 0.03 0.00system 0:00.08elapsed 43%CPU (0avgtext+0avgdata 17600maxresident)k
+Theorem/SWV200+1.p success 0.53 0.02system 0:00.62elapsed 89%CPU (0avgtext+0avgdata 89008maxresident)k
+Theorem/SWV201+1.p success 0.55 0.00system 0:00.61elapsed 90%CPU (0avgtext+0avgdata 88992maxresident)k
+Theorem/SWV202+1.p success 18.23 0.18system 0:18.52elapsed 99%CPU (0avgtext+0avgdata 1799344maxresident)k
+Theorem/SWV203+1.p success 18.17 0.23system 0:18.53elapsed 99%CPU (0avgtext+0avgdata 1799328maxresident)k
+Theorem/SWV204+1.p success 0.03 0.00system 0:00.07elapsed 54%CPU (0avgtext+0avgdata 17744maxresident)k
+Theorem/SWV205+1.p success 0.03 0.00system 0:00.08elapsed 44%CPU (0avgtext+0avgdata 18128maxresident)k
+Theorem/SWV206+1.p success 0.04 0.00system 0:00.09elapsed 44%CPU (0avgtext+0avgdata 17792maxresident)k
+Theorem/SWV208+1.p success 0.03 0.00system 0:00.09elapsed 44%CPU (0avgtext+0avgdata 18128maxresident)k
+Theorem/SWV209+1.p success 0.04 0.00system 0:00.07elapsed 59%CPU (0avgtext+0avgdata 18096maxresident)k
+Theorem/SWV210+1.p success 0.04 0.00system 0:00.07elapsed 54%CPU (0avgtext+0avgdata 17760maxresident)k
+Theorem/SWV211+1.p success 0.01 0.00system 0:00.05elapsed 32%CPU (0avgtext+0avgdata 14112maxresident)k
+Theorem/SWV212+1.p success 0.01 0.00system 0:00.05elapsed 28%CPU (0avgtext+0avgdata 14352maxresident)k
+Theorem/SWV213+1.p success 0.01 0.00system 0:00.05elapsed 28%CPU (0avgtext+0avgdata 14272maxresident)k
+Theorem/SWV214+1.p success 0.01 0.00system 0:00.04elapsed 32%CPU (0avgtext+0avgdata 14224maxresident)k
+Theorem/SWV215+1.p success 0.01 0.00system 0:00.04elapsed 32%CPU (0avgtext+0avgdata 14304maxresident)k
+Theorem/SWV216+1.p success 0.01 0.00system 0:00.05elapsed 28%CPU (0avgtext+0avgdata 14400maxresident)k
+Theorem/SWV217+1.p success 0.01 0.00system 0:00.04elapsed 32%CPU (0avgtext+0avgdata 14400maxresident)k
+Theorem/SWV218+1.p success 0.01 0.00system 0:00.04elapsed 32%CPU (0avgtext+0avgdata 14192maxresident)k
+Theorem/SWV219+1.p success 0.00 0.00system 0:00.04elapsed 32%CPU (0avgtext+0avgdata 14208maxresident)k
+Theorem/SWV220+1.p success 0.00 0.00system 0:00.04elapsed 32%CPU (0avgtext+0avgdata 14144maxresident)k
+Theorem/SWV221+1.p success 0.72 0.02system 0:00.80elapsed 93%CPU (0avgtext+0avgdata 138048maxresident)k
+Theorem/SWV222+1.p success 0.01 0.00system 0:00.04elapsed 32%CPU (0avgtext+0avgdata 14016maxresident)k
+Theorem/SWV223+1.p success 0.01 0.00system 0:00.04elapsed 32%CPU (0avgtext+0avgdata 13968maxresident)k
+Theorem/SWV224+1.p success 0.01 0.00system 0:00.04elapsed 32%CPU (0avgtext+0avgdata 14016maxresident)k
+Theorem/SWV225+1.p success 0.01 0.00system 0:00.05elapsed 28%CPU (0avgtext+0avgdata 14064maxresident)k
+Theorem/SWV226+1.p success 0.01 0.00system 0:00.04elapsed 32%CPU (0avgtext+0avgdata 14048maxresident)k
+Theorem/SWV227+1.p success 0.01 0.00system 0:00.04elapsed 32%CPU (0avgtext+0avgdata 14000maxresident)k
+Theorem/SWV228+1.p success 0.01 0.00system 0:00.05elapsed 28%CPU (0avgtext+0avgdata 14000maxresident)k
+Theorem/SWV229+1.p success 0.01 0.00system 0:00.04elapsed 32%CPU (0avgtext+0avgdata 14032maxresident)k
+Theorem/SWV230+1.p success 0.01 0.00system 0:00.05elapsed 28%CPU (0avgtext+0avgdata 13952maxresident)k
+Theorem/SWV231+1.p success 0.01 0.00system 0:00.04elapsed 32%CPU (0avgtext+0avgdata 13888maxresident)k
+Theorem/SWV232+1.p success 0.01 0.00system 0:00.04elapsed 32%CPU (0avgtext+0avgdata 13888maxresident)k
+Theorem/SWV448+1.p fail
+Theorem/SWV449+1.p success 2.82 0.04system 0:02.93elapsed 97%CPU (0avgtext+0avgdata 226000maxresident)k
+Theorem/SWV450+1.p success 0.07 0.00system 0:00.11elapsed 64%CPU (0avgtext+0avgdata 23616maxresident)k
+Theorem/SWV451+1.p success 258.10 2.39system 4:21.01elapsed 99%CPU (0avgtext+0avgdata 18529424maxresident)k
+Theorem/SWV452+1.p success 107.27 1.20system 1:48.74elapsed 99%CPU (0avgtext+0avgdata 9567936maxresident)k
+Theorem/SWV453+1.p success 105.99 1.05system 1:47.28elapsed 99%CPU (0avgtext+0avgdata 9633792maxresident)k
+Theorem/SWV454+1.p success 2.30 0.04system 0:02.41elapsed 97%CPU (0avgtext+0avgdata 318096maxresident)k
+Theorem/SWV455+1.p success 2.75 0.04system 0:02.87elapsed 97%CPU (0avgtext+0avgdata 321152maxresident)k
+Theorem/SWV456+1.p success 8.54 0.08system 0:08.74elapsed 98%CPU (0avgtext+0avgdata 541680maxresident)k
+Theorem/SWV457+1.p success 4.78 0.05system 0:04.91elapsed 98%CPU (0avgtext+0avgdata 445872maxresident)k
+Theorem/SWV458+1.p fail
+Theorem/SWV459+1.p fail
+Theorem/SWV460+1.p success 198.30 2.70system 3:21.41elapsed 99%CPU (0avgtext+0avgdata 22678752maxresident)k
+Theorem/SWV461+1.p success 3.72 0.06system 0:03.87elapsed 97%CPU (0avgtext+0avgdata 361056maxresident)k
+Theorem/SWV462+1.p fail
+Theorem/SWV463+1.p success 5.43 0.06system 0:05.58elapsed 98%CPU (0avgtext+0avgdata 459808maxresident)k
+Theorem/SWV464+1.p success 2.38 0.03system 0:02.50elapsed 96%CPU (0avgtext+0avgdata 237472maxresident)k
+Theorem/SWV465+1.p fail
+Theorem/SWV466+1.p success 2.86 0.03system 0:02.98elapsed 97%CPU (0avgtext+0avgdata 282688maxresident)k
+Theorem/SWV467+1.p fail
+Theorem/SWV468+1.p fail
+Theorem/SWV469+1.p success 6.63 0.11system 0:06.83elapsed 98%CPU (0avgtext+0avgdata 714704maxresident)k
+Theorem/SWV470+1.p fail
+Theorem/SWV471+1.p fail
+Theorem/SWV472+1.p fail
+Theorem/SWV473+1.p fail
+Theorem/SWV474+1.p fail
+Theorem/SWV475+1.p success 0.22 0.00system 0:00.28elapsed 79%CPU (0avgtext+0avgdata 34896maxresident)k
+Theorem/SWV476+1.p success 0.20 0.00system 0:00.27elapsed 77%CPU (0avgtext+0avgdata 34368maxresident)k
+Theorem/SWV477+1.p success 0.19 0.02system 0:00.27elapsed 77%CPU (0avgtext+0avgdata 34448maxresident)k
+Theorem/SWV478+1.p success 0.22 0.00system 0:00.29elapsed 79%CPU (0avgtext+0avgdata 35200maxresident)k
+Theorem/SWV479+1.p success 0.22 0.00system 0:00.28elapsed 80%CPU (0avgtext+0avgdata 35376maxresident)k
+Theorem/SWV480+1.p success 0.22 0.00system 0:00.28elapsed 80%CPU (0avgtext+0avgdata 36160maxresident)k
+Theorem/SWV481+1.p success 18.59 0.28system 0:18.98elapsed 99%CPU (0avgtext+0avgdata 2121792maxresident)k

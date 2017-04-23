@@ -1,0 +1,28 @@
+% **************** Theorems
+
+\newtheorem{theorem}{Theorem}
+
+\newtheoremstyle{exampstyle}
+  {12pt} % Space above
+  {12pt} % Space below
+  {} % Body font
+  {} % Indent amount
+  {\bfseries} % Theorem head font
+  {.} % Punctuation after theorem head
+  {.5em} % Space after theorem head
+  {} % Theorem head spec (can be left empty, meaning `normal')
+
+\theoremstyle{exampstyle} \newtheorem{definition}{Definition}
+% \theoremstyle{exampstyle} \newtheorem{theorem}{Theorem}
+\theoremstyle{exampstyle} \newtheorem{example}{Example}
+\numberwithin{example}{section}
+\numberwithin{definition}{section}
+% \numberwithin{theorem}{section}
+
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

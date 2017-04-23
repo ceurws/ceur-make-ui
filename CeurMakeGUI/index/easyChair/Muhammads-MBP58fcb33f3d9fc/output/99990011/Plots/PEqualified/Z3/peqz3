@@ -1,0 +1,117 @@
+CAT001-3_PEqualify.p fail
+CAT001-4_PEqualify.p fail
+CAT002-3_PEqualify.p fail
+CAT002-4_PEqualify.p fail
+CAT003-3_PEqualify.p fail
+CAT003-4_PEqualify.p fail
+CAT004-3_PEqualify.p fail
+CAT004-4_PEqualify.p fail
+CAT005-3_PEqualify.p success 	0m0.012s
+CAT005-4_PEqualify.p success 	0m0.020s
+CAT006-3_PEqualify.p success 	0m0.020s
+CAT006-4_PEqualify.p success 	0m0.016s
+CAT009-3_PEqualify.p success 	0m0.024s
+CAT009-4_PEqualify.p success 	0m0.020s
+CAT010-4_PEqualify.p success 	0m0.020s
+CAT011-3_PEqualify.p success 	0m0.008s
+CAT011-4_PEqualify.p success 	0m0.016s
+CAT012-3_PEqualify.p success 	0m0.012s
+CAT012-4_PEqualify.p success 	0m0.016s
+CAT013-3_PEqualify.p success 	0m0.016s
+CAT013-4_PEqualify.p success 	0m0.008s
+CAT014-3_PEqualify.p success 	0m0.016s
+CAT014-4_PEqualify.p success 	0m0.016s
+CAT016-3_PEqualify.p success 	0m0.012s
+CAT016-4_PEqualify.p success 	0m0.012s
+CAT017-3_PEqualify.p success 	0m0.016s
+CAT017-4_PEqualify.p success 	0m0.016s
+CAT018-3_PEqualify.p success 	0m0.020s
+CAT018-4_PEqualify.p success 	0m0.020s
+CAT019-3_PEqualify.p success 	0m0.016s
+FLD003-1_PEqualify.p fail
+FLD004-1_PEqualify.p fail
+FLD005-1_PEqualify.p fail
+FLD006-1_PEqualify.p success 	0m0.020s
+FLD007-1_PEqualify.p fail
+FLD008-2_PEqualify.p fail
+FLD009-1_PEqualify.p fail
+FLD010-1_PEqualify.p success 	0m0.012s
+FLD011-1_PEqualify.p fail
+FLD012-2_PEqualify.p fail
+FLD013-1_PEqualify.p fail
+FLD013-2_PEqualify.p fail
+FLD014-1_PEqualify.p fail
+FLD015-1_PEqualify.p fail
+FLD016-1_PEqualify.p fail
+FLD017-1_PEqualify.p fail
+FLD018-1_PEqualify.p success 	0m0.040s
+FLD019-1_PEqualify.p success 	0m0.024s
+FLD020-1_PEqualify.p success 	0m0.300s
+FLD021-1_PEqualify.p fail
+FLD022-1_PEqualify.p fail
+FLD023-1_PEqualify.p fail
+FLD024-1_PEqualify.p fail
+FLD025-1_PEqualify.p fail
+FLD025-2_PEqualify.p fail
+FLD026-1_PEqualify.p fail
+FLD027-1_PEqualify.p fail
+FLD028-1_PEqualify.p fail
+FLD029-1_PEqualify.p fail
+FLD030-1_PEqualify.p fail
+FLD030-2_PEqualify.p fail
+FLD031-1_PEqualify.p success 	0m0.024s
+FLD032-1_PEqualify.p success 	0m0.024s
+FLD033-1_PEqualify.p success 	0m0.404s
+FLD034-1_PEqualify.p fail
+FLD035-1_PEqualify.p fail
+FLD036-1_PEqualify.p fail
+FLD037-1_PEqualify.p fail
+FLD038-1_PEqualify.p fail
+FLD039-1_PEqualify.p success 	0m0.016s
+FLD040-1_PEqualify.p fail
+FLD041-1_PEqualify.p fail
+FLD041-2_PEqualify.p fail
+FLD043-1_PEqualify.p fail
+FLD044-2_PEqualify.p fail
+FLD049-1_PEqualify.p fail
+FLD049-2_PEqualify.p fail
+FLD050-1_PEqualify.p fail
+FLD050-2_PEqualify.p fail
+FLD055-1_PEqualify.p fail
+FLD056-1_PEqualify.p success 	0m0.020s
+FLD057-1_PEqualify.p fail
+FLD058-1_PEqualify.p success 	0m0.020s
+FLD059-1_PEqualify.p fail
+FLD059-2_PEqualify.p fail
+FLD060-1_PEqualify.p fail
+FLD060-2_PEqualify.p fail
+FLD061-1_PEqualify.p fail
+FLD061-2_PEqualify.p fail
+FLD062-1_PEqualify.p fail
+FLD063-1_PEqualify.p fail
+FLD064-1_PEqualify.p fail
+FLD065-1_PEqualify.p fail
+FLD066-1_PEqualify.p fail
+FLD067-1_PEqualify.p fail
+FLD067-2_PEqualify.p fail
+FLD068-1_PEqualify.p fail
+FLD068-2_PEqualify.p fail
+FLD069-1_PEqualify.p fail
+FLD070-1_PEqualify.p fail
+FLD070-2_PEqualify.p fail
+FLD071-1_PEqualify.p success 	0m0.024s
+FLD071-2_PEqualify.p fail
+FLD072-2_PEqualify.p fail
+FLD088-1_PEqualify.p fail
+FLD090-1_PEqualify.p fail
+GEO167+1_PEqualify.p success 	0m29.426s
+GEO168+1_PEqualify.p success 	1m34.302s
+GEO169+1_PEqualify.p success 	0m0.456s
+MSC006-1_PEqualify.p success 	0m0.012s
+SET055-6_PEqualify.p fail
+SET055-7_PEqualify.p fail
+SET581+3_PEqualify.p success 	0m0.016s
+SET628+3_PEqualify.p success 	0m0.028s
+SET637+3_PEqualify.p success 	0m0.072s
+SYN726-1_PEqualify.p success 	0m0.020s
+SYN919+1_PEqualify.p success 	0m0.008s

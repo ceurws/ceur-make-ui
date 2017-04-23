@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--This view generates stepwise wizard for publishing proceedings using CEUR Make Workflow. The workflow in which user is required to create 
+<!--This view generates stepwise wizard for publishing proceedings using CEUR Make Workflow. The workflow in which user is required to create
     Table of Contents and Workshop artifact and based on that artifacts we generate standard submission artifacts.
 -->
 <html lang="en">
@@ -528,7 +528,7 @@
 
                     $('.modal-trigger').leanModal();
                     document.getElementById('uniquename2').style.display = "none";
-                    document.getElementById('uniquename0').style.display = "none";   
+                    document.getElementById('uniquename0').style.display = "none";
                     document.getElementById('uniquename3').style.display = "none";
                     document.getElementById('tocForm').style.display ="none";
                     document.getElementById('workshopForm').style.display = "none";
@@ -536,7 +536,7 @@
 
                     init();
                     initTwo();
-                        
+
                     //checking if the session already exists or is it a new session....
                     if( sessionStorage.userId == null)
                     {
@@ -586,12 +586,12 @@
 
         function showContentForWorkshop(d)
         {
-           
+
                    document.getElementById(d).style.display = "none";
                    document.getElementById('tocForm').style.display = "none" ;
                    document.getElementById('workshopForm').style.display = "initial" ;
                    document.getElementById('loader').style.display = "none" ;
-           
+
         }
 
         function hideContainerContent()
@@ -610,7 +610,7 @@
            document.getElementById('uniquename').style.display = "initial" ;
            if( uniquenameZero == 1 )
            {
-                   document.getElementById('uniquename0').style.display = "initial" ; 
+                   document.getElementById('uniquename0').style.display = "initial" ;
            }
            document.getElementById('tocForm').style.display = "none" ;
            document.getElementById('workshopForm').style.display = "none" ;
@@ -621,7 +621,7 @@
            document.getElementById("createToc").href = "#" ;
            boolFromTOCToWorkshop = 1 ;
            Materialize.toast('Table Of Contents Has Been Successfully Created!', 3000, 'rounded') ;
-        
+
            var a = document.getElementById('downloadToc'); //or grab it by tagname etc
            a.href = "userDirectories/"+sessionStorage.userId+"/output/toc.xml" ;
            a.setAttribute('target', '_blank');
@@ -639,7 +639,7 @@
            document.getElementById('downloadWorkshop').className = "waves-effect waves-light btn" ;
            boolFromWorkshopToToc = 1 ;
            Materialize.toast('Workshop Contents Has Been Successfully Created!', 3000, 'rounded') ;
-           
+
            var a = document.getElementById('downloadWorkshop'); //or grab it by tagname etc
            a.href = "userDirectories/"+sessionStorage.userId+"/output/workshop.xml" ;
            a.setAttribute('target', '_blank');
@@ -651,29 +651,29 @@
                 document.getElementById('uniquename').style.display = "initial" ;
                 document.getElementById('uniquename2').style.display = "initial" ;
                 document.getElementById('uniquename3').style.display = "initial" ;
-                
+
                 var zipName = document.getElementById('id').value + (document.getElementById('date').value).slice(0,4) ;
-                
+
                 a = document.getElementById('rightsDownload');
                 a.href = "userDirectories/"+sessionStorage.userId+"/output/copyright-form.txt" ;
                 a.setAttribute('target', '_blank');
-                
+
                 a = document.getElementById('bibDownload');
                 a.href = "userDirectories/"+sessionStorage.userId+"/output/ceur-ws/temp.bib" ;
                 a.setAttribute('target', '_blank');
-                
+
                 a = document.getElementById('zipDownload');
                 a.href = "userDirectories/"+sessionStorage.userId+"/output/"+zipName+".zip" ;
                 a.setAttribute('target', '_blank');
-                
+
                 a = document.getElementById('indexDownload');
                 a.href = "userDirectories/"+sessionStorage.userId+"/output/ceur-ws/index.html" ;
                 a.setAttribute('target', '_blank');
-                
-                
+
+
                 Materialize.toast('You Can Now Download The Resources !!', 3000, 'rounded') ;
         }
-          
+
         function scriptGenerator( )
         {
                 var data = JSON.stringify(workshopArray);
@@ -689,14 +689,14 @@
                                         afterTocCreation();
                                 if( boolFromTOCToWorkshop)
                                         copyrightsFormCreation();
-                                
+
                                 // in case we reply back from server
                                 jsondata = xhr.responseText;
                                 afterResourceCreation();
                         }
                 }
         }
-          
+
         function refreshSelect( selectId )
         {
                 var $selectDropdown = $(selectId).empty().html(' ');
@@ -838,7 +838,7 @@
                             console.log(i+" "+authorArray[i]+" " + j);
 
                         }
-                        
+
 
                 }
 
@@ -854,13 +854,13 @@
                            document.getElementById('paperTitleError' + i ).style.display = "initial" ;
                            tempCheck++ ;
                         }
-                        
+
                         if( !(numberOnly.test(document.getElementById('paperTo' + i ).value))  )
                         {
                            document.getElementById('errorTo' + i ).style.display = "initial" ;
                            tempCheck++ ;
                         }
-                        
+
                          if( !(numberOnly.test(document.getElementById('paperFrom' + i ).value))  )
                         {
                            document.getElementById('paperFromError' + i ).style.display = "initial" ;
@@ -971,23 +971,23 @@
                                         // in case we reply back from server
                                         jsondata = xhr.responseText;
                                         console.log(jsondata);
-                                        
-                                        
+
+
                                         if( boolFromWorkshopToToc == 1 )
                                         {
-                                               scriptGenerator(); 
+                                               scriptGenerator();
                                         }else
                                         {
                                                 afterTocCreation();
                                         }
-                                                
+
                                 }
                         }
 
-                        
 
-        
-                
+
+
+
            }
         });
 
@@ -1013,14 +1013,14 @@
 
                                 if( currentIndex == 1 && newIndex == 2)
                                 {
-                                        
+
                                        var result = validatingConference(0) ;
 
                                         if( result == 0 )
                                                 return 1;
                                         else
                                                 return 0;
-                                        
+
                                         return 1;
                                 }
 
@@ -1032,20 +1032,20 @@
                                                 return 1;
                                         else
                                                 return 0;
-                                        
-                                        return 1;    
+
+                                        return 1;
                                 }
 
                                 if( currentIndex == 2 && newIndex == 1)
-                                {       
+                                {
                                         var result = validatingEditors(0) ;
 
                                         if( result == 0 )
                                                 return 1;
                                         else
                                                 return 0;
-                                        
-                                        return 1;    
+
+                                        return 1;
 
                                 }
 
@@ -1057,8 +1057,8 @@
                                                 return 1;
                                         else
                                                 return 0;
-                                        
-                                        return 1;       
+
+                                        return 1;
                                 }
 
                                 if( currentIndex == 0 && newIndex == 2)
@@ -1070,7 +1070,7 @@
                                         else
                                                 return 0;
                                         return 1;
-                                        
+
                                 }
 
                                 return 1 ;
@@ -1157,8 +1157,8 @@
                                                 return 1;
                                         else
                                                 return 0;
-                                        
-                                        return 1;        
+
+                                        return 1;
 
                         },
 
@@ -1169,13 +1169,13 @@
 
                                      var tempSortingArray = [] ;
                                      var finalEditorsArray = [];
-                                
+
                                      //first get the editor form values .....
                                      for( i = 0 ; i < editorCounter + 1 ; i++ )
                                      {
                                              var country = document.getElementById('countryEditor'+i);
                                              var countryStr = country.options[country.selectedIndex].text;
-                                             
+
                                                    editorArray.push({
 
                                                            name: document.getElementById('nameEditor' + i).value,
@@ -1188,7 +1188,7 @@
                                      }
 
                                     tempSortingArray.sort();
-                                
+
                                         //sortingAlgorithimForEditors
                                         for( j = 0 ; j < editorCounter +1 ; j++ )
                                         {
@@ -1200,14 +1200,14 @@
                                                         }
                                                 }
                                         }
-                                
-                                    
+
+
                                     if( boolSorted == 1 )
-                                        finalEditorsArray = sortedEditorArray ;    
+                                        finalEditorsArray = sortedEditorArray ;
                                     else
-                                        finalEditorsArray = editorArray ;    
-                                  
-                                 
+                                        finalEditorsArray = editorArray ;
+
+
                                     //making the whole dataToSendVariable
                                     workshopArray.push({
 
@@ -1238,16 +1238,16 @@
                                                 jsondata = xhr.responseText;
                                                 console.log(jsondata);
                                                 //after Workshop Creation
-                                               
-                                                
-                                                
+
+
                                                 if( boolFromTOCToWorkshop == 1 )
                                                 {
                                                         scriptGenerator( ) ;
                                                 }else
                                                 {
-                                                      
+
                                                       copyrightsFormCreation( );
+                                                      console.log("going to create copyright");
                                                 }
                                         }
                                    }
@@ -1255,10 +1255,12 @@
                         }
 
                 });
-          
+
                 function copyrightsFormCreation( )
                 {
                         var data = JSON.stringify(workshopArray);
+                        console.log('today');
+                        console.log(data);
                         var xhr = new XMLHttpRequest();
                         xhr.open("POST", "userDirectories/"+sessionStorage.userId+"/output/copyright.php", !0);
                         xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
@@ -1272,18 +1274,21 @@
                                         afterWorkshopCreation();
                                         displayCopyright();
                                         uniquenameZero = 1 ;
+
+                                        console.log(jsondata);
+                                        console.log("hi");
                                 }
                         }
-                        
+
                 }
-          
+
                 function displayCopyright()
                 {
                         a = document.getElementById('rightsDownload');
                         a.href = "userDirectories/"+sessionStorage.userId+"/output/copyright-form.txt" ;
                         a.setAttribute('target', '_blank');
-                        
-                        document.getElementById('uniquename0').style.display = "initial" ; 
+
+                        document.getElementById('uniquename0').style.display = "initial" ;
                 }
 
 
@@ -1402,11 +1407,11 @@
                      }
                      else {
                           var selectEditor = "<select id='countryEditor"+(editorCounter+1)+"'><option value='1'>Option 1</option></select><label for='countryEditor"+(editorCounter+1)+"'>Country Of The Editor</label>";
-                          
+
                           var newdiv = document.createElement('div');
                           newdiv.id ="editor"+(editorCounter+1);
                           newdiv.innerHTML = "<fieldset><legend>Editor "+ (editorCounter + 1) +"</legend><div class='row'><div class='input-field col s12'><input id='nameEditor"+(editorCounter + 1 )+"' type='text' class='validate'><label for='nameEditor"+ (editorCounter + 1 ) +"'>Name of The Editor</label><span id='nameEditorError"+(editorCounter + 1 )+"' class='error' style='display:none'>Please enter alphabets only.</span></div><div class='input-field col s12'><input id='affiliationEditor"+(editorCounter+1)+"' type='text' class='validate'><label for='affiliationEditor"+(editorCounter+1)+"'>Affiliation Of The Editor</label><span id='affiliationEditorError"+(editorCounter+1)+"' class='error' style='display:none'>Please enter alpha numerics.</span></div><div class='input-field col s12'>"+selectEditor+"</div><div class='input-field col s12'><input id='homepageEditor"+(editorCounter+1)+"' type='text' class='validate'><label for='homepageEditor"+(editorCounter+1)+"'>Homepage Of The Editor</label><span id='homepageEditorError"+(editorCounter+1)+"' class='error' style='display:none'>Please enter a valid URL</span></div></div></fieldset>";
-                          
+
                           document.getElementById(divName).appendChild(newdiv);
                           var selectId = '#countryEditor'+(editorCounter+1);
                           selectForCountries(selectId);
@@ -1427,7 +1432,7 @@
                      }
 
           }
-          
+
           function sortEditor( )
           {
               if( boolSorted == 0 )
@@ -1435,18 +1440,18 @@
                       boolSorted = 1;
                       document.getElementById("sortIcon").className = "btn-floating btn-large disabled" ;
 
-                      
+
               }else if ( boolSorted == 1 )
               {
                       boolSorted = 0 ;
                       document.getElementById("sortIcon").className = "btn-floating tooltipped btn-large waves-effect waves-light blue" ;
               }
-               
+
           }
 
        //-----------------------------------------------------------------------------------------
 
-     
+
       //funtion form validations------------------------------------------------------------------
 
           function validatingMetaData( boolTemp )
@@ -1478,38 +1483,38 @@
                         document.getElementById('volumeError').style.display = "initial" ;
                         boolTemp++;
                   }
-                
+
                   if( !(alphaNumeric.test(document.getElementById('volumeNumber').value )))
                   {
                        document.getElementById('volumeNumberID').style.display = "initial" ;
                        boolTemp++;
                   }
-                  
+
                   if( !(dateYYYYMMDD.test(document.getElementById('date').value )) )
                   {
                        document.getElementById('dateError').style.display = "initial" ;
                        boolTemp++;
-                     
+
                   }
-                     
+
                   if( !(hyperLink.test(document.getElementById('homePage').value )) )
                   {
                        document.getElementById('homePageError').style.display = "initial" ;
                        boolTemp++;
                   }
-                  
+
                   if( !(address.test(document.getElementById('location').value )) )
                   {
                        document.getElementById('locationError').style.display = "initial" ;
                        boolTemp++;
                   }
-                     
+
                   if( !(hyperLink.test(document.getElementById('linkLocation').value )) )
                   {
                        document.getElementById('linkLocationError').style.display = "initial" ;
                        boolTemp++;
                   }
-                  
+
                   return boolTemp ;
 
           }
@@ -1518,21 +1523,21 @@
           {
                   boolTemp = 0 ;
                   clearingConferenceErrorSpan();
-                  
+
                   if ( !( capitalLettersNumbers.test( document.getElementById('acronymConference').value )) )
                   {
                         document.getElementById('acronymConferenceError').style.display = "initial" ;
                         boolTemp++;
 
                   }
-                  
+
                   if ( !( alphaNumeric.test( document.getElementById('fullName').value )) )
                   {
                         document.getElementById('fullNameError').style.display = "initial" ;
                         boolTemp++;
 
                   }
-                  
+
                   if ( !( hyperLink.test( document.getElementById('homepageConference').value )) )
                   {
                         document.getElementById('homepageConferenceError').style.display = "initial" ;
@@ -1541,14 +1546,14 @@
                   }
 
                   return boolTemp ;
-                  
+
           }
 
           function validatingEditors( boolTemp )
           {
                   clearingEditorsErrorSpan();
                   boolTemp = 0 ;
-                  
+
                   for( var i = 0 ; i < editorCounter +1 ; i++ )
                   {
                         if ( !( alphaNumeric.test( document.getElementById('nameEditor'+i).value )) )
@@ -1557,27 +1562,27 @@
                                 boolTemp++;
 
                         }
-                        
+
                         if ( !( alphaNumeric.test( document.getElementById('affiliationEditor'+i).value )) )
                         {
                                 document.getElementById('affiliationEditorError'+i).style.display = "initial" ;
                                 boolTemp++;
 
                         }
-                        
-                     
-                        
+
+
+
                         if ( !( hyperLink.test( document.getElementById('homepageEditor'+i).value )) )
                         {
                                 document.getElementById('homepageEditorError'+i).style.display = "initial" ;
                                 boolTemp++;
 
                         }
-                   
-                          
+
+
                   }
-                  
-                  return boolTemp ;       
+
+                  return boolTemp ;
 
           }
 
@@ -1600,15 +1605,15 @@
                    document.getElementById('linkLocationError').style.display = "none" ;
 
         }
-          
+
         function clearingConferenceErrorSpan( )
         {
-                
+
                 document.getElementById('acronymConferenceError').style.display = "none" ;
                 document.getElementById('fullNameError').style.display = "none" ;
-                document.getElementById('homepageConferenceError').style.display = "none" ;  
+                document.getElementById('homepageConferenceError').style.display = "none" ;
         }
-          
+
         function clearingEditorsErrorSpan( )
         {
                 for( var i = 0 ; i < editorCounter +1 ; i++ )
@@ -1620,8 +1625,8 @@
         }
     //-------------------------------------------------------------------------------------------
     //Loading JSON FOR COUNTRIES-----------------------------------------------------------------
-          
-           function loadJSON(callback) {   
+
+           function loadJSON(callback) {
                     var xobj = new XMLHttpRequest();
                         xobj.overrideMimeType("application/json");
                     xobj.open('GET', 'json/countries.json', true); // Replace 'my_data' with the path to your file
@@ -1631,7 +1636,7 @@
                             callback(xobj.responseText);
                           }
                     };
-                    xobj.send(null);  
+                    xobj.send(null);
            }
 
             function init() {
@@ -1643,9 +1648,9 @@
                           $('select').material_select();
                  });
            }
-          
+
     //-SELECT FOR COUNTRIES-----------------------------------------------------------------------
-          
+
           function selectForCountries( selectId )
           {
                var $selectDropdown = $(selectId).empty().html(' ');
@@ -1663,18 +1668,18 @@
 
 
                 // re-initialize (update)
-                $('select').material_select();    
+                $('select').material_select();
           }
 
     //-------------------------------------------------------------------------------------------
 
 
     //-------------------------------------------------------------------------------------------
-          
+
     //-Loading JSON FOR LANGUAGES----------------------------------------------------------------
-          
-             
-        function loadJSONTwo(callback) {   
+
+
+        function loadJSONTwo(callback) {
 
                     var xobj = new XMLHttpRequest();
                         xobj.overrideMimeType("application/json");
@@ -1685,7 +1690,7 @@
                             callback(xobj.responseText);
                           }
                     };
-                    xobj.send(null);  
+                    xobj.send(null);
         }
 
         function initTwo() {
@@ -1697,10 +1702,10 @@
                          $('select').material_select();
                  });
         }
-          
+
     //-------------------------------------------------------------------------------------------
     //-SELECT FOR LANGUAGES-----------------------------------------------------------------------
-             
+
         function selectForLanguage( )
         {
                 var $selectDropdown = $('#language').empty().html(' ');
@@ -1720,22 +1725,22 @@
                 // re-initialize (update)
                 $('select').material_select();
         }
-          
+
     //-------------------------------------------------------------------------------------------
       //Title Case Function------------------------------------------------------------------------
-    
+
       String.prototype.toTitleCase = function() {
         var i, j, str, lowers, uppers;
         str = this.replace(/([^\W_]+[^\s-]*) */g, function(txt) {
           return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
         });
 
-        // Certain minor words should be left lowercase unless 
+        // Certain minor words should be left lowercase unless
         // they are the first or last words in the string
-        lowers = ['A', 'An', 'The', 'And', 'But', 'Or', 'For', 'Nor', 'As', 'At', 
+        lowers = ['A', 'An', 'The', 'And', 'But', 'Or', 'For', 'Nor', 'As', 'At',
         'By', 'For', 'From', 'In', 'Into', 'Near', 'Of', 'On', 'Onto', 'To', 'With'];
         for (i = 0, j = lowers.length; i < j; i++)
-          str = str.replace(new RegExp('\\s' + lowers[i] + '\\s', 'g'), 
+          str = str.replace(new RegExp('\\s' + lowers[i] + '\\s', 'g'),
             function(txt) {
               return txt.toLowerCase();
             });
@@ -1743,7 +1748,7 @@
         // Certain words such as initialisms or acronyms should be left uppercase
         uppers = ['Id', 'Tv'];
         for (i = 0, j = uppers.length; i < j; i++)
-          str = str.replace(new RegExp('\\b' + uppers[i] + '\\b', 'g'), 
+          str = str.replace(new RegExp('\\b' + uppers[i] + '\\b', 'g'),
             uppers[i].toUpperCase());
 
         return str;

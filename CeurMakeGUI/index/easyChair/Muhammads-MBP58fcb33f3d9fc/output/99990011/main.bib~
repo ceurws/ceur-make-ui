@@ -1,0 +1,25 @@
+@article{chaining,
+  title={Ordered chaining calculi for first-order theories of transitive relations},
+  author={Bachmair, Leo and Ganzinger, Harald},
+  journal={Journal of the ACM (JACM)},
+  volume={45},
+  number={6},
+  pages={1007--1049},
+  year={1998},
+  publisher={ACM}
+}
+
+@misc{tptp,
+  title={The {TPTP} Problem Library},
+  author={Sutcliffe, Geoff},
+  note={{\sf http://www.tptp.org/}},
+  year={2015}
+}
+
+@misc{eprover,
+  title={The {E} Theorem Prover},
+  author={Schulz, Stephan},
+  note={{\sf http://www.eprover.org/}},
+  year={2015}
+}
+
