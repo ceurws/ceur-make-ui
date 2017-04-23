@@ -6,12 +6,6 @@ scientific workshops"*
 
 CEUR Make Graphical User Interface or ceur-make-ui is a graphical user interface for [ceur-make](https://github.com/ceurws/ceur-make). CEUR Make Graphical User Interface tries to automate the workflow for publishing proceedings at [CEUR-WS.org](http://ceur-ws.org/) by providing a usable web frontend. It is a standalone software that could be used on any platform through browser. For development purposes, please refer to the **Up and Running** and **How to Play with the Code** section. 
 
-## Key Advantages
-
-## Features
-
-## Disclaimer
-
 ## Prerequisites
 
 In order to install it on your local machine and start playing with the code, the setup is simple. The only prerequisite to start working with the code is to have AMP stack working that is Apache, MySQL and PHP. You can either go with installing the stack manually or the bundle comes in couple of flavours that you can install from their respective sites as listed below:
@@ -28,6 +22,12 @@ Once you are done installing the AMP stack and cloning the ceur-make-ui code in 
 *ceur-make-ui/CeurMakeGUI/index/* 
 
 After you are in the index directory, you can double click the index.html to run in the browser or you can choose a code editor of your own choice to start playing with the code. Advanced techniques to use the code are discussed in the next section.
+
+Following steps are essential before the software is completely running on your web browser using apache server:
++ Extract the output.zip folder from the path: ceur-make-ui/CEURMakeGUI/index/output.zip
++ Changing path in Makefile.vars to the path of SAXON-HE 9 as located in ceur-make-ui/CEURMakeGUI/index/saxon/saxon9he.jar
++ In order for CEUR Make and CEUR Make GUI to be able to write files on server, you should own everything in htdocs/www folder. Please follow sample [link](http://constant.co.za/fix-permissions-on-xampp-osx/) for Mac OSX.
++ In order for you as a user who is owning everything at htdocs/www, you should grant sudo access to yourself, One way to do this is to give yourself root level rights using the following terminal level command: superuser ALL=(ALL) NOPASSWD:ALL . Possilble alternatives could be to grant sudo to php scripts or particular commands.
 
 ## How to Play with the Code
 Previous section described the technique to get started with the code and in this section we will describe the advanced techniques to play with different files in the code. First we discuss the external libraries used in the project, than we describe the general software architecture of the ceur-make-ui and than we will discuss the file structure in different layers of the application along with the code blocks programmers can start to play with.
