@@ -1,4 +1,0 @@
-RUN job1
-fof(inp4,conjecture,(subclass(a,c))).
-GO
-> .. Proof output truncated ..
