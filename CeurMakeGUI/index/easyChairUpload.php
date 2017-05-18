@@ -50,7 +50,7 @@
                       <a class="btn-floating btn-small waves-effect waves-light green disabled" onClick="" id="workshopLink"><i class="material-icons">check</i></a>  Create Workshop</span>
                       <div class="divider"></div>
                       <br/>
-              <p>Simple easy to use steb by step form for creating Workshop.Contains all the nescessay elements to be added
+              <p>Simple easy to use step by step form for creating Workshop. Contains all the necessary elements to be added
               in workshop.</p>
               </div>
               <div class="card-action spacingWorkshop">
@@ -94,7 +94,7 @@
                       <a class="btn-floating btn-small waves-effect waves-light green" onClick="" id="workshopLink"><i class="material-icons">check</i></a>  Copyrights Form</span>
                       <div class="divider"></div>
                       <br/>
-              <p>Simple easy to use steb by step form for creating Workshop.Contains all the nescessay elements to be added
+              <p>Simple easy to use step by step form for creating Workshop. Contains all the necessary elements to be added
               in workshop.</p>
               </div>
               <div class="card-action">
@@ -109,7 +109,7 @@
                       <a class="btn-floating btn-small waves-effect waves-light green" onClick="" id="workshopLink"><i class="material-icons">check</i></a>  Index File</span>
                       <div class="divider"></div>
                       <br/>
-              <p>Simple easy to use steb by step form for creating Workshop.Contains all the nescessay elements to be added
+              <p>Simple easy to use step by step form for creating Workshop. Contains all the necessary elements to be added
               in workshop.</p>
               </div>
               <div class="card-action">
@@ -127,7 +127,7 @@
                       <a class="btn-floating btn-small waves-effect waves-light green" onClick="" id="workshopLink"><i class="material-icons">check</i></a>  Bibtex Database</span>
                       <div class="divider"></div>
                       <br/>
-              <p>Simple easy to use steb by step form for creating Workshop.Contains all the nescessay elements to be added
+              <p>Simple easy to use step by step form for creating Workshop. Contains all the necessary elements to be added
               in workshop.</p>
               </div>
               <div class="card-action">
@@ -142,7 +142,7 @@
                       <a class="btn-floating btn-small waves-effect waves-light green" onClick="" id="workshopLink"><i class="material-icons">check</i></a>  Zip Archive</span>
                       <div class="divider"></div>
                       <br/>
-              <p>Simple easy to use steb by step form for creating Workshop.Contains all the nescessay elements to be added
+              <p>Simple easy to use step by step form for creating Workshop. Contains all the necessary elements to be added
               in workshop.</p>
               </div>
               <div class="card-action">
