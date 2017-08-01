@@ -188,7 +188,7 @@
                                             <div class="input-field col s12">
                                               <input id="fullTitle" type="text" class="validate">
                                               <label for="fulltitle">Full Title</label>
-                                              <span id="fullTitleError" class="error" style="display:none">Please Enter Alphabets or Space only</span>
+                                              <span id="fullTitleError" class="error" style="display:none">Please enter alphabets, numbers or space only</span>
                                             </div>
                                            </div>
                                            </fieldset>
