@@ -173,7 +173,7 @@
                                             <div class="input-field col s6">
                                               <input id="id" type="text" class="validate">
                                               <label for="id">ID</label>
-                                              <span id="idError" class="error" style="display:none">Please enter numbers only.</span>
+                                              <span id="idError" class="error" style="display:none">Please enter valid ID</span>
                                             </div>
                                             <div class="input-field col s6">
                                               <input id="acronym" type="text" class="validate">
@@ -1031,7 +1031,7 @@
                   boolTemp = 0 ;
                   clearingMetaDataErrorSpan( ) ;
 
-                  if ( !( numberOnly.test( document.getElementById('id').value )) )
+                  if ( !( alphaNumeric.test( document.getElementById('id').value )) )
                   {
                         document.getElementById('idError').style.display = "initial" ;
                         boolTemp++;
