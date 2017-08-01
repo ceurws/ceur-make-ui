@@ -182,7 +182,7 @@
                                             </div>
                                             <div class="input-field col s12">
                                               <input id="volume" type="text" class="validate">
-                                              <label for="volume">Volume</label>
+                                              <label for="volume">Volume Title</label>
                                               <span id="volumeError" class="error" style="display:none">You can only enter alphanumerics with hyphen.</span>
                                             </div>
                                             <div class="input-field col s12">
