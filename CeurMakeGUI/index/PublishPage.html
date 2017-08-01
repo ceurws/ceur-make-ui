@@ -512,8 +512,10 @@
         var numberOnly = new RegExp(/^[0-9]+$/) ;
         var volNumber = new RegExp(/^\Vol-[0-9]+$/);
         var capitalLettersNumbers =  new RegExp(/^[A-Z0-9]+$/);
+        var capitalLettersNumbersNotMust =  new RegExp(/^[A-Z0-9]*$/);
         var email = new RegExp("/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i") ;
         var hyperLink = new RegExp(/[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/i) ;
+        var hyperLinkNotMust = new RegExp(/[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)*$/i) ;
         var emptyString = new RegExp("/^[\s]*$/");
         var dateYYYYMMDD = new RegExp(/^\d{4}-\d{1,2}-\d{1,2}$/);
         var address = new RegExp(/^[a-zA-Z0-9\s,'-]*$/i);
@@ -1524,21 +1526,21 @@
                   boolTemp = 0 ;
                   clearingConferenceErrorSpan();
 
-                  if ( !( capitalLettersNumbers.test( document.getElementById('acronymConference').value )) )
+                  if ( !( capitalLettersNumbersNotMust.test( document.getElementById('acronymConference').value )) )
                   {
                         document.getElementById('acronymConferenceError').style.display = "initial" ;
                         boolTemp++;
 
                   }
 
-                  if ( !( alphaNumeric.test( document.getElementById('fullName').value )) )
+                  if ( !( alphaNumericNotMust.test( document.getElementById('fullName').value )) )
                   {
                         document.getElementById('fullNameError').style.display = "initial" ;
                         boolTemp++;
 
                   }
 
-                  if ( !( hyperLink.test( document.getElementById('homepageConference').value )) )
+                  if ( !( hyperLinkNotMust.test( document.getElementById('homepageConference').value )) )
                   {
                         document.getElementById('homepageConferenceError').style.display = "initial" ;
                         boolTemp++;
