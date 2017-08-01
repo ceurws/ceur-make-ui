@@ -77,7 +77,7 @@
                 </div>
               </div>
               <div class="card-action">
-                        
+
                       <a class="waves-effect waves-light btn " id="submitForm" href="javascript:submitZip()">Generate</a>
                       <a class="waves-effect waves-light btn " id="downloadToc" href="#" >Download TOC</a>
                 <!--      <a class="waves-effect waves-light btn" href="javascript:HideContent('uniquename')" id="createToc">Generate</a> -->
@@ -256,7 +256,7 @@
                                     </div>
                                   </fieldset>
                                 </div>
-                                
+
                                 <h1>Editors</h1>
                                 <div id="editors">
                                   <fieldset>
@@ -399,7 +399,7 @@
           var languagesArray ;
         //--------------------------------
    //----------------------------------
-          
+
   //regularExpression Variables-----------
 
         var alphaNumeric = new RegExp(/^[a-z\d\-_\s]+$/i);
@@ -408,9 +408,11 @@
         var numberAndSpace = new RegExp("/^[0-9 ]+$/") ;
         var numberOnly = new RegExp(/^[0-9]+$/) ;
         var capitalLettersNumbers = new RegExp(/^[A-Z0-9]+$/);
+        var capitalLettersNumbersNotMust =  new RegExp(/^[A-Z0-9]*$/);
         var volNumber = new RegExp(/^\Vol-[0-9]+$/);
         var email = new RegExp("/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i") ;
         var hyperLink = new RegExp(/[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/i) ;
+        var hyperLinkNotMust = new RegExp(/[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)*$/i) ;
         var emptyString = new RegExp("/^[\s]*$/");
         var dateYYYYMMDD = new RegExp(/^\d{4}-\d{1,2}-\d{1,2}$/);
         var address = new RegExp(/^[a-zA-Z0-9\s,'-]*$/i);
@@ -425,15 +427,15 @@
 
                     $('.modal-trigger').leanModal();
                     document.getElementById('uniquename2').style.display = "none";
-                    document.getElementById('uniquename0').style.display = "none";   
+                    document.getElementById('uniquename0').style.display = "none";
                     document.getElementById('uniquename3').style.display = "none";
                     document.getElementById('workshopForm').style.display = "none";
                     document.getElementById('downloadToc').className = "waves-effect waves-light btn disabled" ;
-                    document.getElementById('loader').style.display = "none" ;                
-                
+                    document.getElementById('loader').style.display = "none" ;
+
                     init();
                     initTwo();
-                     
+
                     //checking if the session already exists or is it a new session....
                     if( sessionStorage.userIdEasyChair == null)
                     {
@@ -462,47 +464,47 @@
                          }
 
                     }
-        
-                   
+
+
 
                 });
 
 
           //-----------------------------------------------------------------------------------------
-          
-          //file Upload 
-          
+
+          //file Upload
+
            function submitZip()
           {
                 var file_data = $('#sortpicture').prop('files')[0];
                 var form_data = new FormData();
                 var fileName ;
                 form_data.append('file', file_data);
-                console.log(form_data);                             
+                console.log(form_data);
                 $.ajax({
-                url: 'extract.php', // point to server-side PHP script 
+                url: 'extract.php', // point to server-side PHP script
                 dataType: 'text',  // what to expect back from the PHP script, if anything
                 cache: false,
                 contentType: false,
                 processData: false,
-                data:form_data,                     
+                data:form_data,
                 type: 'post',
                 success: function(php_script_response){
-                        
+
                     console.log(php_script_response); // display response from the PHP script, if any
                     fileName = php_script_response ;
                     manageExtract( fileName ) ;
                 }
                 });
-                  
-                
-                
+
+
+
           }
-          
-          
+
+
           function manageExtract( fileName )
           {
-                hideContainerContent();   
+                hideContainerContent();
                 sendFormOneData = {
                            fileName: fileName ,
                            sessions: sessionStorage.userIdEasyChair
@@ -517,7 +519,7 @@
                 xhr.send(data);
                 xhr.onreadystatechange = function () {
                 if (xhr.readyState === 4 && xhr.status === 200) {
-                        
+
                                 // in case we reply back from server
                                 jsondata = xhr.responseText;
                                 console.log(jsondata);
@@ -530,18 +532,18 @@
                                 a.href = "easyChair/"+sessionStorage.userIdEasyChair+"/output/toc.xml" ;
                                 a.setAttribute('target', '_blank');
                                 uploadedProceeding();
-                                
+
                                 if( boolFromWorkshopToChair == 1 )
                                 {
-                                        
+
                                         resourceCreation( );
-                                        
+
                                 }
                         }
                 }
-                  
+
           }
-          
+
           //-------------------------------------------------------------------------------------------
 
     //Div Display Functions
@@ -558,7 +560,7 @@
                 document.getElementById(d).style.display = "none";
                 document.getElementById('workshopForm').style.display = "initial" ;
                 document.getElementById('loader').style.display = "none" ;
-           
+
 
         }
 
@@ -587,7 +589,7 @@
            document.getElementById('downloadWorkshop').className = "waves-effect waves-light btn" ;
            //Materialize.toast('Workshop Contents Has Been Successfully Created!', 3000, 'rounded') ;
         }
-        
+
         function workshopCreated( )
         {
            document.getElementById('uniquename').style.display = "initial" ;
@@ -600,7 +602,7 @@
            boolFromWorkshopToChair = 1 ;
            Materialize.toast('Workshop Contents Has Been Successfully Created!', 3000, 'rounded') ;
         }
-        
+
         function uploadedProceeding( )
         {
            document.getElementById('uniquename').style.display = "initial" ;
@@ -622,7 +624,7 @@
 }
    //-------------------------------------------------------------------------------------------------
 
-  
+
           // Workshop Form Basic Functions
 
                 var wizard = $("#wizard2").steps({
@@ -644,14 +646,14 @@
 
                                 if( currentIndex == 1 && newIndex == 2)
                                 {
-                                        
+
                                        var result = validatingConference(0) ;
 
                                         if( result == 0 )
                                                 return 1;
                                         else
                                                 return 0;
-                                        
+
                                         return 1;
                                 }
 
@@ -663,20 +665,20 @@
                                                 return 1;
                                         else
                                                 return 0;
-                                        
-                                        return 1;    
+
+                                        return 1;
                                 }
 
                                 if( currentIndex == 2 && newIndex == 1)
-                                {       
+                                {
                                         var result = validatingEditors(0) ;
 
                                         if( result == 0 )
                                                 return 1;
                                         else
                                                 return 0;
-                                        
-                                        return 1;    
+
+                                        return 1;
 
                                 }
 
@@ -688,8 +690,8 @@
                                                 return 1;
                                         else
                                                 return 0;
-                                        
-                                        return 1;       
+
+                                        return 1;
                                 }
 
                                 if( currentIndex == 0 && newIndex == 2)
@@ -701,7 +703,7 @@
                                         else
                                                 return 0;
                                         return 1;
-                                        
+
                                 }
 
                                 return 1 ;
@@ -788,8 +790,8 @@
                                                 return 1;
                                         else
                                                 return 0;
-                                        
-                                        return 1;        
+
+                                        return 1;
 
                         },
 
@@ -800,13 +802,13 @@
 
                              var tempSortingArray = [] ;
                              var finalEditorsArray = [];
-                                
+
                              //first get the editor form values .....
                              for( i = 0 ; i < editorCounter + 1 ; i++ )
                              {
                                            var country = document.getElementById('countryEditor'+i);
                                            var countryStr = country.options[country.selectedIndex].text;
-                                     
+
                                            editorArray.push({
 
                                                    name: document.getElementById('nameEditor' + i).value,
@@ -820,7 +822,7 @@
 
                             tempSortingArray.sort();
                             console.log(tempSortingArray );
-                               
+
                                 //sortingAlgorithimForEditors
                                 for( j = 0 ; j < editorCounter +1 ; j++ )
                                 {
@@ -832,12 +834,12 @@
                                                 }
                                         }
                                 }
-                        
+
                              if( boolSorted == 1 )
-                                        finalEditorsArray = sortedEditorArray ;    
+                                        finalEditorsArray = sortedEditorArray ;
                                     else
-                                        finalEditorsArray = editorArray ;    
-                                
+                                        finalEditorsArray = editorArray ;
+
                             //making the whole dataToSendVariable
                             workshopArray.push({
 
@@ -867,28 +869,28 @@
                                         // in case we reply back from server
                                         jsondata = xhr.responseText;
                                         console.log(jsondata);
-                                        
+
                                         var a = document.getElementById('downloadWorkshop'); //or grab it by tagname etc
                                         a.href = "easyChair/"+sessionStorage.userIdEasyChair+"/output/workshop.xml" ;
                                         a.setAttribute('target', '_blank');
                                         copyrightsFormCreation( );
-                                        
-                                        
+
+
                                         if( boolFromChairToWorkshop == 1 )
                                         {
                                                 resourceCreation( );
                                         }
 
-                                        
+
                                 }
                            }
 
-                           
-                           
+
+
                         }
 
                 });
-          
+
                 function copyrightsFormCreation( )
                 {
                         var data = JSON.stringify(workshopArray);
@@ -906,18 +908,18 @@
                                         displayCopyright();
                                 }
                         }
-                        
+
                 }
-          
+
                 function displayCopyright()
                 {
                         a = document.getElementById('rightsDownload');
                         a.href = "easyChair/"+sessionStorage.userIdEasyChair+"/output/copyright-form.txt" ;
                         a.setAttribute('target', '_blank');
-                        
-                        document.getElementById('uniquename0').style.display = "initial" ; 
+
+                        document.getElementById('uniquename0').style.display = "initial" ;
                 }
-          
+
                 function resourceCreation( )
                 {
                            var data = JSON.stringify(workshopArray);
@@ -937,13 +939,13 @@
                                 }
                            }
 
-                        
+
                 }
-          
+
                 function downloadables( )
                 {
                         var zipName = document.getElementById('id').value + (document.getElementById('date').value).slice(0,4) ;
-                        
+
                         var a = document.getElementById('downloadToc'); //or grab it by tagname etc
                         a.href = "easyChair/"+sessionStorage.userIdEasyChair+"/output/toc.xml" ;
                         a.setAttribute('target', '_blank');
@@ -975,13 +977,13 @@
                           alert("You have reached the limit of adding editors" + editorCounter + " inputs");
                      }
                      else {
-                          
+
                           var selectEditor = "<select id='countryEditor"+(editorCounter+1)+"'><option value='1'>Option 1</option></select><label for='countryEditor"+(editorCounter+1)+"'>Country Of The Editor</label>";
-                          
+
                           var newdiv = document.createElement('div');
                           newdiv.id ="editor"+(editorCounter+1);
                           newdiv.innerHTML = "<fieldset><legend>Editor "+ (editorCounter + 1) +"</legend><div class='row'><div class='input-field col s12'><input id='nameEditor"+(editorCounter + 1 )+"' type='text' class='validate'><label for='nameEditor"+ (editorCounter + 1 ) +"'>Name of The Editor</label><span id='nameEditorError"+(editorCounter + 1 )+"' class='error' style='display:none'>Please enter alphabets only.</span></div><div class='input-field col s12'><input id='affiliationEditor"+(editorCounter+1)+"' type='text' class='validate'><label for='affiliationEditor"+(editorCounter+1)+"'>Affiliation Of The Editor</label><span id='affiliationEditorError"+(editorCounter+1)+"' class='error' style='display:none'>Please enter alpha numerics.</span></div><div class='input-field col s12'>"+selectEditor+"</div><div class='input-field col s12'><input id='homepageEditor"+(editorCounter+1)+"' type='text' class='validate'><label for='homepageEditor"+(editorCounter+1)+"'>Homepage Of The Editor</label><span id='homepageEditorError"+(editorCounter+1)+"' class='error' style='display:none'>Please enter a valid URL</span></div></div></fieldset>";
-                          
+
                           document.getElementById(divName).appendChild(newdiv);
                           var selectId = '#countryEditor'+(editorCounter+1);
                           selectForCountries(selectId);
@@ -1002,7 +1004,7 @@
                      }
 
           }
-          
+
           function sortEditor( )
           {
               if( boolSorted == 0 )
@@ -1010,13 +1012,13 @@
                       boolSorted = 1;
                       document.getElementById("sortIcon").className = "btn-floating btn-large disabled" ;
 
-                      
+
               }else if ( boolSorted == 1 )
               {
                       boolSorted = 0 ;
                       document.getElementById("sortIcon").className = "btn-floating tooltipped btn-large waves-effect waves-light blue" ;
               }
-               
+
           }
 
        //-----------------------------------------------------------------------------------------
@@ -1053,38 +1055,38 @@
                         document.getElementById('volumeError').style.display = "initial" ;
                         boolTemp++;
                   }
-                
+
                   if( !(alphaNumeric.test(document.getElementById('volumeNumber').value )))
                   {
                        document.getElementById('volumeNumberID').style.display = "initial" ;
                        boolTemp++;
                   }
-                  
+
                   if( !(dateYYYYMMDD.test(document.getElementById('date').value )) )
                   {
                        document.getElementById('dateError').style.display = "initial" ;
                        boolTemp++;
-                     
+
                   }
-                     
+
                   if( !(hyperLink.test(document.getElementById('homePage').value )) )
                   {
                        document.getElementById('homePageError').style.display = "initial" ;
                        boolTemp++;
                   }
-                  
+
                   if( !(address.test(document.getElementById('location').value )) )
                   {
                        document.getElementById('locationError').style.display = "initial" ;
                        boolTemp++;
                   }
-                     
+
                   if( !(hyperLink.test(document.getElementById('linkLocation').value )) )
                   {
                        document.getElementById('linkLocationError').style.display = "initial" ;
                        boolTemp++;
                   }
-                  
+
                   return boolTemp ;
 
           }
@@ -1093,22 +1095,22 @@
           {
                   boolTemp = 0 ;
                   clearingConferenceErrorSpan();
-                  
-                  if ( !( capitalLettersNumbers.test( document.getElementById('acronymConference').value )) )
+
+                  if ( !( capitalLettersNumbersNotMust.test( document.getElementById('acronymConference').value )) )
                   {
                         document.getElementById('acronymConferenceError').style.display = "initial" ;
                         boolTemp++;
 
                   }
-                  
-                  if ( !( alphaNumeric.test( document.getElementById('fullName').value )) )
+
+                  if ( !( alphaNumericNotMust.test( document.getElementById('fullName').value )) )
                   {
                         document.getElementById('fullNameError').style.display = "initial" ;
                         boolTemp++;
 
                   }
-                  
-                  if ( !( hyperLink.test( document.getElementById('homepageConference').value )) )
+
+                  if ( !( hyperLinkNotMust.test( document.getElementById('homepageConference').value )) )
                   {
                         document.getElementById('homepageConferenceError').style.display = "initial" ;
                         boolTemp++;
@@ -1116,14 +1118,14 @@
                   }
 
                   return boolTemp ;
-                  
+
           }
 
           function validatingEditors( boolTemp )
           {
                   clearingEditorsErrorSpan();
                   boolTemp = 0 ;
-                  
+
                   for( var i = 0 ; i < editorCounter +1 ; i++ )
                   {
                         if ( !( alpha.test( document.getElementById('nameEditor'+i).value )) )
@@ -1132,25 +1134,25 @@
                                 boolTemp++;
 
                         }
-                        
+
                         if ( !( alphaNumeric.test( document.getElementById('affiliationEditor'+i).value )) )
                         {
                                 document.getElementById('affiliationEditorError'+i).style.display = "initial" ;
                                 boolTemp++;
 
                         }
-                        
+
                         if ( !( hyperLink.test( document.getElementById('homepageEditor'+i).value )) )
                         {
                                 document.getElementById('homepageEditorError'+i).style.display = "initial" ;
                                 boolTemp++;
 
                         }
-                   
-                          
+
+
                   }
-                  
-                  return boolTemp ;       
+
+                  return boolTemp ;
 
           }
 
@@ -1173,15 +1175,15 @@
                    document.getElementById('linkLocationError').style.display = "none" ;
 
         }
-          
+
         function clearingConferenceErrorSpan( )
         {
-                
+
                 document.getElementById('acronymConferenceError').style.display = "none" ;
                 document.getElementById('fullNameError').style.display = "none" ;
-                document.getElementById('homepageConferenceError').style.display = "none" ;  
+                document.getElementById('homepageConferenceError').style.display = "none" ;
         }
-          
+
         function clearingEditorsErrorSpan( )
         {
                 for( var i = 0 ; i < editorCounter +1 ; i++ )
@@ -1194,8 +1196,8 @@
     //-------------------------------------------------------------------------------------------
 
     //Loading JSON FOR COUNTRIES-----------------------------------------------------------------
-          
-           function loadJSON(callback) {   
+
+           function loadJSON(callback) {
                     var xobj = new XMLHttpRequest();
                         xobj.overrideMimeType("application/json");
                     xobj.open('GET', 'json/countries.json', true); // Replace 'my_data' with the path to your file
@@ -1205,7 +1207,7 @@
                             callback(xobj.responseText);
                           }
                     };
-                    xobj.send(null);  
+                    xobj.send(null);
            }
 
            function init() {
@@ -1218,7 +1220,7 @@
                  });
            }
      //-SELECT FOR COUNTRIES-----------------------------------------------------------------------
-          
+
           function selectForCountries( selectId )
           {
                var $selectDropdown = $(selectId).empty().html(' ');
@@ -1236,15 +1238,15 @@
 
 
                 // re-initialize (update)
-                $('select').material_select();    
+                $('select').material_select();
           }
 
     //-------------------------------------------------------------------------------------------
-          
+
     //-Loading JSON FOR LANGUAGES----------------------------------------------------------------
-          
-             
-        function loadJSONTwo(callback) {   
+
+
+        function loadJSONTwo(callback) {
 
                     var xobj = new XMLHttpRequest();
                         xobj.overrideMimeType("application/json");
@@ -1255,7 +1257,7 @@
                             callback(xobj.responseText);
                           }
                     };
-                    xobj.send(null);  
+                    xobj.send(null);
         }
 
         function initTwo() {
@@ -1269,11 +1271,11 @@
         }
 
      //-SELECT FOR LANGUAGES-----------------------------------------------------------------------
-             
+
         function selectForLanguage( )
         {
                 var $selectDropdown = $('#language').empty().html(' ');
-                
+
                 for ( var i=0 ; i < languagesArray.length ; i++ )
                 {
                 //document.getElementById('ses').appendChild("<option value='option"+i+"'>"+sessionsArray[i]+"</option>");
@@ -1289,23 +1291,23 @@
                 // re-initialize (update)
                 $('select').material_select();
         }
-          
+
     //-------------------------------------------------------------------------------------------
-    
+
     //Title Case Function------------------------------------------------------------------------
-    
+
       String.prototype.toTitleCase = function() {
         var i, j, str, lowers, uppers;
         str = this.replace(/([^\W_]+[^\s-]*) */g, function(txt) {
           return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
         });
 
-        // Certain minor words should be left lowercase unless 
+        // Certain minor words should be left lowercase unless
         // they are the first or last words in the string
-        lowers = ['A', 'An', 'The', 'And', 'But', 'Or', 'For', 'Nor', 'As', 'At', 
+        lowers = ['A', 'An', 'The', 'And', 'But', 'Or', 'For', 'Nor', 'As', 'At',
         'By', 'For', 'From', 'In', 'Into', 'Near', 'Of', 'On', 'Onto', 'To', 'With'];
         for (i = 0, j = lowers.length; i < j; i++)
-          str = str.replace(new RegExp('\\s' + lowers[i] + '\\s', 'g'), 
+          str = str.replace(new RegExp('\\s' + lowers[i] + '\\s', 'g'),
             function(txt) {
               return txt.toLowerCase();
             });
@@ -1313,7 +1315,7 @@
         // Certain words such as initialisms or acronyms should be left uppercase
         uppers = ['Id', 'Tv'];
         for (i = 0, j = uppers.length; i < j; i++)
-          str = str.replace(new RegExp('\\b' + uppers[i] + '\\b', 'g'), 
+          str = str.replace(new RegExp('\\b' + uppers[i] + '\\b', 'g'),
             uppers[i].toUpperCase());
 
         return str;
