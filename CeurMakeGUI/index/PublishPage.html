@@ -13,7 +13,7 @@
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/jquery.steps.css" rel="stylesheet">
-
+  <script type="text/javascript" src="./helperJS/fieldValidator.js" ></script>
 </head>
 <body>
   <nav class="blue-grey darken-1" role="navigation">
@@ -1461,12 +1461,14 @@
                   boolTemp = 0 ;
                   clearingMetaDataErrorSpan( ) ;
 
-                  if ( !( alphaNumeric.test( document.getElementById('id').value )) )
-                  {
-                        document.getElementById('idError').style.display = "initial" ;
-                        boolTemp++;
+                  boolTemp += validateAlphaNumeric('id', 'idError') ;
 
-                  }
+                  // if ( !( alphaNumeric.test( document.getElementById('id').value )) )
+                  // {
+                  //       document.getElementById('idError').style.display = "initial" ;
+                  //       boolTemp++;
+                  //
+                  // }
 
                   if( !(capitalLettersNumbers.test(document.getElementById('acronym').value)))
                   {
@@ -1474,17 +1476,21 @@
                        boolTemp++ ;
                   }
 
-                  if ( !( alphaNumeric.test(document.getElementById('fullTitle').value )))
-                  {
-                        document.getElementById('fullTitleError').style.display = "initial" ;
-                        boolTemp++;
-                  }
+                  boolTemp += validateAlphaNumeric( 'fulltitle', 'fullTitleError' );
+                  //
+                  // if ( !( alphaNumeric.test(document.getElementById('fullTitle').value )))
+                  // {
+                  //       document.getElementById('fullTitleError').style.display = "initial" ;
+                  //       boolTemp++;
+                  // }
 
-                  if( !(alphaNumeric.test(document.getElementById('volume').value)))
-                  {
-                        document.getElementById('volumeError').style.display = "initial" ;
-                        boolTemp++;
-                  }
+                  boolTemp += validateAlphaNumeric('volume', 'volumeError');
+                  //
+                  // if( !(alphaNumeric.test(document.getElementById('volume').value)))
+                  // {
+                  //       document.getElementById('volumeError').style.display = "initial" ;
+                  //       boolTemp++;
+                  // }
 
                   if( !(alphaNumeric.test(document.getElementById('volumeNumber').value )))
                   {
