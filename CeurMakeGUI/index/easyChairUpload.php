@@ -406,7 +406,7 @@
         var alphaNumericNotMust = new RegExp(/^[a-z\d\-_\s]*$/i);
         var alpha = new RegExp(/^[A-Za-z\s]+$/i);
         var numberAndSpace = new RegExp("/^[0-9 ]+$/") ;
-        var numberOnly = new RegExp(/^[0-9]+$/) ;
+        var numberOnly = new RegExp(/^[0-9]*$/) ;
         var capitalLettersNumbers = new RegExp(/^[A-Z0-9]+$/);
         var capitalLettersNumbersNotMust =  new RegExp(/^[A-Z0-9]*$/);
         var volNumber = new RegExp(/^\Vol-[0-9]+$/);
@@ -481,7 +481,7 @@
                 var form_data = new FormData();
                 var fileName ;
                 form_data.append('file', file_data);
-                
+
                 console.log(form_data);
                 $.ajax({
                 url: 'extract.php', // point to server-side PHP script
