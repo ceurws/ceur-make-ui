@@ -2,7 +2,7 @@
 
 header('Content-type: application/json');
 $json = file_get_contents('php://input');
- 
+
 $array = json_decode($json, true);
 
 $newsXML = new SimpleXMLElement("<toc></toc>");
@@ -21,13 +21,13 @@ foreach($array['sessions'] as $value )
         $newsPaper = $newsSession->addChild('paper');
         $newsPaper->addChild('title',$paper['title']);
         $pages = $newsPaper->addChild('pages');
-        $pages->addAttribute('From', $paper['pageFrom']);
-        $pages->addAttribute('To', $paper['pageTo']);
-        
+        $pages->addAttribute('from', $paper['pageFrom']);
+        $pages->addAttribute('to', $paper['pageTo']);
+
         foreach( $paper['authors'] as $authors )
         {
             $newsPaper->addChild('authors', $authors);
-   
+
         }
     }
 }

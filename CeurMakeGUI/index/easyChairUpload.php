@@ -477,9 +477,11 @@
            function submitZip()
           {
                 var file_data = $('#sortpicture').prop('files')[0];
+
                 var form_data = new FormData();
                 var fileName ;
                 form_data.append('file', file_data);
+                
                 console.log(form_data);
                 $.ajax({
                 url: 'extract.php', // point to server-side PHP script
@@ -494,6 +496,8 @@
                     console.log(php_script_response); // display response from the PHP script, if any
                     fileName = php_script_response ;
                     manageExtract( fileName ) ;
+
+                    //console.log("dsadsasdsa"+fileName);
                 }
                 });
 
