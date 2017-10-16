@@ -13,78 +13,82 @@ var emptyString = new RegExp("/^[\s]*$/");
 var dateYYYYMMDD = new RegExp(/^\d{4}-\d{1,2}-\d{1,2}$/);
 var address = new RegExp(/^[a-zA-Z0-9\s,'-]*$/i);
 
+
+
+// TODO: complete the validator functions for PublishPage and EasyChair Upload
+
 function validateAlphaNumeric( id, errorId )
 {
-  if(!(  alphaNumeric.test( document.getElementById(id).value ) ))
-  {
-    document.getElementById(errorId).style.display = "initial" ;
-    return 1 ;
-  }else
-    return 0 ;
+	if(!(  alphaNumeric.test( document.getElementById(id).value ) ))
+	{
+		document.getElementById(errorId).style.display = "initial" ;
+		return 1 ;
+	}else
+		return 0 ;
 
 }
 
 function validatingMetaDataOfTwo( boolTemp )
 {
-        boolTemp = 0 ;
-        clearingMetaDataErrorSpan( ) ;
+	boolTemp = 0 ;
+	clearingMetaDataErrorSpan( ) ;
 
-        if ( !( alphaNumeric.test( document.getElementById('id').value )) )
-        {
-              document.getElementById('idError').style.display = "initial" ;
-              boolTemp++;
+	if ( !( alphaNumeric.test( document.getElementById("id").value )) )
+	{
+		document.getElementById("idError").style.display = "initial" ;
+		boolTemp++;
 
-        }
+	}
 
-        if( !(capitalLettersNumbers.test(document.getElementById('acronym').value)))
-        {
-             document.getElementById('acronymError').style.display = "initial" ;
-             boolTemp++ ;
-        }
+	if( !(capitalLettersNumbers.test(document.getElementById("acronym").value)))
+	{
+		document.getElementById("acronymError").style.display = "initial" ;
+		boolTemp++ ;
+	}
 
-        if ( !( alphaNumeric.test(document.getElementById('fullTitle').value )))
-        {
-              document.getElementById('fullTitleError').style.display = "initial" ;
-              boolTemp++;
-        }
+	if ( !( alphaNumeric.test(document.getElementById("fullTitle").value )))
+	{
+		document.getElementById("fullTitleError").style.display = "initial" ;
+		boolTemp++;
+	}
 
-        if( !(alphaNumeric.test(document.getElementById('volume').value)))
-        {
-              document.getElementById('volumeError').style.display = "initial" ;
-              boolTemp++;
-        }
+	if( !(alphaNumeric.test(document.getElementById("volume").value)))
+	{
+		document.getElementById("volumeError").style.display = "initial" ;
+		boolTemp++;
+	}
 
-        if( !(alphaNumeric.test(document.getElementById('volumeNumber').value )))
-        {
-             document.getElementById('volumeNumberID').style.display = "initial" ;
-             boolTemp++;
-        }
+	if( !(alphaNumeric.test(document.getElementById("volumeNumber").value )))
+	{
+		document.getElementById("volumeNumberID").style.display = "initial" ;
+		boolTemp++;
+	}
 
-        if( !(dateYYYYMMDD.test(document.getElementById('date').value )) )
-        {
-             document.getElementById('dateError').style.display = "initial" ;
-             boolTemp++;
+	if( !(dateYYYYMMDD.test(document.getElementById("date").value )) )
+	{
+		document.getElementById("dateError").style.display = "initial" ;
+		boolTemp++;
 
-        }
+	}
 
-        if( !(hyperLink.test(document.getElementById('homePage').value )) )
-        {
-             document.getElementById('homePageError').style.display = "initial" ;
-             boolTemp++;
-        }
+	if( !(hyperLink.test(document.getElementById("homePage").value )) )
+	{
+		document.getElementById("homePageError").style.display = "initial" ;
+		boolTemp++;
+	}
 
-        if( !(address.test(document.getElementById('location').value )) )
-        {
-             document.getElementById('locationError').style.display = "initial" ;
-             boolTemp++;
-        }
+	if( !(address.test(document.getElementById("location").value )) )
+	{
+		document.getElementById("locationError").style.display = "initial" ;
+		boolTemp++;
+	}
 
-        if( !(hyperLink.test(document.getElementById('linkLocation').value )) )
-        {
-             document.getElementById('linkLocationError').style.display = "initial" ;
-             boolTemp++;
-        }
+	if( !(hyperLink.test(document.getElementById("linkLocation").value )) )
+	{
+		document.getElementById("linkLocationError").style.display = "initial" ;
+		boolTemp++;
+	}
 
-        return boolTemp ;
+	return boolTemp ;
 
 }

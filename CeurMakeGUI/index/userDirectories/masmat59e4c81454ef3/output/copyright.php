@@ -6,7 +6,7 @@ $array = json_decode($json, true);
 $pathFileName = $array[0]['fileName'] ;
 
 
-$pth = "../../../userDirectories/".$pathFileName;
+$pth = $pathFileName;
 
 exec ("find ".$pth." -type d -exec chmod -R 777 {} +");//for sub directory
 exec ("find ".$pth." -type f -exec chmod -R 777 {} +");//for files inside directory
