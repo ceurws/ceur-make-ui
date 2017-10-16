@@ -24,9 +24,11 @@ foreach($array['sessions'] as $value )
         $pages->addAttribute('from', $paper['pageFrom']);
         $pages->addAttribute('to', $paper['pageTo']);
 
+        $author = $newsPaper->addChild('authors');
+
         foreach( $paper['authors'] as $authors )
         {
-            $newsPaper->addChild('authors', $authors);
+            $author->addChild('author', $authors);
 
         }
     }
