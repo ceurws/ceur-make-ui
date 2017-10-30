@@ -1,63 +1,90 @@
-![alt tag](https://raw.github.com/dogfalo/materialize/master/images/materialize.gif)
-===========
+<p align="center">
+  <a href="http://materializecss.com/">
+    <img src="http://materializecss.com/res/materialize.svg" width="150">
+  </a>
 
-[![Travis CI](https://travis-ci.org/Dogfalo/materialize.svg?branch=master)](https://travis-ci.org/Dogfalo/materialize)[![Dependency Status](https://david-dm.org/Dogfalo/materialize.svg)](https://david-dm.org/Dogfalo/materialize)[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/Dogfalo/materialize?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+  <h3 align="center">MaterializeCSS</h3>
 
-Materialize, a CSS Framework based on material design
+  <p align="center">
+    Materialize, a CSS Framework based on material design.
+    <br>
+    <a href="http://materializecss.com/"><strong>-- Browse the docs --</strong></a>
+    <br>
+    <br>
+    <a href="https://travis-ci.org/Dogfalo/materialize">
+      <img src="https://travis-ci.org/Dogfalo/materialize.svg?branch=master" alt="Travis CI badge">
+    </a>
+    <a href="https://badge.fury.io/js/materialize-css">
+      <img src="https://badge.fury.io/js/materialize-css.svg" alt="npm version badge">
+    </a>
+    <a href="https://cdnjs.com/libraries/materialize">
+      <img src="https://img.shields.io/cdnjs/v/materialize.svg" alt="CDNJS version badge">
+    </a>
+    <a href="https://david-dm.org/Dogfalo/materialize">
+      <img src="https://david-dm.org/Dogfalo/materialize/status.svg" alt="dependencies Status badge">
+      </a>
+    <a href="https://david-dm.org/Dogfalo/materialize#info=devDependencies">
+      <img src="https://david-dm.org/Dogfalo/materialize/dev-status.svg" alt="devDependency Status badge">
+    </a>
+    <a href="https://gitter.im/Dogfalo/materialize">
+      <img src="https://badges.gitter.im/Join%20Chat.svg" alt="Gitter badge">
+    </a>
+</p>
 
-### Current Version : v0.97.4
+## Table of Contents
+- [Quickstart](#quickstart)
+- [Documentation](#documentation)
+- [Supported Browsers](#supported-browsers)
+- [Changelog](#changelog)
+- [Testing](#testing)
+- [Contributing](#contributing)
+- [Copyright and license](#copyright-and-license)
 
-## Sass Requirements:
-- Ruby Sass 3.3+, LibSass 0.6+
+## Quickstart:
+Read the [getting started guide](http://materializecss.com/getting-started.html) for more information on how to use materialize.
+
+- [Download the latest release](https://github.com/Dogfalo/materialize/releases/latest) of materialize directly from GitHub.
+- Clone the repo: `git clone https://github.com/Dogfalo/materialize.git`
+- Include the files via [cdnjs](https://cdnjs.com/libraries/materialize). More [here](http://materializecss.com/getting-started.html).
+- Install with [npm](https://www.npmjs.com): `npm install materialize-css`
+- Install with [Bower](https://bower.io): `bower install materialize`
+- Install with [Atmosphere](https://atmospherejs.com): `meteor add materialize:materialize`
+
+## Documentation
+The documentation can be found at <http://materializecss.com>. To run the documentation locally on your machine, you need [Node.js](https://nodejs.org/en/) installed on your computer.
+
+### Running documentation locally
+Run these commands to set up the documentation:
+
+```bash
+git clone https://github.com/Dogfalo/materialize
+cd materialize
+npm install
+```
+
+Then run `grunt monitor` to compile the documentation. When it finishes, open a new browser window and navigate to `localhost:8000`. We use [BrowserSync](https://www.browsersync.io/) to display the documentation.
+
+### Documentation for previous releases
+Previous releases and their documentation are available for [download](https://github.com/Dogfalo/materialize/releases).
 
 ## Supported Browsers:
-Chrome 35+, Firefox 31+, Safari 7+, IE 10+
+Materialize is compatible with:
+
+- Chrome 35+
+- Firefox 31+
+- Safari 7+
+- Opera
+- Edge
+- IE 10+
 
 ## Changelog
-- v0.97.4 (Dec 20, 2015)
-  - Added Jasmine testing with Travis CI
-  - Select bugfixes
-  - Grid Offset bugfix
-  - Dropdown overflow bugfix
-  - Range slider error bugfix
-- v0.97.3 (Nov 15, 2015)
-  - Meteor font issues fixed
-  - Select rendering issue fixed
-  - Added Push and Pull to grid
-  - Dynamic accordion appends fixed
-- v0.97.2 (Nov 8, 2015)
-  - Image support inside select
-  - Optgroup supported in select
-  - Multiple select added
-  - Card styling fixes
-  - Breadcrumbs added
-  - Scrollable tabs
-  - Tooltips and dropdowns position themselves more intelligently inside the window
-  - FAB menu is click-toggleable
-  - Horizontal FAB support added
-- v0.97.1 (Sep 13, 2015)
-  - Added new range slider with uses noUiSlider to provide powerful options
-  - Added CSS for Chips
-  - Toasts support adding of html elements
-  - Fixed select destroy/creation bug
-  - Bugfixes for dropdown, badges, collections, scrollfire
-  - Added default preloader color variable
-  - File input now supports multiple files and dynamically loaded elements
-- v0.97.0 (June 21, 2015)
-  - **Documentation changed to use Official Google Icon web font**
-  - **Input errors added**
-  - Flicker on Firefox on dropdowns fixed
-  - Pagination made more responsive
-  - Modal now prevents scrolling
-  - Modal animation added
-  - Support for multiple modals added
-  - Programmatic control of FAB to open/close added
-  - Programmatic control of slider to play/pause added
-  - Plus many more bug fixes
-
-
-## Contributing
-[Please read CONTRIBUTING.md for more information](CONTRIBUTING.md)
+For changelogs, check out [the Releases section of materialize](https://github.com/Dogfalo/materialize/releases) or the [CHANGELOG.md](CHANGELOG.md).
 
 ## Testing
-We use Jasmine as our testing framework and we're trying to write a robust test suite for our components. If you want to help, [here's a starting guide on how to write tests in Jasmine](https://docs.google.com/document/d/1dVM6qGt_b_y9RRhr9X7oZfFydaJIEqB9CT7yekv-4XE/edit?usp=sharing)
+We use Jasmine as our testing framework and we're trying to write a robust test suite for our components. If you want to help, [here's a starting guide on how to write tests in Jasmine](CONTRIBUTING.md#jasmine-testing-guide).
+
+## Contributing
+Check out the [CONTRIBUTING document](CONTRIBUTING.md) in the root of the repository to learn how you can contribute. You can also browse the [help-wanted](https://github.com/Dogfalo/materialize/labels/help-wanted) tag in our issue tracker to find things to do.
+
+## Copyright and license
+Code copyright 2017 Materialize. Code released under the MIT license.
