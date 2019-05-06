@@ -54,7 +54,7 @@ foreach($array as $value )
 
     }
 
-    echo $value['editors'] ;
+    //echo $value['editors'] ;
 
 }
 
