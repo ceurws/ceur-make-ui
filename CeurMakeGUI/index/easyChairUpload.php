@@ -1,34 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Ceur Make</title>
-
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/jquery.steps.css" rel="stylesheet">
-
-</head>
-<body>
-  <nav class="blue-grey darken-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">CEUR Make</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="index.html"> Home</a></li>
-        <li><a href="Proceedings.html"> Proceedings</a></li>
-        <li><a href="Publish.html"> Publish</a></li>
-        <li><a href="Issue.html"> Issues</a></li>
-
-      </ul>
-
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
+<?php
+	$page_title = 'Ceur Make';
+	
+	include_once '_inc/header.php';
+?>
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
     <div class="row">
@@ -205,7 +179,7 @@
                                               <label for="language">Language</label>
                                             </div>
                                             <div class="input-field col s4">
-                                              <input id="date" type="text" class="validate">
+                                              <input id="date" type="text" class="validate datepicker">
                                               <label for="date">Date</label>
                                               <span id="dateError" class="error" style="display:none">Please enter date in a valid date format</span>
                                             </div>
@@ -321,49 +295,12 @@
 </div>
       <br><br>
 
-    </div>
+</div>
 
-  <footer class="page-footer blue-grey darken-2">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">CEUR-WS</h5>
-          <p class="grey-text text-lighten-4">CEUR-WS.org is an online publication service for editors of scientific proceedings, in particular workshop proceedings.</p>
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Important</h5>
-          <ul>
-            <li><a class="white-text" href="http://ceur-ws.org/HOWTOSUBMIT.html">How to Submit</a></li>
-            <li><a class="white-text" href="http://ceur-ws.org/HOWTOSUBMIT.html#FAQ">FAQ</a></li>
-            <li><a class="white-text" href="https://github.com/ceurws/ceur-make">Ceur Make</a></li>
-            <li><a class="white-text" href="http://ceur-ws.org/index.html">Old</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">General</h5>
-          <ul>
-            <li><a class="white-text" href="http://ceur-ws.org/ceurws-timeline.txt">Timeline</a></li>
-            <li><a class="white-text" href="https://ceurws.wordpress.com/">Blog</a></li>
-            <li><a class="white-text" href="http://ceur-ws.org/CEURWS-TEAM.html">Team</a></li>
-            <li><a class="white-text" href="http://ceur-ws.org/CEURWS-VALUES.html">Core Values</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Copyrights @ <a class="orange-text text-lighten-3" href="http://ceur-ws.org">Ceur Make 2016</a>
-      </div>
-    </div>
-  </footer>
-
-
-  <!--  Scripts-->
-  <script src="./jquery/jquery-2.2.0.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-  <script src="./jquery/jquery.steps.min.js"></script>
+	<!-- Footer -->
+	<?php include_once '_inc/footer.php'; ?>
+	<!-- /Footer -->
+	
   <script>
   //Variables:
 
@@ -425,7 +362,7 @@
 
                 $(document).ready(function() {
 
-                    $('.modal-trigger').leanModal();
+                    $('.modal-trigger').modal();
                     document.getElementById('uniquename2').style.display = "none";
                     document.getElementById('uniquename0').style.display = "none";
                     document.getElementById('uniquename3').style.display = "none";
@@ -527,7 +464,7 @@
                                 // in case we reply back from server
                                 jsondata = xhr.responseText;
                                 console.log(jsondata);
-                                Materialize.toast('Your Easy Chair source files are being uploaded', 4000, 'rounded') // 'rounded' is the class I'm applying to the toast
+                                M.toast({html:'Your Easy Chair source files are being uploaded', displayLength: 4000, classes: 'rounded'}) // 'rounded' is the class I'm applying to the toast
                                 boolFromChairToWorkshop = 1;
                                 document.getElementById('downloadToc').className = "waves-effect waves-light btn" ;
                                 document.getElementById('tocLink').className = "btn-floating btn-small waves-effect waves-light green";
@@ -591,7 +528,7 @@
            document.getElementById('workshopLink').className = "btn-floating btn-small waves-effect waves-light green";
            document.getElementById('tocLink').className = "btn-floating btn-small waves-effect waves-light green";
            document.getElementById('downloadWorkshop').className = "waves-effect waves-light btn" ;
-           //Materialize.toast('Workshop Contents Has Been Successfully Created!', 3000, 'rounded') ;
+           //M.toast({html:'Workshop Contents Has Been Successfully Created!', displayLength: 3000, classes: 'rounded'}) ;
         }
 
         function workshopCreated( )
@@ -604,7 +541,7 @@
            document.getElementById('workshopLink').className = "btn-floating btn-small waves-effect waves-light green";
            document.getElementById('downloadWorkshop').className = "waves-effect waves-light btn" ;
            boolFromWorkshopToChair = 1 ;
-           Materialize.toast('Workshop Contents Has Been Successfully Created!', 3000, 'rounded') ;
+           M.toast({html:'Workshop Contents Has Been Successfully Created!', displayLength: 3000, classes: 'rounded'}) ;
         }
 
         function uploadedProceeding( )
@@ -612,7 +549,7 @@
            document.getElementById('uniquename').style.display = "initial" ;
            document.getElementById('workshopForm').style.display = "none" ;
            document.getElementById('loader').style.display = "none" ;
-           Materialize.toast('Proceeding Content From Easy Chair Has Been Uploaded', 3000, 'rounded') ;
+           M.toast({html:'Proceeding Content From Easy Chair Has Been Uploaded', displayLength: 3000, classes: 'rounded'}) ;
         }
 
     //----------------------------------------------------------------------------------------------
@@ -1204,7 +1141,9 @@
            function loadJSON(callback) {
                     var xobj = new XMLHttpRequest();
                         xobj.overrideMimeType("application/json");
-                    xobj.open('GET', 'json/countries.json', true); // Replace 'my_data' with the path to your file
+                    //xobj.open('GET', 'json/countries.json', true); // Replace 'my_data' with the path to your file
+					xobj.open('GET', 'https://restcountries.eu/rest/v2/all?fields=name', true);
+					
                     xobj.onreadystatechange = function () {
                           if (xobj.readyState == 4 && xobj.status == "200") {
                             // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
@@ -1220,7 +1159,7 @@
                      countriesArray = JSON.parse(response);
                          console.log(countriesArray);
                          selectForCountries("#countryEditor0");
-                          $('select').material_select();
+                          $('select').formSelect();
                  });
            }
      //-SELECT FOR COUNTRIES-----------------------------------------------------------------------
@@ -1242,7 +1181,7 @@
 
 
                 // re-initialize (update)
-                $('select').material_select();
+                $('select').formSelect();
           }
 
     //-------------------------------------------------------------------------------------------
@@ -1270,7 +1209,7 @@
                     languagesArray = JSON.parse(response);
                          console.log(languagesArray);
                           selectForLanguage();
-                          $('select').material_select();
+                          $('select').formSelect();
                  });
         }
 
@@ -1293,7 +1232,7 @@
 
 
                 // re-initialize (update)
-                $('select').material_select();
+                $('select').formSelect();
         }
 
     //-------------------------------------------------------------------------------------------

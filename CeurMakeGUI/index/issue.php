@@ -1,39 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Ceur Make</title>
-
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <style>
-  .error {
-
-    color:red;
-    display: none;        
-  }
-  </style>
-</head>
-<body>
-  <nav class="blue-grey darken-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">CEUR Make</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="index.html"> Home</a></li>
-        <li><a href="Proceedings.html"> Proceedings</a></li>
-        <li><a href="Publish.html"> Publish</a></li>
-        <li><a href="Issue.html"> Issues</a></li>
-
-      </ul>
-
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
+<?php
+	$page_title = 'Ceur Make';
+	
+	include_once '_inc/header.php';
+?>
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
@@ -102,46 +71,10 @@
     </div>
   </div>
   
-   <footer class="page-footer blue-grey darken-2">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">CEUR-WS</h5>
-          <p class="grey-text text-lighten-4">CEUR-WS.org is an online publication service for editors of scientific proceedings, in particular workshop proceedings.</p>
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Important</h5>
-          <ul>
-            <li><a class="white-text" href="http://ceur-ws.org/HOWTOSUBMIT.html">How to Submit</a></li>
-            <li><a class="white-text" href="http://ceur-ws.org/HOWTOSUBMIT.html#FAQ">FAQ</a></li>
-            <li><a class="white-text" href="https://github.com/ceurws/ceur-make">Ceur Make</a></li>
-            <li><a class="white-text" href="http://ceur-ws.org/index.html">Old</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">General</h5>
-          <ul>
-            <li><a class="white-text" href="http://ceur-ws.org/ceurws-timeline.txt">Timeline</a></li>
-            <li><a class="white-text" href="https://ceurws.wordpress.com/">Blog</a></li>
-            <li><a class="white-text" href="http://ceur-ws.org/CEURWS-TEAM.html">Team</a></li>
-            <li><a class="white-text" href="http://ceur-ws.org/CEURWS-VALUES.html">Core Values</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Copyrights @ <a class="orange-text text-lighten-3" href="http://ceur-ws.org">Ceur Make 2016</a>
-      </div>
-    </div>
-  </footer>
-
-
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
+	<!-- Footer -->
+	<?php include_once '_inc/footer.php'; ?>
+	<!-- /Footer -->
+	
   <script>
     var alphaNumeric = new RegExp(/^[a-z\d\-_\s]+$/i);
     
@@ -189,7 +122,7 @@
             {
                 jsondata = xhr.responseText;
                 console.log(jsondata);
-                Materialize.toast('Your Issue has been posted.', 4000, 'rounded') // 'rounded' is the 
+                M.toast({html:'Your Issue has been posted.', displayLength: 4000, classes: 'rounded'}) // 'rounded' is the 
                 afterIssueCreation( );
             }
         }

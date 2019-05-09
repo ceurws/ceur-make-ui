@@ -1,32 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Ceur Make</title>
-
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-</head>
-<body>
-  <nav class="blue-grey darken-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">CEUR Make</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="index.html"> Home</a></li>
-        <li><a href="Proceedings.html"> Proceedings</a></li>
-        <li><a href="Publish.html"> Publish</a></li>
-        <li><a href="Issue.html"> Issues</a></li>
-
-      </ul>
-
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
+<?php
+	$page_title = 'Ceur Make';
+	
+	include_once '_inc/header.php';
+?>
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
@@ -452,46 +428,10 @@
 
   </div>
   
-   <footer class="page-footer blue-grey darken-2">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">CEUR-WS</h5>
-          <p class="grey-text text-lighten-4">CEUR-WS.org is an online publication service for editors of scientific proceedings, in particular workshop proceedings.</p>
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Important</h5>
-          <ul>
-            <li><a class="white-text" href="http://ceur-ws.org/HOWTOSUBMIT.html">How to Submit</a></li>
-            <li><a class="white-text" href="http://ceur-ws.org/HOWTOSUBMIT.html#FAQ">FAQ</a></li>
-            <li><a class="white-text" href="https://github.com/ceurws/ceur-make">Ceur Make</a></li>
-            <li><a class="white-text" href="http://ceur-ws.org/index.html">Old</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">General</h5>
-          <ul>
-            <li><a class="white-text" href="http://ceur-ws.org/ceurws-timeline.txt">Timeline</a></li>
-            <li><a class="white-text" href="https://ceurws.wordpress.com/">Blog</a></li>
-            <li><a class="white-text" href="http://ceur-ws.org/CEURWS-TEAM.html">Team</a></li>
-            <li><a class="white-text" href="http://ceur-ws.org/CEURWS-VALUES.html">Core Values</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Copyrights @ <a class="orange-text text-lighten-3" href="http://ceur-ws.org">Ceur Make 2016</a>
-      </div>
-    </div>
-  </footer>
-
-
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
+	<!-- Footer -->
+	<?php include_once '_inc/footer.php'; ?>
+	<!-- /Footer -->
+	
   <script>
     
         $(document).ready(function(){
@@ -580,95 +520,95 @@
                   var url = 'http://ceur-ws.org/Vol-1648/';
                   var win = window.open(url, '_blank');
                   win.focus();
-                  Materialize.toast('Your search result opened in new tab !!!.', 4000, 'rounded'); // 'rounded' is the
+                  M.toast({html:'Your search result opened in new tab !!!.', displayLength: 4000, classes: 'rounded'}); // 'rounded' is the
                   
                 }else if( language === "Search as Learning 2016" )
                 {
                   var url = 'http://ceur-ws.org/Vol-1647/';
                   var win = window.open(url, '_blank');
                   win.focus();
-                  Materialize.toast('Your search result opened in new tab !!!.', 4000, 'rounded'); // 'rounded' is the
+                  M.toast({html:'Your search result opened in new tab !!!.', displayLength: 4000, classes: 'rounded'}); // 'rounded' is the
                   
                 }else if( language === "Italian Conference on Computational Logic 2016" )
                 {
                   var url = 'http://ceur-ws.org/Vol-1645/';
                   var win = window.open(url, '_blank');
                   win.focus();
-                  Materialize.toast('Your search result opened in new tab !!!.', 4000, 'rounded'); // 'rounded' is the
+                  M.toast({html:'Your search result opened in new tab !!!.', displayLength: 4000, classes: 'rounded'}); // 'rounded' is the
                   
                 }else if( language === "Alberto Mendelzon Workshop on Foundations of Data Management 2016" )
                 {
                   var url = 'http://ceur-ws.org/Vol-1644/';
                   var win = window.open(url, '_blank');
                   win.focus();
-                  Materialize.toast('Your search result opened in new tab !!!.', 4000, 'rounded'); // 'rounded' is the
+                  M.toast({html:'Your search result opened in new tab !!!.', displayLength: 4000, classes: 'rounded'}); // 'rounded' is the
                   
                 }else if( language === "RESource Awareness and Application Auto-tuning in Adaptive and heterogeNeous compuTing 2016" )
                 {
                   var url = 'http://ceur-ws.org/Vol-1643/';
                   var win = window.open(url, '_blank');
                   win.focus();
-                  Materialize.toast('Your search result opened in new tab !!!.', 4000, 'rounded'); // 'rounded' is the
+                  M.toast({html:'Your search result opened in new tab !!!.', displayLength: 4000, classes: 'rounded'}); // 'rounded' is the
                   
                 }else if( language === "Gamification for Information Retrieval 2016" )
                 {
                   var url = 'http://ceur-ws.org/Vol-1642/';
                   var win = window.open(url, '_blank');
                   win.focus();
-                  Materialize.toast('Your search result opened in new tab !!!.', 4000, 'rounded'); // 'rounded' is the
+                  M.toast({html:'Your search result opened in new tab !!!.', displayLength: 4000, classes: 'rounded'}); // 'rounded' is the
                   
                 }else if( language === "Cultures of Participation in the Digital Age 2015" )
                 {
                   var url = 'http://ceur-ws.org/Vol-1641/';
                   var win = window.open(url, '_blank');
                   win.focus();
-                  Materialize.toast('Your search result opened in new tab !!!.', 4000, 'rounded'); // 'rounded' is the
+                  M.toast({html:'Your search result opened in new tab !!!.', displayLength: 4000, classes: 'rounded'}); // 'rounded' is the
                   
                 }else if( language === "Cultures of Participation in the Digital Age 2014" )
                 {
                   var url = 'http://ceur-ws.org/Vol-1640/';
                   var win = window.open(url, '_blank');
                   win.focus();
-                  Materialize.toast('Your search result opened in new tab !!!.', 4000, 'rounded'); // 'rounded' is the
+                  M.toast({html:'Your search result opened in new tab !!!.', displayLength: 4000, classes: 'rounded'}); // 'rounded' is the
                   
                 }else if( language === "Constraint Solvers in Testing, Verification, and Analysis 2016" )
                 {
                   var url = 'http://ceur-ws.org/Vol-1639/';
                   var win = window.open(url, '_blank');
                   win.focus();
-                  Materialize.toast('Your search result opened in new tab !!!.', 4000, 'rounded'); // 'rounded' is the
+                  M.toast({html:'Your search result opened in new tab !!!.', displayLength: 4000, classes: 'rounded'}); // 'rounded' is the
                   
                 }else if( language === "Conceptual Structures Tools & Interoperability 2016" )
                 {
                   var url = 'http://ceur-ws.org/Vol-1637/';
                   var win = window.open(url, '_blank');
                   win.focus();
-                  Materialize.toast('Your search result opened in new tab !!!.', 4000, 'rounded'); // 'rounded' is the
+                  M.toast({html:'Your search result opened in new tab !!!.', displayLength: 4000, classes: 'rounded'}); // 'rounded' is the
                   
                 }else if( language === "Late Breaking Papers of ILP 2015" )
                 {
                   var url = 'http://ceur-ws.org/Vol-1636/';
                   var win = window.open(url, '_blank');
                   win.focus();
-                  Materialize.toast('Your search result opened in new tab !!!.', 4000, 'rounded'); // 'rounded' is the
+                  M.toast({html:'Your search result opened in new tab !!!.', displayLength: 4000, classes: 'rounded'}); // 'rounded' is the
                   
                 }else if( language === "Practical Aspects of Automated Reasoning 2016" )
                 {
                   var url = 'http://ceur-ws.org/Vol-1635/';
                   var win = window.open(url, '_blank');
                   win.focus();
-                  Materialize.toast('Your search result opened in new tab !!!.', 4000, 'rounded'); // 'rounded' is the
+                  M.toast({html:'Your search result opened in new tab !!!.', displayLength: 4000, classes: 'rounded'}); // 'rounded' is the
                   
                 }else if( language === "L’integrazione dei dati archeologici digitali - Esperienze e prospettive in Italia 2015" )
                 {
                   var url = 'http://ceur-ws.org/Vol-1634/';
                   var win = window.open(url, '_blank');
                   win.focus();
-                  Materialize.toast('Your search result opened in new tab !!!.', 4000, 'rounded'); // 'rounded' is the
+                  M.toast({html:'Your search result opened in new tab !!!.', displayLength: 4000, classes: 'rounded'}); // 'rounded' is the
                   
                 }else
                 {
-                  Materialize.toast('Your search result not found !!!.', 4000, 'rounded') ; // 'rounded' is the
+                  M.toast({html:'Your search result not found !!!.', displayLength: 4000, classes: 'rounded'}) ; // 'rounded' is the
                 }
                            
 

@@ -1,37 +1,11 @@
-<!DOCTYPE html>
+<?php
+	$page_title = 'Ceur Make';
+	
+	include_once '_inc/header.php';
+?>
 <!--This view generates stepwise wizard for publishing proceedings using CEUR Make Workflow. The workflow in which user is required to create
     Table of Contents and Workshop artifact and based on that artifacts we generate standard submission artifacts.
--->
-<html lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
-  <title>Ceur Make</title>
-
-  <!-- CSS  -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-  <link href="css/jquery.steps.css" rel="stylesheet">
-  <script type="text/javascript" src="./helperJS/fieldValidator.js" ></script>
-</head>
-<body>
-  <nav class="blue-grey darken-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">CEUR Make</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="index.html"> Home</a></li>
-        <li><a href="Proceedings.html"> Proceedings</a></li>
-        <li><a href="Publish.html"> Publish</a></li>
-        <li><a href="Issue.html"> Issues</a></li>
-
-      </ul>
-
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
+-->  
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
     <div class="row">
@@ -198,11 +172,11 @@
                                                                 <select id="ses0">
                                                                 <option value="1">Option 1</option>
                                                                 </select>
-                                                                <label>Session *(optional)</label>
+                                                                <label>Session(optional)</label>
                                                              </div>
                                                              <div class="row">
                                                                 <div class="input-field col s7">
-                                                                <input id="paperTitle0" type="text" class="validate">
+                                                                <input id="paperTitle0" type="text" data-paper_index="0" class="tableofcontents_paper_title autocomplete validate">
                                                                 <label for="paperTitle0">Paper Title </label>
                                                                 <span id="paperTitleError0" style="display:none" class="error">Paper title can contain only Alphanumeric Characters (A-Z) and (0-9).</span>
                                                              </div>
@@ -210,12 +184,12 @@
                                                              <h6>Page Number</h6>
                                                              </div>
                                                              <div class="input-field col s2">
-                                                                <input id="paperFrom0" type="text" class="validate" >
+                                                                <input id="paperFrom0" type="text" class="tableofcontents_page_from validate" >
                                                                 <label for="paperFrom0"  >From</label>
                                                                 <span id="paperFromError0" style="display:none" class="error">Enter Number</span>
                                                              </div>
                                                              <div class="input-field col s2">
-                                                                <input id="paperTo0" type="text" class="validate" >
+                                                                <input id="paperTo0" type="text" class="tableofcontents_page_to validate" >
                                                                 <label for="paperTo0" >To</label>
                                                                 <span id="errorTo0" style="display:none" class="error">Enter Number</span>
                                                              </div>
@@ -223,10 +197,10 @@
                                                              <fieldset>
                                                                 <legend>Authors of the Paper <span>   <a class="btn-floating btn-small waves-effect waves-light green" onClick="addAuthor('authors0');"><i class="material-icons">add</i></a> <a class="btn-floating btn-small waves-effect waves-light red" onClick="removeAuthor('authors0');"><i class="material-icons">remove</i></a></span></legend>
                                                                 <div class="input-field col s7" id="authors0" >
-                                                                <input id="0author0" type="text" class="validate">
-                                                                <label for="0author0" >Author 0</label>
-                                                                <span id="0authorError0" style="display:none" class="error">Please add valid author name that includes only alphabets from ( A - Z ).</span>
-                                                             </div>
+																	<input id="0author0" type="text" class="validate">
+																	<label for="0author0" >Author 0</label>
+																	<span id="0authorError0" style="display:none" class="error">Please add valid author name.</span>
+																</div>
                                                              </fieldset>
                                                              <br/>
                                                         </fieldset>
@@ -281,7 +255,7 @@
                                            </fieldset>
                                            <div class="row">
                                             <div class="input-field col s4">
-                                              <input id="volumeNumber" type="text" class="validate">
+                                              <input id="volumeNumber" type="text" class="validate" value="Vol-">
                                               <label for="volumeNumber">Volume Number</label>
                                               <span id="volumeNumberID" class="error" style="display:none">Please enter numbers or hyphen.</span>
                                             </div>
@@ -292,7 +266,7 @@
                                               <label for="language">Language</label>
                                             </div>
                                             <div class="input-field col s4">
-                                              <input id="date" type="text" class="validate">
+                                              <input id="date" type="text" class="validate datepicker">
                                               <label for="date">Date</label>
                                               <span id="dateError" class="error" style="display:none">Please enter date in a valid date format</span>
                                             </div>
@@ -323,7 +297,7 @@
                                   <br/>
                                   <br/>
                                   <fieldset>
-                                    <legend> Conference Metadata *(Optional)</legend>
+                                    <legend> Conference Metadata</legend>
                                     <div class="row">
                                        <div class="input-field col s12">
                                               <input id="acronymConference" type="text" class="validate">
@@ -360,12 +334,12 @@
                                           <div class="input-field col s12">
                                               <input id="nameEditor0" type="text" class="validate">
                                               <label for="nameEditor0">Name of The Editor</label>
-                                              <span id="nameEditorError0" class="error" style="display:none">Please enter alphabets only.</span>
+                                              <span id="nameEditorError0" class="error" style="display:none">Please enter a valid text.</span>
                                           </div>
                                           <div class="input-field col s12">
                                               <input id="affiliationEditor0" type="text" class="validate">
                                               <label for="affiliationEditor0">Affiliation Of The Editor</label>
-                                              <span id="affiliationEditorError0" class="error" style="display:none">Please enter alpha numerics.</span>
+                                              <span id="affiliationEditorError0" class="error" style="display:none">Please enter a valid text.</span>
                                           </div>
                                           <div class="input-field col s12">
                                               <select id="countryEditor0">
@@ -410,47 +384,9 @@
 
     </div>
 
-   <footer class="page-footer blue-grey darken-2">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">CEUR-WS</h5>
-          <p class="grey-text text-lighten-4">CEUR-WS.org is an online publication service for editors of scientific proceedings, in particular workshop proceedings.</p>
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Important</h5>
-          <ul>
-            <li><a class="white-text" href="http://ceur-ws.org/HOWTOSUBMIT.html">How to Submit</a></li>
-            <li><a class="white-text" href="http://ceur-ws.org/HOWTOSUBMIT.html#FAQ">FAQ</a></li>
-            <li><a class="white-text" href="https://github.com/ceurws/ceur-make">Ceur Make</a></li>
-            <li><a class="white-text" href="http://ceur-ws.org/index.html">Old</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">General</h5>
-          <ul>
-            <li><a class="white-text" href="http://ceur-ws.org/ceurws-timeline.txt">Timeline</a></li>
-            <li><a class="white-text" href="https://ceurws.wordpress.com/">Blog</a></li>
-            <li><a class="white-text" href="http://ceur-ws.org/CEURWS-TEAM.html">Team</a></li>
-            <li><a class="white-text" href="http://ceur-ws.org/CEURWS-VALUES.html">Core Values</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Copyrights @ <a class="orange-text text-lighten-3" href="http://ceur-ws.org">Ceur Make 2016</a>
-      </div>
-    </div>
-  </footer>
-
-
-  <!--  Scripts-->
-  <script src="./jquery/jquery-2.2.0.min.js"></script>
-  <script src="js/materialize.js"></script>
-  <script src="js/init.js"></script>
-  <script src="./jquery/jquery.steps.min.js"></script>
+	<!-- Footer -->
+	<?php include_once '_inc/footer.php'; ?>
+	<!-- /Footer -->
 
   <script>
 
@@ -527,8 +463,49 @@
           //Initializers
 
                 $(document).ready(function() {
-
-                    $('.modal-trigger').leanModal();
+					
+					//-- non-deletable "vol-" text in Volume Number field
+					$("#volumeNumber").keydown(function(e) {
+						var oldvalue=$(this).val();
+						var field=this;
+						setTimeout(function () {
+							if(field.value.indexOf('Vol-') !== 0) {
+								$(field).val(oldvalue);
+							} 
+						}, 1);
+					});
+					
+					//-- function to move the cursor to the end of the string
+					function SetCaretAtEnd(elem) {
+						var elemLen = elem.value.length;
+						// For IE Only
+						if (document.selection) {
+							// Set focus
+							elem.focus();
+							// Use IE Ranges
+							var oSel = document.selection.createRange();
+							// Reset position to 0 & then set at end
+							oSel.moveStart('character', -elemLen);
+							oSel.moveStart('character', elemLen);
+							oSel.moveEnd('character', 0);
+							oSel.select();
+						}
+						else if (elem.selectionStart || elem.selectionStart == '0') {
+							// Firefox/Chrome
+							elem.selectionStart = elemLen;
+							elem.selectionEnd = elemLen;
+							elem.focus();
+						} // if
+					} 
+	
+					//-- move cursor to the end of the text, when the input field gets focus (eg: during Tab press)
+					$("#volumeNumber").on('focus', function(e) {
+						SetCaretAtEnd(this);
+					});
+					
+					//-------------------------------------------------------------
+					
+                    $('.modal-trigger').modal();
                     document.getElementById('uniquename2').style.display = "none";
                     document.getElementById('uniquename0').style.display = "none";
                     document.getElementById('uniquename3').style.display = "none";
@@ -622,7 +599,7 @@
            document.getElementById('createToc').className = "waves-effect waves-light btn disabled" ;
            document.getElementById("createToc").href = "#" ;
            boolFromTOCToWorkshop = 1 ;
-           Materialize.toast('Table Of Contents Has Been Successfully Created!', 3000, 'rounded') ;
+           M.toast({html:'Table Of Contents Has Been Successfully Created!', displayLength:3000, classes:'rounded'}) ;
 
            var a = document.getElementById('downloadToc'); //or grab it by tagname etc
            a.href = "userDirectories/"+sessionStorage.userId+"/output/toc.xml" ;
@@ -640,7 +617,7 @@
            document.getElementById('workshopLink').className = "btn-floating btn-small waves-effect waves-light green";
            document.getElementById('downloadWorkshop').className = "waves-effect waves-light btn" ;
            boolFromWorkshopToToc = 1 ;
-           Materialize.toast('Workshop Contents Has Been Successfully Created!', 3000, 'rounded') ;
+           M.toast({html:'Workshop Contents Has Been Successfully Created!', displayLength: 3000, classes: 'rounded'}) ;
 
            var a = document.getElementById('downloadWorkshop'); //or grab it by tagname etc
            a.href = "userDirectories/"+sessionStorage.userId+"/output/workshop.xml" ;
@@ -673,7 +650,7 @@
                 a.setAttribute('target', '_blank');
 
 
-                Materialize.toast('You Can Now Download The Resources !!', 3000, 'rounded') ;
+                M.toast({html:'You Can Now Download The Resources !!', displayLength: 3000, classes: 'rounded'}) ;
         }
 
         function scriptGenerator( )
@@ -716,7 +693,7 @@
 
 
                 // re-initialize (update)
-                $('select').material_select();
+                $('select').formSelect();
         }
 
     //----------------------------------------------------------------------------------------------
@@ -738,7 +715,7 @@
 
                 $(document).ready(function() {
 
-                    $('select').material_select();
+                    $('select').formSelect();
 
                 });
 
@@ -775,7 +752,7 @@
                                 }
 
                                 // re-initialize (update)
-                                        $('select').material_select();
+                                        $('select').formSelect();
 
                         }
 
@@ -875,7 +852,8 @@
                           var tempAuthor = document.getElementById(i+'author'+ j).value ;
                           console.log(tempAuthor);
 
-                          if( !(alpha.test(tempAuthor)) )
+                          //if( !(alpha.test(tempAuthor)) )
+						  if( jQuery.trim(tempAuthor) == '' )	//-- checks whether the Author name is empty or not.
                           {
                              document.getElementById(i+'authorError'+ j).style.display = "initial" ;
                              tempCheck++ ;
@@ -1338,7 +1316,7 @@
                           authorArray.push(0);
                           var newdiv = document.createElement('div');
                           newdiv.id ="Paper"+(counterPaper+1);
-                          newdiv.innerHTML = "<fieldset><legend>Paper"+(counterPaper+1)+"</legend><div class='input-field col s12'><select id='ses"+(counterPaper+1) +"'><option value='1'>Option 1</option></select><label>Session *(optional)</label></div><div class='row'><div class='input-field col s7'><input id='paperTitle"+(counterPaper+1)+"' type='text' class='validate'><label for='paperTitle"+(counterPaper+1)+"'>Paper Title </label><span id='paperTitleError"+(counterPaper+1)+"' style='display:none' class='error'>Paper title can contain only Alphanumeric Characters (A-Z) and (0-9).</span></div><div class='input-field col s1'><h6>Page Number</h6></div><div class='input-field col s2'><input id='paperFrom"+(counterPaper+1)+"' type='text' class='validate'><label for='paperFrom"+(counterPaper+1)+"'>From</label><span id='paperFromError"+(counterPaper+1)+"' style='display:none' class='error'>Enter Number</span></div><div class='input-field col s2'><input id='paperTo"+(counterPaper+1)+"' type='text' class='validate'><label for='paperTo"+(counterPaper+1)+"'>To</label>                                <span id='errorTo"+(counterPaper+1)+"' style='display:none' class='error'>Enter Number</span></div></div><fieldset><legend>Authors of the Paper <span><a class='btn-floating btn-small waves-effect waves-light green' onClick='addAuthor(&quot;authors"+(counterPaper + 1)+"&quot;);'><i class='material-icons'>add</i></a></span><a class='btn-floating btn-small waves-effect waves-light red' onClick='removeAuthor(&quot;authors"+(counterPaper + 1)+"&quot;);'><i class='material-icons'>remove</i></a></legend><div class='input-field col s7' id='authors"+(counterPaper + 1)+"' ><input id='"+(counterPaper+1)+"author"+authorArray[counterPaper+1]+"' type='text' class='validate'><label for='"+(counterPaper+1)+"author"+authorArray[counterPaper+1]+"'>Author "+authorArray[counterPaper+1]+"</label><span id='"+(counterPaper+1)+"authorError"+(authorArray[counterPaper+1])+"' style='display:none' class='error'>Please add valid author name that includes only alphabets from ( A - Z ).</span></div></fieldset><br/></fieldset><br/>";
+                          newdiv.innerHTML = "<fieldset><legend>Paper"+(counterPaper+1)+"</legend><div class='input-field col s12'><select id='ses"+(counterPaper+1) +"'><option value='1'>Option 1</option></select><label>Session(optional)</label></div><div class='row'><div class='input-field col s7'><input id='paperTitle"+(counterPaper+1)+"' type='text' data-paper_index='"+(counterPaper+1) +"' class='tableofcontents_paper_title autocomplete validate'><label for='paperTitle"+(counterPaper+1)+"'>Paper Title </label><span id='paperTitleError"+(counterPaper+1)+"' style='display:none' class='error'>Paper title can contain only Alphanumeric Characters (A-Z) and (0-9).</span></div><div class='input-field col s1'><h6>Page Number</h6></div><div class='input-field col s2'><input id='paperFrom"+(counterPaper+1)+"' type='text' class='validate'><label for='paperFrom"+(counterPaper+1)+"'>From</label><span id='paperFromError"+(counterPaper+1)+"' style='display:none' class='error'>Enter Number</span></div><div class='input-field col s2'><input id='paperTo"+(counterPaper+1)+"' type='text' class='validate'><label for='paperTo"+(counterPaper+1)+"'>To</label>                                <span id='errorTo"+(counterPaper+1)+"' style='display:none' class='error'>Enter Number</span></div></div><fieldset><legend>Authors of the Paper <span><a class='btn-floating btn-small waves-effect waves-light green' onClick='addAuthor(&quot;authors"+(counterPaper + 1)+"&quot;);'><i class='material-icons'>add</i></a></span><a class='btn-floating btn-small waves-effect waves-light red' onClick='removeAuthor(&quot;authors"+(counterPaper + 1)+"&quot;);'><i class='material-icons'>remove</i></a></legend><div class='input-field col s7' id='authors"+(counterPaper + 1)+"' ><input id='"+(counterPaper+1)+"author"+authorArray[counterPaper+1]+"' type='text' class='validate'><label for='"+(counterPaper+1)+"author"+authorArray[counterPaper+1]+"'>Author "+authorArray[counterPaper+1]+"</label><span id='"+(counterPaper+1)+"authorError"+(authorArray[counterPaper+1])+"' style='display:none' class='error'>Please add valid author name.</span></div></fieldset><br/></fieldset><br/>";
 
                           document.getElementById(divName).appendChild(newdiv);
                           var selectId = '#ses'+(counterPaper+1);
@@ -1373,32 +1351,30 @@
                 var newdiv = document.createElement('div');
                 newdiv.className ="input-field col s12" ;
                 newdiv.id =positionOfPapersDiv +"Author"+( authorArray[positionOfPapersDiv] + 1 );
-                newdiv.innerHTML = "<input id='"+positionOfPapersDiv+"author"+(authorArray[positionOfPapersDiv] + 1)+"' type='text' class='validate'><label for='"+positionOfPapersDiv+"author"+(authorArray[positionOfPapersDiv] + 1)+"'>Author "+(authorArray[positionOfPapersDiv] + 1)+"</label><span id='"+(positionOfPapersDiv)+"authorError"+(authorArray[positionOfPapersDiv] + 1)+"' style='display:none' class='error'>Please add valid author name that includes only alphabets from ( A - Z ).</span>";
+                newdiv.innerHTML = "<input id='"+positionOfPapersDiv+"author"+(authorArray[positionOfPapersDiv] + 1)+"' type='text' class='validate'><label for='"+positionOfPapersDiv+"author"+(authorArray[positionOfPapersDiv] + 1)+"'>Author "+(authorArray[positionOfPapersDiv] + 1)+"</label><span id='"+(positionOfPapersDiv)+"authorError"+(authorArray[positionOfPapersDiv] + 1)+"' style='display:none' class='error'>Please add valid author name.</span>";
                 document.getElementById(divName).appendChild(newdiv);
                 authorArray[positionOfPapersDiv] = authorArray[positionOfPapersDiv] + 1 ;
 
 
           }
 
-          function removeAuthor(divName)
-          {
+			function removeAuthor(divName)
+			{
                 var positionOfPapersDiv = parseInt( divName.slice(7) );
 
                 if (authorArray[positionOfPapersDiv] == 0 )  {
-                          alert("You have only one Author element which is compulsory");
-                     }
-                     else {
+                    alert("You have only one Author element which is compulsory");
+                }
+                else {
+                    console.log( positionOfPapersDiv);
 
-                             console.log( positionOfPapersDiv);
-
-                          var div = document.getElementById(positionOfPapersDiv+"Author" + authorArray[positionOfPapersDiv]);
-                          div.parentNode.removeChild(div);
-                          authorArray[positionOfPapersDiv] = authorArray[positionOfPapersDiv] - 1 ;
-                     }
-
-          }
-
-
+                    var div = document.getElementById(positionOfPapersDiv+"Author" + authorArray[positionOfPapersDiv]);
+                    div.parentNode.removeChild(div);
+                    authorArray[positionOfPapersDiv] = authorArray[positionOfPapersDiv] - 1 ;
+                }
+			}
+			
+			
        //-----------------------------------------------------------------------------------------
        //Editors -- Workshop Creation ------------------------------------------------------------
 
@@ -1412,7 +1388,7 @@
 
                           var newdiv = document.createElement('div');
                           newdiv.id ="editor"+(editorCounter+1);
-                          newdiv.innerHTML = "<fieldset><legend>Editor "+ (editorCounter + 1) +"</legend><div class='row'><div class='input-field col s12'><input id='nameEditor"+(editorCounter + 1 )+"' type='text' class='validate'><label for='nameEditor"+ (editorCounter + 1 ) +"'>Name of The Editor</label><span id='nameEditorError"+(editorCounter + 1 )+"' class='error' style='display:none'>Please enter alphabets only.</span></div><div class='input-field col s12'><input id='affiliationEditor"+(editorCounter+1)+"' type='text' class='validate'><label for='affiliationEditor"+(editorCounter+1)+"'>Affiliation Of The Editor</label><span id='affiliationEditorError"+(editorCounter+1)+"' class='error' style='display:none'>Please enter alpha numerics.</span></div><div class='input-field col s12'>"+selectEditor+"</div><div class='input-field col s12'><input id='homepageEditor"+(editorCounter+1)+"' type='text' class='validate'><label for='homepageEditor"+(editorCounter+1)+"'>Homepage Of The Editor</label><span id='homepageEditorError"+(editorCounter+1)+"' class='error' style='display:none'>Please enter a valid URL</span></div></div></fieldset>";
+                          newdiv.innerHTML = "<fieldset><legend>Editor "+ (editorCounter + 1) +"</legend><div class='row'><div class='input-field col s12'><input id='nameEditor"+(editorCounter + 1 )+"' type='text' class='validate'><label for='nameEditor"+ (editorCounter + 1 ) +"'>Name of The Editor</label><span id='nameEditorError"+(editorCounter + 1 )+"' class='error' style='display:none'>Please enter a valid text.</span></div><div class='input-field col s12'><input id='affiliationEditor"+(editorCounter+1)+"' type='text' class='validate'><label for='affiliationEditor"+(editorCounter+1)+"'>Affiliation Of The Editor</label><span id='affiliationEditorError"+(editorCounter+1)+"' class='error' style='display:none'>Please enter a valid text.</span></div><div class='input-field col s12'>"+selectEditor+"</div><div class='input-field col s12'><input id='homepageEditor"+(editorCounter+1)+"' type='text' class='validate'><label for='homepageEditor"+(editorCounter+1)+"'>Homepage Of The Editor</label><span id='homepageEditorError"+(editorCounter+1)+"' class='error' style='display:none'>Please enter a valid URL</span></div></div></fieldset>";
 
                           document.getElementById(divName).appendChild(newdiv);
                           var selectId = '#countryEditor'+(editorCounter+1);
@@ -1546,51 +1522,52 @@
 
                   }
 
-                  if ( !( hyperLinkNotMust.test( document.getElementById('homepageConference').value )) )
-                  {
-                        document.getElementById('homepageConferenceError').style.display = "initial" ;
-                        boolTemp++;
+				  if ( $.trim( document.getElementById('homepageConference').value ).length != 0 )	//-- if user has entered a Conference home page link, then validate
+				  {
+					  if ( !( hyperLinkNotMust.test( document.getElementById('homepageConference').value )) )
+					  {
+							document.getElementById('homepageConferenceError').style.display = "initial" ;
+							boolTemp++;
 
-                  }
-
+					  }
+				  }
+				  
                   return boolTemp ;
 
           }
 
           function validatingEditors( boolTemp )
           {
-                  clearingEditorsErrorSpan();
-                  boolTemp = 0 ;
+				clearingEditorsErrorSpan();
+                boolTemp = 0 ;
 
-                  for( var i = 0 ; i < editorCounter +1 ; i++ )
-                  {
-                        if ( !( alphaNumeric.test( document.getElementById('nameEditor'+i).value )) )
-                        {
-                                document.getElementById('nameEditorError'+i).style.display = "initial" ;
-                                boolTemp++;
+                for( var i = 0 ; i < editorCounter +1 ; i++ )
+                {
+					
+                    //if ( !( alphaNumeric.test( document.getElementById('nameEditor'+i).value )) )
+					if ( jQuery.trim( document.getElementById('nameEditor'+i).value ) == '' )	//-- checks whether the Editor name is empty or not.
+                    {
+                        document.getElementById('nameEditorError'+i).style.display = "initial" ;
+                        boolTemp++;
+                    }
 
-                        }
-
-                        if ( !( alphaNumeric.test( document.getElementById('affiliationEditor'+i).value )) )
-                        {
-                                document.getElementById('affiliationEditorError'+i).style.display = "initial" ;
-                                boolTemp++;
-
-                        }
-
-
-
-                        if ( !( hyperLink.test( document.getElementById('homepageEditor'+i).value )) )
-                        {
-                                document.getElementById('homepageEditorError'+i).style.display = "initial" ;
-                                boolTemp++;
-
-                        }
+                    //if ( !( alphaNumeric.test( document.getElementById('affiliationEditor'+i).value )) )
+					if ( jQuery.trim( document.getElementById('affiliationEditor'+i).value ) == '' )	//-- checks whether the Affiliation is empty or not.
+                    {
+                        document.getElementById('affiliationEditorError'+i).style.display = "initial" ;
+                        boolTemp++;
+                    }
 
 
-                  }
+					if ( !( hyperLink.test( document.getElementById('homepageEditor'+i).value )) )
+					{
+						document.getElementById('homepageEditorError'+i).style.display = "initial" ;
+						boolTemp++;
+					}
 
-                  return boolTemp ;
+				}
+
+				return boolTemp ;
 
           }
 
@@ -1637,7 +1614,9 @@
            function loadJSON(callback) {
                     var xobj = new XMLHttpRequest();
                         xobj.overrideMimeType("application/json");
-                    xobj.open('GET', 'json/countries.json', true); // Replace 'my_data' with the path to your file
+                    //xobj.open('GET', 'json/countries.json', true); // Replace 'my_data' with the path to your file
+					xobj.open('GET', 'https://restcountries.eu/rest/v2/all?fields=name', true); 
+					
                     xobj.onreadystatechange = function () {
                           if (xobj.readyState == 4 && xobj.status == "200") {
                             // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
@@ -1653,7 +1632,7 @@
                      countriesArray = JSON.parse(response);
                          console.log(countriesArray);
                          selectForCountries("#countryEditor0");
-                          $('select').material_select();
+                          $('select').formSelect();
                  });
            }
 
@@ -1676,7 +1655,7 @@
 
 
                 // re-initialize (update)
-                $('select').material_select();
+                $('select').formSelect();
           }
 
     //-------------------------------------------------------------------------------------------
@@ -1707,7 +1686,7 @@
                     languagesArray = JSON.parse(response);
                          console.log(languagesArray);
                          selectForLanguage();
-                         $('select').material_select();
+                         $('select').formSelect();
                  });
         }
 
@@ -1731,7 +1710,7 @@
 
 
                 // re-initialize (update)
-                $('select').material_select();
+                $('select').formSelect();
         }
 
     //-------------------------------------------------------------------------------------------
@@ -1764,5 +1743,7 @@
     //---------------------------------------------------------------------------------------------
   </script>
 
+	
+	<script src="js/tableofcontents_page.js"></script>
   </body>
 </html>
