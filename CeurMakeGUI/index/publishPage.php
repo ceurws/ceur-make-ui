@@ -1,11 +1,11 @@
 <?php
 	$page_title = 'Ceur Make';
-	
+
 	include_once '_inc/header.php';
 ?>
 <!--This view generates stepwise wizard for publishing proceedings using CEUR Make Workflow. The workflow in which user is required to create
     Table of Contents and Workshop artifact and based on that artifacts we generate standard submission artifacts.
--->  
+-->
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
     <div class="row">
@@ -441,6 +441,7 @@
 
   //regularExpression Variables-----------
 
+				// TODO: This can be completely moved to helper JS 
         var alphaNumeric = new RegExp(/^[a-z\d\-_\s]+$/i);
         var alphaNumericNotMust = new RegExp(/^[a-z\d\-_\s]*$/i);
         var alpha = new RegExp(/^[A-Za-z\s]+$/);
@@ -463,7 +464,7 @@
           //Initializers
 
                 $(document).ready(function() {
-					
+
 					//-- non-deletable "vol-" text in Volume Number field
 					$("#volumeNumber").keydown(function(e) {
 						var oldvalue=$(this).val();
@@ -471,10 +472,10 @@
 						setTimeout(function () {
 							if(field.value.indexOf('Vol-') !== 0) {
 								$(field).val(oldvalue);
-							} 
+							}
 						}, 1);
 					});
-					
+
 					//-- function to move the cursor to the end of the string
 					function SetCaretAtEnd(elem) {
 						var elemLen = elem.value.length;
@@ -496,15 +497,15 @@
 							elem.selectionEnd = elemLen;
 							elem.focus();
 						} // if
-					} 
-	
+					}
+
 					//-- move cursor to the end of the text, when the input field gets focus (eg: during Tab press)
 					$("#volumeNumber").on('focus', function(e) {
 						SetCaretAtEnd(this);
 					});
-					
+
 					//-------------------------------------------------------------
-					
+
                     $('.modal-trigger').modal();
                     document.getElementById('uniquename2').style.display = "none";
                     document.getElementById('uniquename0').style.display = "none";
@@ -1373,8 +1374,8 @@
                     authorArray[positionOfPapersDiv] = authorArray[positionOfPapersDiv] - 1 ;
                 }
 			}
-			
-			
+
+
        //-----------------------------------------------------------------------------------------
        //Editors -- Workshop Creation ------------------------------------------------------------
 
@@ -1531,7 +1532,7 @@
 
 					  }
 				  }
-				  
+
                   return boolTemp ;
 
           }
@@ -1543,7 +1544,7 @@
 
                 for( var i = 0 ; i < editorCounter +1 ; i++ )
                 {
-					
+
                     //if ( !( alphaNumeric.test( document.getElementById('nameEditor'+i).value )) )
 					if ( jQuery.trim( document.getElementById('nameEditor'+i).value ) == '' )	//-- checks whether the Editor name is empty or not.
                     {
@@ -1615,8 +1616,8 @@
                     var xobj = new XMLHttpRequest();
                         xobj.overrideMimeType("application/json");
                     //xobj.open('GET', 'json/countries.json', true); // Replace 'my_data' with the path to your file
-					xobj.open('GET', 'https://restcountries.eu/rest/v2/all?fields=name', true); 
-					
+					xobj.open('GET', 'https://restcountries.eu/rest/v2/all?fields=name', true);
+
                     xobj.onreadystatechange = function () {
                           if (xobj.readyState == 4 && xobj.status == "200") {
                             // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
@@ -1743,7 +1744,7 @@
     //---------------------------------------------------------------------------------------------
   </script>
 
-	
+
 	<script src="js/tableofcontents_page.js"></script>
   </body>
 </html>
