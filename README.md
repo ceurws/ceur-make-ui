@@ -2,8 +2,6 @@
 *"CEUR Make Graphical User Interface is a usable web frontend for supporting the workflow of publishing proceedings of 
 scientific workshops"*
 
-**[Live demo](http://butterbur13.iai.uni-bonn.de)**
-
 CEUR Make Graphical User Interface or ceur-make-ui is a graphical user interface for [ceur-make](https://github.com/ceurws/ceur-make). CEUR Make Graphical User Interface tries to automate the workflow for publishing proceedings at [CEUR-WS.org](http://ceur-ws.org/) by providing a usable web frontend. It is a standalone software that could be used on any platform through browser. For development purposes, please refer to the **Up and Running** and **How to Play with the Code** section. 
 
 ## Prerequisites
