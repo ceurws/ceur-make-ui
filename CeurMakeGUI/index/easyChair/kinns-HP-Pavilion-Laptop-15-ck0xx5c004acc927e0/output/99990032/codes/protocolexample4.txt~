@@ -1,0 +1,15 @@
+UNSTAGE axiom_set2
+>202 ok : unstaged
+
+REMOVE axiom_set2
+>203 ok : removed
+
+DOWNLOAD axiom_set1
+>fof(inp1,axiom,(subclass(a,b))).
+>fof(inp2,axiom,(subclass(b,c))).
+>204 ok : downloaded
+
+RUN job2
+fof(inp4,conjecture,(subclass(a,c))).
+GO
+> .. Proof output truncated ..

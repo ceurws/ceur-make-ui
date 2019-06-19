@@ -1,0 +1,71 @@
+\begin{code}
+false           <= {reflexive, reflexive^~}                     transitive    <= {euclidean, antisymmetric}
+false           <= {reflexive, asymmetric}                      transitive    <= {euclidean, euclidean^~}
+false           <= {total, reflexive^~}                         transitive    <= {total, euclidean^^}
+false           <= {total, asymmetric}                          transitive    <= {asymmetric, euclidean^^}
+reflexive       <= {total}                                      transitive    <= {symmetric, euclidean^^}
+euclidean       <= {symmetric, asymmetric}                      transitive    <= {asymmetric, euclidean^~^}
+euclidean       <= {total, symmetric}                           transitive    <= {antisymmetric, euclidean^~^}
+euclidean       <= {antisymmetric, coreflexive^~}               transitive    <= {euclidean, reflexive}
+euclidean       <= {transitive, euclidean^~}                    transitive    <= {euclidean, euclidean^~^}
+euclidean       <= {antisymmetric, euclidean^~}                 transitive    <= {euclidean, euclidean^^}
+euclidean       <= {reflexive, coreflexive^~}                   transitive    <= {antisymmetric, euclidean^^}
+euclidean       <= {reflexive, euclidean^~}                     transitive    <= {euclidean^^, antisymmetric^~}
+euclidean       <= {coreflexive}                                transitive    <= {euclidean^~, euclidean^^}
+euclidean       <= {total, coreflexive^~}                       total         <= {reflexive, coreflexive^~}
+euclidean       <= {reflexive^~, euclidean^^}                   total         <= {reflexive, euclidean^~^}
+euclidean       <= {reflexive, euclidean^~^}                    total         <= {reflexive, euclidean^~}
+euclidean       <= {asymmetric, euclidean^^}                    total         <= {reflexive, antisymmetric^~}
+euclidean       <= {symmetric, antisymmetric}                   total         <= {reflexive, transitive^~}
+euclidean       <= {transitive, reflexive^~, euclidean^~^}      symmetric     <= {coreflexive^~}
+euclidean       <= {total, euclidean^~}                         symmetric     <= {euclidean^~, reflexive^~}
+euclidean       <= {transitive, coreflexive^~}                  symmetric     <= {euclidean, reflexive^~}
+euclidean       <= {asymmetric, coreflexive^~}                  symmetric     <= {coreflexive}
+euclidean       <= {asymmetric, euclidean^~}                    symmetric     <= {total, euclidean^~}
+euclidean       <= {total, euclidean^~^}                        symmetric     <= {total, euclidean}
+euclidean       <= {antisymmetric, reflexive^~, euclidean^~^}   symmetric     <= {euclidean, asymmetric}
+euclidean       <= {asymmetric, euclidean^~^}                   symmetric     <= {asymmetric, euclidean^~}
+euclidean       <= {symmetric, transitive}                      symmetric     <= {reflexive, euclidean^~^}
+euclidean       <= {euclidean^~, euclidean^^}                   symmetric     <= {reflexive, euclidean^^}
+euclidean       <= {symmetric, euclidean^^}                     symmetric     <= {reflexive^~, euclidean^^}
+euclidean       <= {reflexive, euclidean^^}                     symmetric     <= {reflexive^~, euclidean^~^}
+euclidean       <= {reflexive, symmetric, antisymmetric^~}      symmetric     <= {total, euclidean^~^}
+euclidean       <= {reflexive, symmetric, transitive^~}         symmetric     <= {asymmetric, euclidean^^}
+euclidean       <= {total, euclidean^^}                         symmetric     <= {euclidean^~, euclidean^^}
+euclidean       <= {euclidean^^, coreflexive^~}                 symmetric     <= {total, euclidean^^}
+antisymmetric   <= {coreflexive}                                symmetric     <= {euclidean, euclidean^~^}
+antisymmetric   <= {asymmetric}                                 symmetric     <= {euclidean, euclidean^^}
+antisymmetric   <= {transitive, reflexive^~}                    symmetric     <= {euclidean, reflexive}
+antisymmetric   <= {reflexive^~, euclidean^^}                   symmetric     <= {asymmetric, euclidean^~^}
+antisymmetric   <= {euclidean, reflexive^~}                     symmetric     <= {euclidean^~, euclidean^~^}
+transitive      <= {symmetric, asymmetric}                      symmetric     <= {reflexive, euclidean^~}
+transitive      <= {total, symmetric}                           coreflexive   <= {symmetric, asymmetric}
+transitive      <= {antisymmetric, coreflexive^~}               coreflexive   <= {antisymmetric, coreflexive^~}
+transitive      <= {coreflexive}                                coreflexive   <= {transitive, euclidean^~, reflexive^~}
+transitive      <= {euclidean, transitive^~}                    coreflexive   <= {asymmetric, coreflexive^~}
+transitive      <= {symmetric, antisymmetric}                   coreflexive   <= {euclidean, reflexive^~}
+transitive      <= {reflexive, euclidean^~}                     coreflexive   <= {reflexive, antisymmetric, euclidean^~}
+transitive      <= {euclidean, reflexive^~}                     coreflexive   <= {asymmetric, euclidean^~}
+transitive      <= {total, euclidean^~}                         coreflexive   <= {euclidean, asymmetric}
+transitive      <= {reflexive, coreflexive^~}                   coreflexive   <= {symmetric, antisymmetric}
+transitive      <= {asymmetric, coreflexive^~}                  coreflexive   <= {total, antisymmetric, euclidean^~}
+transitive      <= {asymmetric, euclidean^~}                    coreflexive   <= {reflexive, antisymmetric, euclidean^~^}
+transitive      <= {asymmetric, transitive^~}                   coreflexive   <= {reflexive, antisymmetric, euclidean^^}
+transitive      <= {antisymmetric, transitive^~}                coreflexive   <= {symmetric, transitive, reflexive^~}
+transitive      <= {euclidean^^, euclidean^~^}                  coreflexive   <= {transitive, reflexive^~, coreflexive^~}
+transitive      <= {euclidean, coreflexive^~}                   coreflexive   <= {antisymmetric, euclidean^~, euclidean^^}
+transitive      <= {total, coreflexive^~}                       coreflexive   <= {total, antisymmetric, euclidean^^}
+transitive      <= {euclidean, asymmetric}                      coreflexive   <= {total, euclidean, antisymmetric}
+transitive      <= {total, euclidean}                           coreflexive   <= {total, antisymmetric, euclidean^~^}
+transitive      <= {reflexive, euclidean^~^}                    coreflexive   <= {antisymmetric, reflexive^~, euclidean^~^}
+transitive      <= {euclidean^^, transitive^~}                  coreflexive   <= {reflexive^~, euclidean^^}
+transitive      <= {euclidean, symmetric}                       coreflexive   <= {antisymmetric, euclidean^~, reflexive^~}
+transitive      <= {reflexive^~, euclidean^^}                   coreflexive   <= {asymmetric, euclidean^^}
+transitive      <= {antisymmetric, euclidean^~}                 coreflexive   <= {asymmetric, euclidean^~^}
+transitive      <= {total, euclidean^~^}                        coreflexive   <= {antisymmetric, euclidean^~, euclidean^~^}
+transitive      <= {euclidean, antisymmetric^~}                 coreflexive   <= {euclidean, antisymmetric, euclidean^~^}
+transitive      <= {reflexive, euclidean^^}                     coreflexive   <= {euclidean, antisymmetric, euclidean^^}
+transitive      <= {reflexive, symmetric, antisymmetric^~}      coreflexive   <= {euclidean, reflexive, antisymmetric}
+transitive      <= {euclidean^^, coreflexive^~}                 coreflexive   <= {transitive, reflexive^~, euclidean^~^}
+transitive      <= {reflexive, symmetric, transitive^~} 
+\end{code}

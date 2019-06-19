@@ -1,0 +1,429 @@
+Unsatisfiable/CAT007-3.p success 	0m0.016s
+Theorem/GEO170+1.p success 	0m0.008s
+Theorem/GEO170+2.p success 	0m0.020s
+Theorem/GEO170+3.p success 	0m0.012s
+Theorem/GEO171+1.p success 	0m0.016s
+Theorem/GEO171+2.p success 	0m0.008s
+Theorem/GEO171+3.p success 	0m0.020s
+Theorem/GEO172+1.p success 	0m0.016s
+Theorem/GEO172+2.p success 	0m0.020s
+Theorem/GEO172+3.p success 	0m0.028s
+Theorem/GEO173+1.p success 	0m0.012s
+Theorem/GEO173+2.p success 	0m0.024s
+Theorem/GEO173+3.p success 	0m0.020s
+Theorem/GEO174+1.p success 	0m0.008s
+Theorem/GEO174+2.p success 	0m0.020s
+Theorem/GEO174+3.p success 	0m0.012s
+Theorem/GEO175+1.p success 	0m0.020s
+Theorem/GEO175+2.p success 	0m0.016s
+Theorem/GEO175+3.p success 	0m0.020s
+Theorem/GEO176+1.p success 	0m0.016s
+Theorem/GEO176+2.p success 	0m0.012s
+Theorem/GEO176+3.p success 	0m0.012s
+Theorem/GEO177+1.p success 	0m0.008s
+Theorem/GEO177+2.p success 	0m0.024s
+Theorem/GEO177+3.p success 	0m0.016s
+Theorem/GEO178+1.p success 	0m0.016s
+Theorem/GEO178+2.p success 	0m0.016s
+Theorem/GEO178+3.p success 	0m0.016s
+Theorem/GEO179+1.p success 	0m0.008s
+Theorem/GEO179+2.p success 	0m0.016s
+Theorem/GEO179+3.p success 	0m0.024s
+Theorem/GEO180+1.p success 	0m0.008s
+Theorem/GEO180+2.p success 	0m0.040s
+Theorem/GEO180+3.p success 	0m0.016s
+Theorem/GEO181+1.p success 	0m0.016s
+Theorem/GEO181+2.p success 	0m0.036s
+Theorem/GEO181+3.p success 	0m0.024s
+Theorem/GEO182+1.p success 	0m0.024s
+Theorem/GEO182+2.p success 	0m0.032s
+Theorem/GEO182+3.p success 	0m0.180s
+Theorem/GEO183+1.p success 	0m0.012s
+Theorem/GEO183+2.p success 	0m0.028s
+Theorem/GEO183+3.p success 	0m0.016s
+Theorem/GEO184+1.p success 	0m0.012s
+Theorem/GEO184+2.p success 	0m0.020s
+Theorem/GEO184+3.p success 	0m0.020s
+Theorem/GEO185+1.p success 	0m0.012s
+Theorem/GEO185+2.p success 	0m0.016s
+Theorem/GEO185+3.p success 	0m0.020s
+Theorem/GEO186+1.p success 	0m0.016s
+Theorem/GEO186+2.p success 	0m0.020s
+Theorem/GEO186+3.p success 	0m0.028s
+Theorem/GEO187+1.p success 	0m0.012s
+Theorem/GEO187+2.p success 	0m0.032s
+Theorem/GEO187+3.p success 	0m0.016s
+Theorem/GEO188+1.p success 	0m0.016s
+Theorem/GEO188+2.p success 	0m0.040s
+Theorem/GEO188+3.p success 	0m2.340s
+Theorem/GEO189+1.p success 	0m0.012s
+Theorem/GEO189+2.p success 	0m0.032s
+Theorem/GEO189+3.p success 	0m0.016s
+Theorem/GEO190+1.p success 	0m0.024s
+Theorem/GEO190+2.p success 	0m0.040s
+Theorem/GEO190+3.p success 	0m0.052s
+Theorem/GEO191+1.p success 	0m0.048s
+Theorem/GEO191+2.p success 	0m0.032s
+Theorem/GEO191+3.p success 	0m0.028s
+Theorem/GEO192+1.p success 	0m0.012s
+Theorem/GEO192+2.p success 	0m0.020s
+Theorem/GEO192+3.p success 	0m0.024s
+Theorem/GEO193+1.p success 	0m0.036s
+Theorem/GEO193+2.p success 	0m0.028s
+Theorem/GEO193+3.p success 	0m0.024s
+Theorem/GEO194+1.p success 	0m0.032s
+Theorem/GEO194+2.p success 	0m0.044s
+Theorem/GEO194+3.p success 	0m0.032s
+Theorem/GEO195+1.p fail
+Theorem/GEO195+2.p success 	0m0.036s
+Theorem/GEO195+3.p success 	0m0.032s
+Theorem/GEO196+1.p success 	0m0.016s
+Theorem/GEO196+2.p success 	0m0.040s
+Theorem/GEO196+3.p success 	0m0.036s
+Theorem/GEO197+1.p success 	0m0.020s
+Theorem/GEO197+2.p success 	0m0.024s
+Theorem/GEO197+3.p success 	0m0.024s
+Theorem/GEO198+1.p success 	0m0.032s
+Theorem/GEO198+2.p success 	0m0.020s
+Theorem/GEO198+3.p success 	0m0.024s
+Theorem/GEO199+1.p success 	0m0.068s
+Theorem/GEO199+2.p success 	0m0.020s
+Theorem/GEO199+3.p success 	0m0.032s
+Theorem/GEO200+1.p success 	0m0.008s
+Theorem/GEO200+2.p success 	0m0.020s
+Theorem/GEO200+3.p success 	0m0.076s
+Theorem/GEO201+1.p success 	0m0.016s
+Theorem/GEO201+2.p success 	0m0.008s
+Theorem/GEO201+3.p success 	0m0.020s
+Theorem/GEO202+1.p success 	0m0.020s
+Theorem/GEO202+2.p success 	0m0.028s
+Theorem/GEO202+3.p success 	0m0.028s
+Theorem/GEO203+1.p success 	0m0.008s
+Theorem/GEO203+2.p success 	0m0.028s
+Theorem/GEO203+3.p success 	0m0.020s
+Theorem/GEO204+1.p success 	0m0.016s
+Theorem/GEO204+2.p success 	0m0.012s
+Theorem/GEO204+3.p success 	0m0.020s
+Theorem/GEO205+1.p success 	0m0.020s
+Theorem/GEO205+2.p success 	0m0.016s
+Theorem/GEO205+3.p success 	0m0.020s
+Theorem/GEO206+1.p success 	0m0.016s
+Theorem/GEO206+2.p success 	0m0.012s
+Theorem/GEO206+3.p success 	0m0.012s
+Theorem/GEO207+1.p success 	0m0.012s
+Theorem/GEO207+2.p success 	0m0.008s
+Theorem/GEO207+3.p success 	0m0.020s
+Theorem/GEO208+1.p success 	0m0.008s
+Theorem/GEO208+2.p success 	0m0.008s
+Theorem/GEO208+3.p success 	0m0.012s
+Theorem/GEO209+1.p success 	0m0.012s
+Theorem/GEO209+2.p success 	0m0.012s
+Theorem/GEO209+3.p success 	0m0.012s
+Theorem/GEO210+1.p success 	0m0.016s
+Theorem/GEO210+2.p success 	0m0.016s
+Theorem/GEO210+3.p success 	0m0.016s
+Theorem/GEO211+1.p success 	0m0.016s
+Theorem/GEO211+2.p success 	0m0.012s
+Theorem/GEO212+1.p success 	0m0.056s
+Theorem/GEO212+2.p success 	0m0.020s
+Theorem/GEO213+1.p success 	2m43.286s
+Theorem/GEO213+2.p success 	0m0.036s
+Theorem/GEO214+1.p success 	0m0.016s
+Theorem/GEO214+2.p success 	0m0.016s
+Theorem/GEO215+1.p success 	0m0.016s
+Theorem/GEO215+2.p success 	0m0.040s
+Theorem/GEO216+1.p success 	0m0.012s
+Theorem/GEO216+2.p success 	0m0.016s
+Theorem/GEO216+3.p success 	0m0.012s
+Theorem/GEO217+1.p success 	0m0.012s
+Theorem/GEO217+2.p success 	0m0.016s
+Theorem/GEO217+3.p success 	0m0.012s
+Theorem/GEO218+1.p success 	0m0.016s
+Theorem/GEO218+2.p success 	0m0.016s
+Theorem/GEO218+3.p success 	0m0.016s
+Theorem/GEO219+1.p success 	0m0.016s
+Theorem/GEO219+2.p success 	0m0.016s
+Theorem/GEO219+3.p success 	0m0.016s
+Theorem/GEO220+1.p success 	0m0.012s
+Theorem/GEO220+2.p success 	0m0.016s
+Theorem/GEO220+3.p success 	0m0.016s
+Theorem/GEO221+1.p success 	0m0.020s
+Theorem/GEO221+2.p success 	0m0.016s
+Theorem/GEO221+3.p success 	0m0.020s
+Theorem/GEO222+1.p success 	0m0.032s
+Theorem/GEO222+2.p success 	0m0.016s
+Theorem/GEO222+3.p success 	0m0.020s
+Theorem/GEO223+1.p success 	0m0.128s
+Theorem/GEO223+2.p success 	0m0.040s
+Theorem/GEO223+3.p success 	0m0.016s
+Theorem/GEO224+3.p success 	0m0.024s
+Theorem/GEO225+1.p success 	0m0.016s
+Theorem/GEO225+2.p success 	0m0.012s
+Theorem/GEO225+3.p success 	0m0.020s
+Theorem/GEO226+1.p success 	0m0.016s
+Theorem/GEO226+2.p success 	0m0.020s
+Theorem/GEO226+3.p success 	0m0.016s
+Theorem/GEO227+1.p success 	0m0.024s
+Theorem/GEO227+3.p success 	0m0.024s
+Theorem/GEO228+1.p success 	0m0.016s
+Theorem/GEO229+1.p success 	0m0.012s
+Theorem/GEO230+1.p success 	0m0.044s
+Theorem/GEO231+1.p success 	0m0.024s
+Theorem/GEO231+3.p success 	0m0.020s
+Theorem/GEO232+1.p success 	0m0.016s
+Theorem/GEO232+3.p success 	0m0.016s
+Theorem/GEO233+1.p success 	0m0.028s
+Theorem/GEO233+3.p success 	0m0.020s
+Theorem/GEO234+1.p success 	0m0.040s
+Theorem/GEO234+3.p success 	0m0.036s
+Theorem/GEO235+1.p success 	0m0.016s
+Theorem/GEO235+3.p success 	0m0.012s
+Theorem/GEO236+1.p success 	0m0.024s
+Theorem/GEO236+3.p success 	0m0.020s
+Theorem/GEO237+1.p success 	0m0.020s
+Theorem/GEO237+3.p success 	0m0.012s
+Theorem/GEO238+1.p success 	0m0.024s
+Theorem/GEO238+3.p success 	0m0.020s
+Theorem/GEO239+1.p success 	0m0.024s
+Theorem/GEO239+3.p success 	0m0.016s
+Theorem/GEO240+1.p success 	0m0.020s
+Theorem/GEO240+3.p success 	0m0.020s
+Theorem/GEO241+1.p success 	0m0.024s
+Theorem/GEO241+3.p success 	0m0.012s
+Theorem/GEO242+1.p success 	0m0.024s
+Theorem/GEO242+3.p success 	0m0.020s
+Theorem/GEO243+1.p success 	0m0.024s
+Theorem/GEO243+3.p success 	0m0.012s
+Theorem/GEO244+1.p success 	0m0.020s
+Theorem/GEO244+3.p success 	0m0.020s
+Theorem/GEO245+1.p success 	0m0.016s
+Theorem/GEO245+3.p success 	0m0.016s
+Theorem/GEO246+1.p success 	0m0.020s
+Theorem/GEO246+3.p success 	0m0.020s
+Theorem/GEO247+1.p success 	0m0.024s
+Theorem/GEO247+3.p success 	0m0.024s
+Theorem/GEO248+1.p success 	0m0.012s
+Theorem/GEO248+3.p success 	0m0.024s
+Theorem/GEO249+1.p success 	0m0.020s
+Theorem/GEO249+3.p success 	0m0.024s
+Theorem/GEO250+1.p success 	0m0.020s
+Theorem/GEO250+3.p success 	0m0.024s
+Theorem/GEO251+1.p success 	0m0.016s
+Theorem/GEO251+3.p success 	0m0.020s
+Theorem/GEO252+1.p success 	0m0.016s
+Theorem/GEO252+3.p success 	0m0.024s
+Theorem/GEO253+1.p success 	0m0.016s
+Theorem/GEO253+3.p success 	0m0.024s
+Theorem/GEO254+1.p success 	0m0.068s
+Theorem/GEO255+1.p success 	0m0.012s
+Theorem/GEO255+3.p success 	0m0.016s
+Theorem/GEO256+1.p success 	0m0.024s
+Theorem/GEO256+3.p success 	0m0.024s
+Theorem/GEO257+1.p success 	0m0.012s
+Theorem/GEO257+3.p success 	0m0.020s
+Theorem/GEO258+1.p success 	0m0.020s
+Theorem/GEO258+3.p success 	0m0.016s
+Theorem/GEO259+1.p success 	0m8.657s
+Theorem/GEO260+1.p success 	0m0.172s
+Theorem/GEO261+1.p success 	0m0.024s
+Theorem/GEO261+3.p success 	0m0.016s
+Theorem/GEO262+1.p success 	0m0.024s
+Theorem/GEO262+3.p success 	0m0.020s
+Theorem/GEO263+1.p success 	0m0.024s
+Theorem/GEO263+3.p success 	0m0.016s
+Theorem/GEO264+1.p success 	0m0.020s
+Theorem/GEO264+3.p success 	0m0.020s
+Theorem/GEO265+3.p success 	0m0.020s
+Theorem/GEO266+3.p success 	0m0.020s
+Theorem/GEO267+3.p success 	0m0.008s
+Theorem/GEO268+3.p success 	0m0.016s
+Theorem/GEO269+3.p success 	0m0.020s
+Unsatisfiable/GRP029-2.p fail
+Unsatisfiable/GRP033-3.p success 	0m0.020s
+Unsatisfiable/NUM017-1.p fail
+Unsatisfiable/NUM019-1.p success 	0m0.012s
+Unsatisfiable/NUM020-1.p success 	0m0.072s
+Unsatisfiable/NUM021-1.p success 	0m0.016s
+Unsatisfiable/NUM023-1.p fail
+Unsatisfiable/NUM024-1.p fail
+Unsatisfiable/NUM025-1.p success 	0m0.016s
+Unsatisfiable/NUM025-2.p success 	0m0.016s
+Unsatisfiable/NUM027-1.p fail
+Unsatisfiable/RNG001-5.p fail
+Unsatisfiable/RNG004-3.p fail
+Unsatisfiable/ROB025-1.p fail
+Unsatisfiable/SET012-1.p success 	0m0.012s
+Unsatisfiable/SET012-2.p fail
+Unsatisfiable/SET013-1.p success 	0m0.012s
+Unsatisfiable/SET013-2.p success 	0m0.116s
+Unsatisfiable/SET014-2.p success 	0m0.012s
+Unsatisfiable/SET015-1.p success 	0m0.012s
+Unsatisfiable/SET015-2.p success 	0m0.668s
+Unsatisfiable/SYN014-2.p success 	0m0.012s
+Unsatisfiable/SYN015-2.p success 	0m0.020s
+Unsatisfiable/SYN554-1.p success 	0m0.016s
+Unsatisfiable/SYN555-1.p success 	0m26.318s
+Unsatisfiable/SYN556-1.p success 	0m0.124s
+Unsatisfiable/SYN557-1.p success 	0m0.088s
+Unsatisfiable/SYN558-1.p success 	0m0.020s
+Unsatisfiable/SYN559-1.p success 	0m0.520s
+Unsatisfiable/SYN560-1.p fail
+Unsatisfiable/SYN561-1.p success 	0m0.612s
+Unsatisfiable/SYN562-1.p success 	0m0.288s
+Unsatisfiable/SYN563-1.p fail
+Unsatisfiable/SYN564-1.p fail
+Unsatisfiable/SYN565-1.p success 	0m0.332s
+Unsatisfiable/SYN566-1.p success 	0m0.028s
+Unsatisfiable/SYN567-1.p success 	0m0.012s
+Unsatisfiable/SYN568-1.p success 	0m0.012s
+Unsatisfiable/SYN569-1.p success 	0m0.704s
+Unsatisfiable/SYN570-1.p success 	0m0.192s
+Unsatisfiable/SYN571-1.p fail
+Unsatisfiable/SYN572-1.p fail
+Unsatisfiable/SYN573-1.p fail
+Unsatisfiable/SYN574-1.p success 	0m0.072s
+Unsatisfiable/SYN575-1.p success 	0m0.068s
+Unsatisfiable/SYN576-1.p success 	0m23.873s
+Unsatisfiable/SYN577-1.p fail
+Unsatisfiable/SYN578-1.p success 	0m0.080s
+Unsatisfiable/SYN579-1.p success 	0m0.024s
+Unsatisfiable/SYN580-1.p success 	0m0.912s
+Unsatisfiable/SYN581-1.p success 	0m4.524s
+Unsatisfiable/SYN582-1.p success 	0m0.280s
+Unsatisfiable/SYN583-1.p success 	0m15.673s
+Unsatisfiable/SYN584-1.p success 	0m0.032s
+Unsatisfiable/SYN585-1.p fail
+Unsatisfiable/SYN586-1.p fail
+Unsatisfiable/SYN587-1.p fail
+Unsatisfiable/SYN588-1.p success 	0m0.020s
+Unsatisfiable/SYN589-1.p success 	0m0.016s
+Unsatisfiable/SYN590-1.p success 	0m0.012s
+Unsatisfiable/SYN591-1.p success 	0m2.512s
+Unsatisfiable/SYN592-1.p success 	0m8.669s
+Unsatisfiable/SYN593-1.p success 	0m0.012s
+Unsatisfiable/SYN594-1.p success 	0m0.220s
+Unsatisfiable/SYN595-1.p success 	0m3.376s
+Unsatisfiable/SYN596-1.p success 	0m0.036s
+Unsatisfiable/SYN597-1.p success 	0m0.052s
+Unsatisfiable/SYN598-1.p success 	2m43.150s
+Unsatisfiable/SYN599-1.p success 	0m0.248s
+Unsatisfiable/SYN600-1.p success 	1m20.025s
+Unsatisfiable/SYN601-1.p success 	0m0.056s
+Unsatisfiable/SYN602-1.p fail
+Unsatisfiable/SYN603-1.p fail
+Unsatisfiable/SYN604-1.p fail
+Unsatisfiable/SYN605-1.p fail
+Unsatisfiable/SYN606-1.p fail
+Unsatisfiable/SYN607-1.p fail
+Unsatisfiable/SYN608-1.p fail
+Unsatisfiable/SYN609-1.p fail
+Unsatisfiable/SYN610-1.p fail
+Unsatisfiable/SYN611-1.p fail
+Unsatisfiable/SYN612-1.p fail
+Unsatisfiable/SYN613-1.p success 	0m0.060s
+Unsatisfiable/SYN614-1.p fail
+Unsatisfiable/SYN615-1.p fail
+Unsatisfiable/SYN616-1.p success 	0m0.012s
+Unsatisfiable/SYN617-1.p fail
+Unsatisfiable/SYN618-1.p success 	0m0.132s
+Unsatisfiable/SYN619-1.p success 	0m0.016s
+Unsatisfiable/SYN620-1.p fail
+Unsatisfiable/SYN621-1.p success 	0m0.020s
+Unsatisfiable/SYN622-1.p fail
+Unsatisfiable/SYN623-1.p success 	0m0.092s
+Unsatisfiable/SYN624-1.p fail
+Unsatisfiable/SYN625-1.p success 	0m0.016s
+Unsatisfiable/SYN626-1.p success 	0m0.332s
+Unsatisfiable/SYN627-1.p success 	0m0.356s
+Unsatisfiable/SYN628-1.p fail
+Unsatisfiable/SYN629-1.p fail
+Unsatisfiable/SYN630-1.p success 	0m0.016s
+Unsatisfiable/SYN631-1.p fail
+Unsatisfiable/SYN632-1.p success 	0m36.458s
+Unsatisfiable/SYN633-1.p success 	0m0.020s
+Unsatisfiable/SYN634-1.p success 	0m0.012s
+Unsatisfiable/SYN635-1.p success 	0m0.016s
+Unsatisfiable/SYN636-1.p success 	0m0.020s
+Unsatisfiable/SYN637-1.p fail
+Unsatisfiable/SYN638-1.p fail
+Unsatisfiable/SYN639-1.p fail
+Unsatisfiable/SYN640-1.p fail
+Unsatisfiable/SYN641-1.p fail
+Unsatisfiable/SYN642-1.p fail
+Unsatisfiable/SYN643-1.p success 	0m1.404s
+Unsatisfiable/SYN644-1.p fail
+Unsatisfiable/SYN645-1.p fail
+Unsatisfiable/SYN646-1.p fail
+Unsatisfiable/SYN647-1.p fail
+Unsatisfiable/SYN648-1.p success 	0m0.044s
+Unsatisfiable/SYN649-1.p success 	0m0.016s
+Unsatisfiable/SYN650-1.p fail
+Unsatisfiable/SYN651-1.p success 	0m0.016s
+Unsatisfiable/SYN652-1.p success 	0m0.080s
+Unsatisfiable/SYN653-1.p fail
+Unsatisfiable/SYN654-1.p success 	0m58.748s
+Unsatisfiable/SYN655-1.p success 	0m12.949s
+Unsatisfiable/SYN656-1.p fail
+Unsatisfiable/SYN657-1.p success 	0m0.016s
+Unsatisfiable/SYN658-1.p fail
+Unsatisfiable/SYN659-1.p fail
+Unsatisfiable/SYN660-1.p success 	0m6.960s
+Unsatisfiable/SYN661-1.p success 	0m0.464s
+Unsatisfiable/SYN662-1.p success 	0m2.868s
+Unsatisfiable/SYN663-1.p success 	0m0.416s
+Unsatisfiable/SYN664-1.p success 	0m0.444s
+Unsatisfiable/SYN665-1.p success 	0m1.396s
+Unsatisfiable/SYN666-1.p success 	0m3.460s
+Unsatisfiable/SYN667-1.p success 	0m0.328s
+Unsatisfiable/SYN668-1.p success 	0m1.608s
+Unsatisfiable/SYN669-1.p success 	0m0.348s
+Unsatisfiable/SYN670-1.p success 	0m19.117s
+Unsatisfiable/SYN671-1.p success 	1m39.638s
+Unsatisfiable/SYN672-1.p success 	0m0.240s
+Unsatisfiable/SYN673-1.p success 	0m0.840s
+Unsatisfiable/SYN674-1.p success 	0m3.740s
+Unsatisfiable/SYN675-1.p success 	0m0.076s
+Unsatisfiable/SYN676-1.p success 	0m21.317s
+Unsatisfiable/SYN677-1.p success 	0m1.480s
+Unsatisfiable/SYN678-1.p success 	0m4.176s
+Unsatisfiable/SYN679-1.p success 	0m16.817s
+Unsatisfiable/SYN680-1.p success 	0m3.488s
+Unsatisfiable/SYN681-1.p success 	0m5.064s
+Unsatisfiable/SYN682-1.p success 	0m0.320s
+Unsatisfiable/SYN683-1.p success 	0m4.392s
+Unsatisfiable/SYN684-1.p success 	0m7.448s
+Unsatisfiable/SYN685-1.p success 	0m18.845s
+Unsatisfiable/SYN686-1.p success 	0m0.600s
+Unsatisfiable/SYN687-1.p success 	0m0.044s
+Unsatisfiable/SYN688-1.p fail
+Unsatisfiable/SYN689-1.p fail
+Unsatisfiable/SYN690-1.p fail
+Unsatisfiable/SYN691-1.p success 	0m0.056s
+Unsatisfiable/SYN692-1.p fail
+Unsatisfiable/SYN693-1.p success 	0m4.508s
+Unsatisfiable/SYN694-1.p fail
+Unsatisfiable/SYN695-1.p success 	0m19.677s
+Unsatisfiable/SYN696-1.p success 	1m30.086s
+Unsatisfiable/SYN697-1.p success 	0m43.899s
+Unsatisfiable/SYN698-1.p fail
+Unsatisfiable/SYN699-1.p fail
+Unsatisfiable/SYN700-1.p fail
+Unsatisfiable/SYN701-1.p fail
+Unsatisfiable/SYN702-1.p success 	0m0.144s
+Unsatisfiable/SYN703-1.p success 	0m0.128s
+Unsatisfiable/SYN704-1.p success 	0m1.660s
+Unsatisfiable/SYN705-1.p success 	0m0.340s
+Unsatisfiable/SYN706-1.p success 	0m0.272s
+Unsatisfiable/SYN707-1.p fail
+Unsatisfiable/SYN708-1.p fail
+Unsatisfiable/SYN709-1.p success 	0m0.500s
+Unsatisfiable/SYN710-1.p success 	0m0.024s
+Unsatisfiable/SYN711-1.p success 	0m0.024s
+Unsatisfiable/SYN712-1.p success 	0m0.084s
+Unsatisfiable/SYN713-1.p success 	0m0.080s
+Unsatisfiable/SYN714-1.p success 	0m0.032s
+Unsatisfiable/SYN715-1.p success 	0m54.835s
+Unsatisfiable/SYN716-1.p success 	0m1.312s
+Unsatisfiable/SYN717-1.p success 	0m0.088s
+Unsatisfiable/SYN718-1.p fail
+Unsatisfiable/SYN719-1.p success 	0m0.136s

@@ -1,0 +1,79 @@
+\usepackage{tikz-qtree}
+
+\usetikzlibrary{automata, arrows}
+
+\makeatletter
+\newcommand*\ifcounter[1]{%
+  \ifcsname c@#1\endcsname
+    \expandafter\@firstoftwo
+  \else
+    \expandafter\@secondoftwo
+  \fi
+}
+\makeatother
+
+% Very basic; draws arrows between the source and all targets; only one
+% source allowed
+\newcommand\source[2]{%
+  \tikz[remember picture,baseline,inner sep=0pt] {%
+    \node [name=source-#1,anchor=base]{$#2$};
+  }%
+  % \newcounter{target#1}
+  % \setcounter{target#1}{0}
+}
+
+\newcommand\target[2]{%
+    \tikz[remember picture,baseline,inner sep=0pt] {%
+        \node [name=target-#1-\arabic{target#1},anchor=base]{$#2$};
+    }%
+    \stepcounter{target#1}%
+}
+
+% #1 - how sharp is the angle
+% #2 - identifier of the connection
+% #3 - label of connection
+% #4 - where the label stays vertically
+% #5 - where the label stays horizontally
+% #6 - whether it bends up or down
+% #7 - whether it connects top or bottom
+\DeclareDocumentCommand{\drawconnections}{o m m O{0} O{.5} O{left} O{north}}
+{%
+  \IfNoValueTF{#1}
+  {%
+    \tikz[remember picture, overlay, -latex] {
+        \foreach \i [evaluate=\i as \n using int(\i-1)] in {1,...,\value{target#2}} {
+          \draw[bend #6] (source-#2.#7) to node[auto, yshift=#4,pos=#5] {{\scriptsize \textcolor{blue}{#3}}} (target-#2-\n.#7);
+        }
+    }
+  }%
+  {%
+    \tikz[remember picture, overlay, -latex] {
+        \foreach \i [evaluate=\i as \n using int(\i-1)] in {1,...,\value{target#2}} {
+          \draw[bend #6=#1] (source-#2.#7) to node[auto, yshift=#4, pos=#5] {{\scriptsize \textcolor{blue}{#3}}} (target-#2-\n.#7);
+        }
+    }
+  }%
+}%
+
+% Allows fancier stuff
+\newcommand{\tikzmark}[1]{\tikz[overlay,remember picture] \node (#1) {};}
+\newcommand{\DrawBox}[2]{%
+  \begin{tikzpicture}[overlay,remember picture]
+    \draw[-,shorten >=5pt,shorten <=5pt,out=70,in=130,distance=0.5cm,#1] (c.north) to (d.north);
+    \draw[-,shorten >=5pt,shorten <=5pt,out=50,in=140,distance=0.3cm,#2] (a.north) to (b.north);
+  \end{tikzpicture}
+}
+
+% \newcommand{\DrawBox}[4]{%
+%   \begin{tikzpicture}[overlay,remember picture,-latex,shorten >=5pt,shorten <=5pt,out=70,in=130]
+%     \draw[distance=0.45cm,#1] (a.north) to (b.north);
+%     \draw[distance=0.65cm,#2] (a.north) to (c.north);
+%     \draw[distance=0.9cm, #3] (a.north) to (d.north);
+%     \draw[distance=1.1cm, #4] (a.north) to (e.north);
+%   \end{tikzpicture}
+% }
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

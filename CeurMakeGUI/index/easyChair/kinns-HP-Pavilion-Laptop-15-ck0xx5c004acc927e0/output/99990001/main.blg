@@ -1,0 +1,71 @@
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+The style file: abbrv.bst
+Database file #1: bib.bib
+I was expecting a `,' or a `}'---line 1623 of file bib.bib
+ :      
+ :      language = {English},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 3022 of file bib.bib
+ :   
+ :   year = 2015,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+A bad cross reference---entry "Baader2001"
+refers to entry "DBLP:books/el/RobinsonV01", which doesn't exist
+A bad cross reference---entry "Bouton2009"
+refers to entry "DBLP:conf/cade/2009", which doesn't exist
+A bad cross reference---entry "deMoura2008-z3"
+refers to entry "DBLP:conf/tacas/2008", which doesn't exist
+A bad cross reference---entry "Reger2015"
+refers to entry "DBLP:conf/cade/2015", which doesn't exist
+Warning--I didn't find a database entry for "DBLP:books/el/RobinsonV01"
+Warning--I didn't find a database entry for "DBLP:conf/cade/2015"
+Warning--I didn't find a database entry for "DBLP:conf/cade/2009"
+Warning--I didn't find a database entry for "DBLP:conf/tacas/2008"
+Warning--empty publisher in Baader2001
+Warning--empty publisher in Nieuwenhuis2001-har
+You've used 20 entries,
+            2118 wiz_defined-function locations,
+            666 strings with 8333 characters,
+and the built_in function-call counts, 9418 in all, are:
+= -- 960
+> -- 399
+< -- 20
++ -- 149
+- -- 129
+* -- 665
+:= -- 1415
+add.period$ -- 72
+call.type$ -- 20
+change.case$ -- 118
+chr.to.int$ -- 0
+cite$ -- 22
+duplicate$ -- 406
+empty$ -- 749
+format.name$ -- 129
+if$ -- 2107
+int.to.chr$ -- 0
+int.to.str$ -- 20
+missing$ -- 20
+newline$ -- 104
+num.names$ -- 54
+pop$ -- 139
+preamble$ -- 1
+purify$ -- 98
+quote$ -- 0
+skip$ -- 320
+stack$ -- 0
+substring$ -- 675
+swap$ -- 164
+text.length$ -- 20
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 80
+warning$ -- 2
+while$ -- 94
+width$ -- 22
+write$ -- 245
+(There were 6 error messages)

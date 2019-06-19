@@ -1,0 +1,13 @@
+\begin{eqnarray*}
+  \frac{}{\{\},\:M,\:Path} & Axiom & \\
+  \frac{C,\:M,\:\{\}}{M} & Start & \mathrm{ where \;} C \in M, C\textrm{ is positive}\\
+  \frac{C,\:M,\:Path\cup\{L_{2}\}}{C\cup\{L_{1}\},\:M,\:Path\cup\{L_{2}\}} & Reduction & \mathrm{ where \;} \sigma(L_{1})=\sigma(\overline{L_{2}}) \\
+  \frac{C_2\setminus\{L_{2}\},\:M,\:Path\cup\{L_{1}\}\qquad C,\:M,\:Path}{C\cup\{L_{1}\},\:M,\:Path} & Extension & \mathrm { where \;}
+  \begin{array}{@{}c@{}}
+    \sigma(L_{1})=\sigma(\overline{L_{2}}),\\
+    \sigma \textrm{ is rigid},\\
+    C_1 \in M, L_2 \in C_2,\\
+    C_2 \textrm{ is a copy of } C_1\\
+    \textrm{with variables renamed}
+  \end{array}
+\end{eqnarray*}

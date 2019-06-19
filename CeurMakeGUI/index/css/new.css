@@ -1,0 +1,95 @@
+.wizard > .content > .body label{
+	margin-left: 10px;
+}
+
+.wizard > .content{
+	min-height: 44em;
+}
+
+.select-wrapper input.select-dropdown{
+	padding-left: 10px;
+}	
+
+.wizard > .content > .body label[for="language"]{
+	margin-left: 0;
+}
+
+.wizard > .content > .body input {
+    border: 1px solid #dedede;
+    border-radius: 3px;	
+}
+
+.wizard > .content {
+    background: #f9f9f9;
+}
+
+fieldset {
+    border: 1px solid #dcdcdc;
+}
+
+legend{
+	color: #675e5e;
+}
+
+.nav_center_box{	
+	margin: 0 auto;
+	width: 330px;
+}	
+
+.menu_icon {
+	display: inline-block !important;
+    font-size: initial !important;
+	margin: 0 !important;
+}	
+
+.loginregister_container{
+    max-width: 400px;
+    margin: 0 auto 20px auto;
+    border: 1px solid #efeeee;
+    padding: 10px 10px;
+}
+
+.or_box{
+	position: relative;
+    margin-top: 15px;
+    margin-bottom: 15px;	
+}	
+
+.or_box:before{
+	content: "";
+    background: #efeeee;
+    height: 2px;
+    width: 100%;
+    top: 12px;
+    left: 0;
+    right: 0;
+    position: absolute;
+	z-index: -1;
+}
+
+.or_box_content{
+	width: 30px;
+    text-align: center;
+    margin: 0 auto;
+    background: white;
+}
+
+.error_box{
+    background: #E53935;
+    color: white;
+    text-align: center;
+    padding: 5px 20px;
+}
+
+.success_box{
+	background: #35e5a4;
+    color: #056340;
+    text-align: center;
+    padding: 5px 20px;
+}
+
+
+.top_right_menus{
+    position: absolute;
+    right: 0;
+}

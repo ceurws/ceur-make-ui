@@ -1,4 +1,6 @@
 <?php
+	include_once '_inc/common.php';
+	
 	$page_title = 'Ceur Make';
 	
 	include_once '_inc/header.php';
@@ -172,7 +174,7 @@
                                                                 <select id="ses0">
                                                                 <option value="1">Option 1</option>
                                                                 </select>
-                                                                <label>Session(optional)</label>
+                                                                <label>Session *(optional)</label>
                                                              </div>
                                                              <div class="row">
                                                                 <div class="input-field col s7">
@@ -255,7 +257,7 @@
                                            </fieldset>
                                            <div class="row">
                                             <div class="input-field col s4">
-                                              <input id="volumeNumber" type="text" class="validate" value="Vol-">
+                                              <input id="volumeNumber" type="text" class="validate" value="vol-">
                                               <label for="volumeNumber">Volume Number</label>
                                               <span id="volumeNumberID" class="error" style="display:none">Please enter numbers or hyphen.</span>
                                             </div>
@@ -469,7 +471,7 @@
 						var oldvalue=$(this).val();
 						var field=this;
 						setTimeout(function () {
-							if(field.value.indexOf('Vol-') !== 0) {
+							if(field.value.indexOf('vol-') !== 0) {
 								$(field).val(oldvalue);
 							} 
 						}, 1);
@@ -1316,7 +1318,7 @@
                           authorArray.push(0);
                           var newdiv = document.createElement('div');
                           newdiv.id ="Paper"+(counterPaper+1);
-                          newdiv.innerHTML = "<fieldset><legend>Paper"+(counterPaper+1)+"</legend><div class='input-field col s12'><select id='ses"+(counterPaper+1) +"'><option value='1'>Option 1</option></select><label>Session(optional)</label></div><div class='row'><div class='input-field col s7'><input id='paperTitle"+(counterPaper+1)+"' type='text' data-paper_index='"+(counterPaper+1) +"' class='tableofcontents_paper_title autocomplete validate'><label for='paperTitle"+(counterPaper+1)+"'>Paper Title </label><span id='paperTitleError"+(counterPaper+1)+"' style='display:none' class='error'>Paper title can contain only Alphanumeric Characters (A-Z) and (0-9).</span></div><div class='input-field col s1'><h6>Page Number</h6></div><div class='input-field col s2'><input id='paperFrom"+(counterPaper+1)+"' type='text' class='validate'><label for='paperFrom"+(counterPaper+1)+"'>From</label><span id='paperFromError"+(counterPaper+1)+"' style='display:none' class='error'>Enter Number</span></div><div class='input-field col s2'><input id='paperTo"+(counterPaper+1)+"' type='text' class='validate'><label for='paperTo"+(counterPaper+1)+"'>To</label>                                <span id='errorTo"+(counterPaper+1)+"' style='display:none' class='error'>Enter Number</span></div></div><fieldset><legend>Authors of the Paper <span><a class='btn-floating btn-small waves-effect waves-light green' onClick='addAuthor(&quot;authors"+(counterPaper + 1)+"&quot;);'><i class='material-icons'>add</i></a></span><a class='btn-floating btn-small waves-effect waves-light red' onClick='removeAuthor(&quot;authors"+(counterPaper + 1)+"&quot;);'><i class='material-icons'>remove</i></a></legend><div class='input-field col s7' id='authors"+(counterPaper + 1)+"' ><input id='"+(counterPaper+1)+"author"+authorArray[counterPaper+1]+"' type='text' class='validate'><label for='"+(counterPaper+1)+"author"+authorArray[counterPaper+1]+"'>Author "+authorArray[counterPaper+1]+"</label><span id='"+(counterPaper+1)+"authorError"+(authorArray[counterPaper+1])+"' style='display:none' class='error'>Please add valid author name.</span></div></fieldset><br/></fieldset><br/>";
+                          newdiv.innerHTML = "<fieldset><legend>Paper"+(counterPaper+1)+"</legend><div class='input-field col s12'><select id='ses"+(counterPaper+1) +"'><option value='1'>Option 1</option></select><label>Session *(optional)</label></div><div class='row'><div class='input-field col s7'><input id='paperTitle"+(counterPaper+1)+"' type='text' data-paper_index='"+(counterPaper+1) +"' class='tableofcontents_paper_title autocomplete validate'><label for='paperTitle"+(counterPaper+1)+"'>Paper Title </label><span id='paperTitleError"+(counterPaper+1)+"' style='display:none' class='error'>Paper title can contain only Alphanumeric Characters (A-Z) and (0-9).</span></div><div class='input-field col s1'><h6>Page Number</h6></div><div class='input-field col s2'><input id='paperFrom"+(counterPaper+1)+"' type='text' class='validate'><label for='paperFrom"+(counterPaper+1)+"'>From</label><span id='paperFromError"+(counterPaper+1)+"' style='display:none' class='error'>Enter Number</span></div><div class='input-field col s2'><input id='paperTo"+(counterPaper+1)+"' type='text' class='validate'><label for='paperTo"+(counterPaper+1)+"'>To</label>                                <span id='errorTo"+(counterPaper+1)+"' style='display:none' class='error'>Enter Number</span></div></div><fieldset><legend>Authors of the Paper <span><a class='btn-floating btn-small waves-effect waves-light green' onClick='addAuthor(&quot;authors"+(counterPaper + 1)+"&quot;);'><i class='material-icons'>add</i></a></span><a class='btn-floating btn-small waves-effect waves-light red' onClick='removeAuthor(&quot;authors"+(counterPaper + 1)+"&quot;);'><i class='material-icons'>remove</i></a></legend><div class='input-field col s7' id='authors"+(counterPaper + 1)+"' ><input id='"+(counterPaper+1)+"author"+authorArray[counterPaper+1]+"' type='text' class='validate'><label for='"+(counterPaper+1)+"author"+authorArray[counterPaper+1]+"'>Author "+authorArray[counterPaper+1]+"</label><span id='"+(counterPaper+1)+"authorError"+(authorArray[counterPaper+1])+"' style='display:none' class='error'>Please add valid author name.</span></div></fieldset><br/></fieldset><br/>";
 
                           document.getElementById(divName).appendChild(newdiv);
                           var selectId = '#ses'+(counterPaper+1);
@@ -1744,6 +1746,6 @@
   </script>
 
 	
-	<script src="js/tableofcontents_page.js"></script>
+	<!--<script src="js/tableofcontents_page.js"></script>-->
   </body>
 </html>

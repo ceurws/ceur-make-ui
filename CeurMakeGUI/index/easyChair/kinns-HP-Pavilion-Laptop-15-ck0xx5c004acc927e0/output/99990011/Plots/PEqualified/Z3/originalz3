@@ -1,0 +1,117 @@
+Unsatisfiable/CAT001-3.p fail
+Unsatisfiable/CAT001-4.p fail
+Unsatisfiable/CAT002-3.p fail
+Unsatisfiable/CAT002-4.p fail
+Unsatisfiable/CAT003-3.p fail
+Unsatisfiable/CAT003-4.p fail
+Unsatisfiable/CAT004-3.p fail
+Unsatisfiable/CAT004-4.p fail
+Unsatisfiable/CAT005-3.p success 	0m0.020s
+Unsatisfiable/CAT005-4.p success 	0m0.020s
+Unsatisfiable/CAT006-3.p success 	0m0.024s
+Unsatisfiable/CAT006-4.p success 	0m0.024s
+Unsatisfiable/CAT009-3.p success 	0m0.012s
+Unsatisfiable/CAT009-4.p success 	0m0.016s
+Unsatisfiable/CAT010-4.p success 	0m0.016s
+Unsatisfiable/CAT011-3.p success 	0m0.012s
+Unsatisfiable/CAT011-4.p success 	0m0.008s
+Unsatisfiable/CAT012-3.p success 	0m0.016s
+Unsatisfiable/CAT012-4.p success 	0m0.016s
+Unsatisfiable/CAT013-3.p success 	0m0.008s
+Unsatisfiable/CAT013-4.p success 	0m0.012s
+Unsatisfiable/CAT014-3.p success 	0m0.020s
+Unsatisfiable/CAT014-4.p success 	0m0.008s
+Unsatisfiable/CAT016-3.p success 	0m0.012s
+Unsatisfiable/CAT016-4.p success 	0m0.016s
+Unsatisfiable/CAT017-3.p success 	0m0.012s
+Unsatisfiable/CAT017-4.p success 	0m0.012s
+Unsatisfiable/CAT018-3.p success 	0m0.028s
+Unsatisfiable/CAT018-4.p success 	0m0.024s
+Unsatisfiable/CAT019-3.p success 	0m0.016s
+Unsatisfiable/FLD003-1.p fail
+Unsatisfiable/FLD004-1.p fail
+Unsatisfiable/FLD005-1.p fail
+Unsatisfiable/FLD006-1.p success 	0m0.016s
+Unsatisfiable/FLD007-1.p fail
+Unsatisfiable/FLD008-2.p fail
+Unsatisfiable/FLD009-1.p fail
+Unsatisfiable/FLD010-1.p success 	0m0.016s
+Unsatisfiable/FLD011-1.p fail
+Unsatisfiable/FLD012-2.p fail
+Unsatisfiable/FLD013-1.p fail
+Unsatisfiable/FLD013-2.p fail
+Unsatisfiable/FLD014-1.p fail
+Unsatisfiable/FLD015-1.p fail
+Unsatisfiable/FLD016-1.p fail
+Unsatisfiable/FLD017-1.p fail
+Unsatisfiable/FLD018-1.p fail
+Unsatisfiable/FLD019-1.p fail
+Unsatisfiable/FLD020-1.p fail
+Unsatisfiable/FLD021-1.p fail
+Unsatisfiable/FLD022-1.p fail
+Unsatisfiable/FLD023-1.p fail
+Unsatisfiable/FLD024-1.p fail
+Unsatisfiable/FLD025-1.p fail
+Unsatisfiable/FLD025-2.p fail
+Unsatisfiable/FLD026-1.p fail
+Unsatisfiable/FLD027-1.p fail
+Unsatisfiable/FLD028-1.p fail
+Unsatisfiable/FLD029-1.p fail
+Unsatisfiable/FLD030-1.p success 	0m0.012s
+Unsatisfiable/FLD030-2.p fail
+Unsatisfiable/FLD031-1.p fail
+Unsatisfiable/FLD032-1.p fail
+Unsatisfiable/FLD033-1.p fail
+Unsatisfiable/FLD034-1.p fail
+Unsatisfiable/FLD035-1.p fail
+Unsatisfiable/FLD036-1.p fail
+Unsatisfiable/FLD037-1.p fail
+Unsatisfiable/FLD038-1.p fail
+Unsatisfiable/FLD039-1.p success 	0m0.008s
+Unsatisfiable/FLD040-1.p fail
+Unsatisfiable/FLD041-1.p fail
+Unsatisfiable/FLD041-2.p fail
+Unsatisfiable/FLD043-1.p fail
+Unsatisfiable/FLD044-2.p fail
+Unsatisfiable/FLD049-1.p fail
+Unsatisfiable/FLD049-2.p fail
+Unsatisfiable/FLD050-1.p fail
+Unsatisfiable/FLD050-2.p fail
+Unsatisfiable/FLD055-1.p fail
+Unsatisfiable/FLD056-1.p success 	0m0.008s
+Unsatisfiable/FLD057-1.p fail
+Unsatisfiable/FLD058-1.p fail
+Unsatisfiable/FLD059-1.p fail
+Unsatisfiable/FLD059-2.p fail
+Unsatisfiable/FLD060-1.p fail
+Unsatisfiable/FLD060-2.p fail
+Unsatisfiable/FLD061-1.p fail
+Unsatisfiable/FLD061-2.p fail
+Unsatisfiable/FLD062-1.p fail
+Unsatisfiable/FLD063-1.p fail
+Unsatisfiable/FLD064-1.p fail
+Unsatisfiable/FLD065-1.p fail
+Unsatisfiable/FLD066-1.p fail
+Unsatisfiable/FLD067-1.p success 	0m0.020s
+Unsatisfiable/FLD067-2.p fail
+Unsatisfiable/FLD068-1.p fail
+Unsatisfiable/FLD068-2.p fail
+Unsatisfiable/FLD069-1.p fail
+Unsatisfiable/FLD070-1.p fail
+Unsatisfiable/FLD070-2.p fail
+Unsatisfiable/FLD071-1.p success 	0m0.012s
+Unsatisfiable/FLD071-2.p fail
+Unsatisfiable/FLD072-2.p fail
+Unsatisfiable/FLD088-1.p fail
+Unsatisfiable/FLD090-1.p fail
+Theorem/GEO167+1.p fail
+Theorem/GEO168+1.p fail
+Theorem/GEO169+1.p success 	0m1.016s
+Unsatisfiable/MSC006-1.p success 	0m0.012s
+Unsatisfiable/SET055-6.p success 	0m0.032s
+Unsatisfiable/SET055-7.p success 	0m0.040s
+Theorem/SET581+3.p success 	0m0.016s
+Theorem/SET628+3.p success 	0m0.012s
+Theorem/SET637+3.p success 	0m1.876s
+Unsatisfiable/SYN726-1.p success 	0m0.016s
+Theorem/SYN919+1.p success 	0m0.012s

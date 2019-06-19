@@ -1,0 +1,15 @@
+RUN job1
+fof(inp4,conjecture,(subclass(a,c))).
+GO
+c_0_10])]), ['proof']).
+# SZS output end CNFRefutation.
+
+# -------------------------------------------------
+# User time                : 0.008 s
+# System time              : 0.002 s
+# Total time               : 0.010 s
+# Maximum resident set size: 2838528 pages
+
+# Processing finished for job1
+
+200 ok : success

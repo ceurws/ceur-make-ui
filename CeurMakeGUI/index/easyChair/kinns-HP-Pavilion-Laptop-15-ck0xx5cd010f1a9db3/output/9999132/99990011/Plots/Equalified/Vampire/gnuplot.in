@@ -1,0 +1,21 @@
+
+set terminal postscript eps enhanced 'Times-Roman' 18 
+
+set grid
+set key
+set clip points
+set logscale xy
+set output 'test_original_vampire_equalified_vampire_300.eps'
+#set arrow from 7200,0.1 to 7200,10000 nohead ls 3
+#set arrow from 0.1,7200 to 10000,7200 nohead ls 3
+#set arrow from 0.1,0.1 to 7200,7200 nohead ls 1
+set arrow from 0.01,0.01 to 600,600 nohead ls 1
+set arrow from 300,0.01 to 300,600 nohead ls 3
+set arrow from 0.01,300 to 600,300 nohead ls 3
+set arrow from 150,0.01 to 150,600 nohead ls 1
+set arrow from 0.01,150 to 600,150 nohead ls 1
+set xlabel 'original-vampire' 
+set ylabel 'equalified-vampire' offset 3
+set size square
+plot [0.01:600][0.01:600] 'data_original_vampire_equalified_vampire' ls 2 with points title ''
+

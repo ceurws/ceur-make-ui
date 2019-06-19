@@ -1,0 +1,117 @@
+Unsatisfiable/CAT001-3.p success 0.01 0.00system 0:00.14elapsed 17%CPU (0avgtext+0avgdata 14624maxresident)k
+Unsatisfiable/CAT001-4.p success 0.46 0.00system 0:00.58elapsed 80%CPU (0avgtext+0avgdata 86064maxresident)k
+Unsatisfiable/CAT002-3.p success 0.00 0.01system 0:00.14elapsed 8%CPU (0avgtext+0avgdata 13776maxresident)k
+Unsatisfiable/CAT002-4.p success 2.26 0.05system 0:02.46elapsed 94%CPU (0avgtext+0avgdata 377088maxresident)k
+Unsatisfiable/CAT003-3.p success 0.00 0.00system 0:00.12elapsed 6%CPU (0avgtext+0avgdata 13584maxresident)k
+Unsatisfiable/CAT003-4.p success 0.02 0.00system 0:00.15elapsed 18%CPU (0avgtext+0avgdata 17776maxresident)k
+Unsatisfiable/CAT004-3.p success 0.10 0.00system 0:00.22elapsed 49%CPU (0avgtext+0avgdata 28992maxresident)k
+Unsatisfiable/CAT004-4.p success 6.30 0.14system 0:06.56elapsed 98%CPU (0avgtext+0avgdata 432176maxresident)k
+Unsatisfiable/CAT005-3.p success 0.01 0.00system 0:00.12elapsed 12%CPU (0avgtext+0avgdata 14640maxresident)k
+Unsatisfiable/CAT005-4.p success 0.00 0.00system 0:00.11elapsed 6%CPU (0avgtext+0avgdata 13824maxresident)k
+Unsatisfiable/CAT006-3.p success 0.00 0.00system 0:00.10elapsed 7%CPU (0avgtext+0avgdata 13792maxresident)k
+Unsatisfiable/CAT006-4.p success 0.00 0.00system 0:00.11elapsed 6%CPU (0avgtext+0avgdata 13408maxresident)k
+Unsatisfiable/CAT009-3.p success 1.28 0.01system 0:01.47elapsed 87%CPU (0avgtext+0avgdata 82480maxresident)k
+Unsatisfiable/CAT009-4.p success 0.02 0.00system 0:00.13elapsed 15%CPU (0avgtext+0avgdata 16048maxresident)k
+Unsatisfiable/CAT010-4.p success 0.02 0.00system 0:00.11elapsed 17%CPU (0avgtext+0avgdata 15920maxresident)k
+Unsatisfiable/CAT011-3.p success 0.01 0.00system 0:00.12elapsed 12%CPU (0avgtext+0avgdata 14704maxresident)k
+Unsatisfiable/CAT011-4.p success 0.00 0.00system 0:00.12elapsed 6%CPU (0avgtext+0avgdata 13408maxresident)k
+Unsatisfiable/CAT012-3.p success 0.00 0.00system 0:00.10elapsed 7%CPU (0avgtext+0avgdata 13136maxresident)k
+Unsatisfiable/CAT012-4.p success 0.00 0.00system 0:00.12elapsed 6%CPU (0avgtext+0avgdata 13376maxresident)k
+Unsatisfiable/CAT013-3.p success 0.00 0.00system 0:00.11elapsed 6%CPU (0avgtext+0avgdata 13120maxresident)k
+Unsatisfiable/CAT013-4.p success 0.00 0.00system 0:00.11elapsed 6%CPU (0avgtext+0avgdata 13408maxresident)k
+Unsatisfiable/CAT014-3.p success 1.23 0.03system 0:01.45elapsed 86%CPU (0avgtext+0avgdata 112400maxresident)k
+Unsatisfiable/CAT014-4.p success 0.00 0.00system 0:00.11elapsed 10%CPU (0avgtext+0avgdata 14064maxresident)k
+Unsatisfiable/CAT016-3.p success 0.01 0.00system 0:00.19elapsed 6%CPU (0avgtext+0avgdata 13392maxresident)k
+Unsatisfiable/CAT016-4.p success 0.00 0.00system 0:00.11elapsed 6%CPU (0avgtext+0avgdata 13296maxresident)k
+Unsatisfiable/CAT017-3.p success 1.26 0.02system 0:01.45elapsed 88%CPU (0avgtext+0avgdata 83088maxresident)k
+Unsatisfiable/CAT017-4.p success 0.00 0.00system 0:00.11elapsed 6%CPU (0avgtext+0avgdata 13392maxresident)k
+Unsatisfiable/CAT018-3.p success 0.01 0.00system 0:00.20elapsed 8%CPU (0avgtext+0avgdata 14560maxresident)k
+Unsatisfiable/CAT018-4.p success 0.04 0.00system 0:00.14elapsed 29%CPU (0avgtext+0avgdata 20576maxresident)k
+Unsatisfiable/CAT019-3.p success 0.01 0.00system 0:00.21elapsed 7%CPU (0avgtext+0avgdata 13984maxresident)k
+Unsatisfiable/FLD003-1.p success 0.76 0.01system 0:00.96elapsed 81%CPU (0avgtext+0avgdata 117504maxresident)k
+Unsatisfiable/FLD004-1.p success 0.26 0.00system 0:00.38elapsed 69%CPU (0avgtext+0avgdata 71088maxresident)k
+Unsatisfiable/FLD005-1.p success 3.54 0.07system 0:03.80elapsed 95%CPU (0avgtext+0avgdata 278912maxresident)k
+Unsatisfiable/FLD006-1.p success 0.02 0.00system 0:00.13elapsed 17%CPU (0avgtext+0avgdata 18528maxresident)k
+Unsatisfiable/FLD007-1.p fail
+Unsatisfiable/FLD008-2.p fail
+Unsatisfiable/FLD009-1.p success 4.51 0.08system 0:04.75elapsed 96%CPU (0avgtext+0avgdata 309600maxresident)k
+Unsatisfiable/FLD010-1.p success 0.01 0.00system 0:00.14elapsed 10%CPU (0avgtext+0avgdata 14400maxresident)k
+Unsatisfiable/FLD011-1.p fail
+Unsatisfiable/FLD012-2.p fail
+Unsatisfiable/FLD013-1.p success 3.37 0.04system 0:03.60elapsed 94%CPU (0avgtext+0avgdata 255424maxresident)k
+Unsatisfiable/FLD013-2.p success 5.48 0.09system 0:05.83elapsed 95%CPU (0avgtext+0avgdata 384928maxresident)k
+Unsatisfiable/FLD014-1.p fail
+Unsatisfiable/FLD015-1.p fail
+Unsatisfiable/FLD016-1.p fail
+Unsatisfiable/FLD017-1.p success 0.11 0.01system 0:00.24elapsed 51%CPU (0avgtext+0avgdata 44480maxresident)k
+Unsatisfiable/FLD018-1.p success 0.15 0.02system 0:00.27elapsed 62%CPU (0avgtext+0avgdata 51568maxresident)k
+Unsatisfiable/FLD019-1.p success 0.12 0.00system 0:00.23elapsed 53%CPU (0avgtext+0avgdata 44816maxresident)k
+Unsatisfiable/FLD020-1.p success 26.36 0.38system 0:26.85elapsed 99%CPU (0avgtext+0avgdata 1389008maxresident)k
+Unsatisfiable/FLD021-1.p success 0.03 0.00system 0:00.14elapsed 28%CPU (0avgtext+0avgdata 23792maxresident)k
+Unsatisfiable/FLD022-1.p fail
+Unsatisfiable/FLD023-1.p success 0.05 0.00system 0:00.16elapsed 38%CPU (0avgtext+0avgdata 30960maxresident)k
+Unsatisfiable/FLD024-1.p success 5.98 0.08system 0:06.29elapsed 96%CPU (0avgtext+0avgdata 377664maxresident)k
+Unsatisfiable/FLD025-1.p success 3.70 0.09system 0:03.95elapsed 96%CPU (0avgtext+0avgdata 304944maxresident)k
+Unsatisfiable/FLD025-2.p success 0.94 0.01system 0:01.14elapsed 84%CPU (0avgtext+0avgdata 109728maxresident)k
+Unsatisfiable/FLD026-1.p fail
+Unsatisfiable/FLD027-1.p success 13.58 0.22system 0:13.96elapsed 98%CPU (0avgtext+0avgdata 382160maxresident)k
+Unsatisfiable/FLD028-1.p success 46.46 0.77system 0:47.25elapsed 99%CPU (0avgtext+0avgdata 2393712maxresident)k
+Unsatisfiable/FLD029-1.p fail
+Unsatisfiable/FLD030-1.p success 0.01 0.00system 0:00.11elapsed 10%CPU (0avgtext+0avgdata 13344maxresident)k
+Unsatisfiable/FLD030-2.p success 0.11 0.00system 0:00.22elapsed 53%CPU (0avgtext+0avgdata 44032maxresident)k
+Unsatisfiable/FLD031-1.p success 0.32 0.00system 0:00.46elapsed 72%CPU (0avgtext+0avgdata 75120maxresident)k
+Unsatisfiable/FLD032-1.p success 0.16 0.00system 0:00.27elapsed 60%CPU (0avgtext+0avgdata 45632maxresident)k
+Unsatisfiable/FLD033-1.p success 43.33 0.66system 0:44.01elapsed 99%CPU (0avgtext+0avgdata 2836528maxresident)k
+Unsatisfiable/FLD034-1.p success 0.03 0.00system 0:00.14elapsed 25%CPU (0avgtext+0avgdata 22672maxresident)k
+Unsatisfiable/FLD035-1.p success 45.37 0.64system 0:46.04elapsed 99%CPU (0avgtext+0avgdata 2391520maxresident)k
+Unsatisfiable/FLD036-1.p success 45.35 0.63system 0:46.04elapsed 99%CPU (0avgtext+0avgdata 2387344maxresident)k
+Unsatisfiable/FLD037-1.p success 0.12 0.00system 0:00.24elapsed 54%CPU (0avgtext+0avgdata 46400maxresident)k
+Unsatisfiable/FLD038-1.p success 11.02 0.14system 0:11.35elapsed 98%CPU (0avgtext+0avgdata 382224maxresident)k
+Unsatisfiable/FLD039-1.p success 0.00 0.00system 0:00.11elapsed 10%CPU (0avgtext+0avgdata 12928maxresident)k
+Unsatisfiable/FLD040-1.p fail
+Unsatisfiable/FLD041-1.p fail
+Unsatisfiable/FLD041-2.p fail
+Unsatisfiable/FLD043-1.p fail
+Unsatisfiable/FLD044-2.p fail
+Unsatisfiable/FLD049-1.p fail
+Unsatisfiable/FLD049-2.p fail
+Unsatisfiable/FLD050-1.p fail
+Unsatisfiable/FLD050-2.p fail
+Unsatisfiable/FLD055-1.p success 0.08 0.00system 0:00.19elapsed 40%CPU (0avgtext+0avgdata 36512maxresident)k
+Unsatisfiable/FLD056-1.p success 0.00 0.00system 0:00.12elapsed 9%CPU (0avgtext+0avgdata 13024maxresident)k
+Unsatisfiable/FLD057-1.p fail
+Unsatisfiable/FLD058-1.p success 0.01 0.00system 0:00.12elapsed 12%CPU (0avgtext+0avgdata 14896maxresident)k
+Unsatisfiable/FLD059-1.p success 0.02 0.00system 0:00.15elapsed 24%CPU (0avgtext+0avgdata 21888maxresident)k
+Unsatisfiable/FLD059-2.p success 0.13 0.01system 0:00.24elapsed 58%CPU (0avgtext+0avgdata 48112maxresident)k
+Unsatisfiable/FLD060-1.p success 15.37 0.14system 0:15.72elapsed 98%CPU (0avgtext+0avgdata 352960maxresident)k
+Unsatisfiable/FLD060-2.p success 4.07 0.08system 0:04.38elapsed 94%CPU (0avgtext+0avgdata 295600maxresident)k
+Unsatisfiable/FLD061-1.p success 15.56 0.13system 0:15.90elapsed 98%CPU (0avgtext+0avgdata 363568maxresident)k
+Unsatisfiable/FLD061-2.p success 15.12 0.11system 0:15.45elapsed 98%CPU (0avgtext+0avgdata 380144maxresident)k
+Unsatisfiable/FLD062-1.p fail
+Unsatisfiable/FLD063-1.p fail
+Unsatisfiable/FLD064-1.p success 0.33 0.00system 0:00.45elapsed 75%CPU (0avgtext+0avgdata 77296maxresident)k
+Unsatisfiable/FLD065-1.p success 0.14 0.02system 0:00.26elapsed 61%CPU (0avgtext+0avgdata 51184maxresident)k
+Unsatisfiable/FLD066-1.p fail
+Unsatisfiable/FLD067-1.p success 0.05 0.00system 0:00.16elapsed 36%CPU (0avgtext+0avgdata 31312maxresident)k
+Unsatisfiable/FLD067-2.p success 0.50 0.02system 0:00.70elapsed 74%CPU (0avgtext+0avgdata 119776maxresident)k
+Unsatisfiable/FLD068-1.p fail
+Unsatisfiable/FLD068-2.p fail
+Unsatisfiable/FLD069-1.p success 0.12 0.00system 0:00.25elapsed 52%CPU (0avgtext+0avgdata 47024maxresident)k
+Unsatisfiable/FLD070-1.p success 0.07 0.00system 0:00.17elapsed 41%CPU (0avgtext+0avgdata 32352maxresident)k
+Unsatisfiable/FLD070-2.p success 0.20 0.00system 0:00.33elapsed 62%CPU (0avgtext+0avgdata 64640maxresident)k
+Unsatisfiable/FLD071-1.p success 0.00 0.00system 0:00.11elapsed 6%CPU (0avgtext+0avgdata 13248maxresident)k
+Unsatisfiable/FLD071-2.p success 0.14 0.00system 0:00.25elapsed 59%CPU (0avgtext+0avgdata 55712maxresident)k
+Unsatisfiable/FLD072-2.p fail
+Unsatisfiable/FLD088-1.p fail
+Unsatisfiable/FLD090-1.p fail
+Theorem/GEO167+1.p fail
+Theorem/GEO168+1.p fail
+Theorem/GEO169+1.p success 0.86 0.00system 0:00.98elapsed 88%CPU (0avgtext+0avgdata 37440maxresident)k
+Unsatisfiable/MSC006-1.p success 0.00 0.00system 0:00.13elapsed 6%CPU (0avgtext+0avgdata 12768maxresident)k
+Unsatisfiable/SET055-6.p success 0.01 0.00system 0:00.15elapsed 8%CPU (0avgtext+0avgdata 13392maxresident)k
+Unsatisfiable/SET055-7.p success 0.00 0.00system 0:00.11elapsed 10%CPU (0avgtext+0avgdata 13392maxresident)k
+Theorem/SET581+3.p success 0.00 0.00system 0:00.13elapsed 6%CPU (0avgtext+0avgdata 13696maxresident)k
+Theorem/SET628+3.p success 0.01 0.00system 0:00.19elapsed 6%CPU (0avgtext+0avgdata 13824maxresident)k
+Theorem/SET637+3.p success 0.23 0.00system 0:00.42elapsed 55%CPU (0avgtext+0avgdata 38432maxresident)k
+Unsatisfiable/SYN726-1.p success 0.01 0.00system 0:00.13elapsed 9%CPU (0avgtext+0avgdata 12736maxresident)k
+Theorem/SYN919+1.p success 0.00 0.00system 0:00.13elapsed 5%CPU (0avgtext+0avgdata 12736maxresident)k

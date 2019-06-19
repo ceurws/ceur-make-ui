@@ -1,0 +1,327 @@
+HWV009-1.p success 	0m0.032s
+HWV009-2.p success 	0m0.044s
+HWV009-3.p success 	0m0.036s
+HWV009-4.p success 	0m0.036s
+HWV010-1.p success 	0m0.032s
+HWV010-2.p success 	0m0.040s
+HWV010-3.p success 	0m0.036s
+HWV011-1.p success 	0m0.028s
+HWV011-2.p success 	0m0.040s
+HWV011-3.p success 	0m0.040s
+HWV012-1.p success 	0m0.028s
+HWV012-2.p success 	0m0.040s
+HWV013-1.p success 	0m0.024s
+HWV013-2.p success 	0m0.036s
+HWV014-1.p success 	0m0.028s
+HWV014-2.p success 	0m0.036s
+HWV015-1.p success 	0m0.028s
+HWV015-2.p success 	0m0.036s
+HWV016-1.p success 	0m0.052s
+HWV016-2.p success 	0m0.064s
+HWV017-1.p success 	0m0.372s
+HWV017-2.p success 	0m0.340s
+HWV018-1.p success 	0m0.044s
+HWV018-2.p success 	0m0.036s
+HWV018-3.p success 	0m0.044s
+HWV019-1.p success 	0m0.016s
+HWV019-2.p success 	0m0.036s
+HWV019-3.p success 	0m0.036s
+HWV020-1.p success 	0m0.020s
+HWV020-2.p success 	0m0.044s
+HWV020-3.p success 	0m0.040s
+HWV021-1.p success 	0m0.080s
+HWV021-2.p success 	0m0.216s
+HWV022-1.p success 	0m0.048s
+HWV022-2.p fail
+HWV023-1.p success 	0m0.040s
+HWV023-2.p success 	0m0.048s
+HWV024-1.p success 	0m0.032s
+HWV024-2.p fail
+HWV025-1.p success 	0m0.028s
+HWV025-2.p success 	0m0.040s
+HWV025-3.p success 	0m0.024s
+HWV026-1.p success 	0m0.032s
+HWV026-2.p success 	0m0.036s
+HWV026-3.p success 	0m0.036s
+HWV027-1.p success 	0m0.028s
+HWV027-2.p success 	0m0.032s
+HWV028-1.p success 	0m0.024s
+HWV028-2.p success 	0m0.036s
+HWV029-1.p fail
+HWV029-2.p fail
+HWV030-1.p success 	0m0.036s
+HWV030-2.p success 	0m0.040s
+HWV031-1.p fail
+HWV031-2.p fail
+HWV032-1.p success 	0m0.036s
+HWV032-2.p success 	0m0.040s
+HWV033-1.p success 	0m42.339s
+HWV033-2.p fail
+LDA005-1.p fail
+LDA006-1.p fail
+LDA007-1.p success 	0m0.016s
+LDA008-1.p fail
+LDA009-1.p fail
+LDA010-1.p fail
+LDA011-1.p fail
+LDA012-1.p fail
+LDA013-1.p fail
+LDA014-1.p fail
+NUM858+1.p fail
+NUM859+1.p fail
+NUM860+1.p fail
+NUM861+1.p fail
+NUM862+1.p fail
+NUM924+1.p success 	0m0.036s
+NUM924+2.p success 	0m0.224s
+NUM926+1.p fail
+NUM926+2.p fail
+SWV002-1.p success 	0m0.244s
+SWV003-1.p success 	0m0.012s
+SWV005-1.p success 	0m0.012s
+SWV006-1.p success 	0m0.020s
+SWV007-1.p success 	0m0.008s
+SWV008-1.p success 	0m0.016s
+SWV022+1.p success 	0m0.052s
+SWV023+1.p success 	0m0.048s
+SWV024+1.p fail
+SWV025+1.p fail
+SWV026+1.p fail
+SWV027+1.p fail
+SWV028+1.p fail
+SWV029+1.p fail
+SWV030+1.p fail
+SWV031+1.p fail
+SWV032+1.p fail
+SWV033+1.p fail
+SWV034+1.p fail
+SWV035+1.p fail
+SWV036+1.p fail
+SWV037+1.p fail
+SWV038+1.p fail
+SWV039+1.p fail
+SWV040+1.p fail
+SWV041+1.p success 	0m0.080s
+SWV042+1.p fail
+SWV043+1.p success 	0m0.048s
+SWV044+1.p fail
+SWV045+1.p success 	0m0.056s
+SWV046+1.p success 	0m0.088s
+SWV047+1.p success 	0m0.052s
+SWV048+1.p success 	0m0.088s
+SWV049+1.p fail
+SWV050+1.p success 	0m0.084s
+SWV051+1.p fail
+SWV052+1.p fail
+SWV053+1.p fail
+SWV054+1.p success 	0m0.056s
+SWV055+1.p fail
+SWV056+1.p success 	0m0.076s
+SWV057+1.p success 	0m0.052s
+SWV058+1.p success 	0m0.060s
+SWV059+1.p success 	0m0.052s
+SWV060+1.p success 	0m0.048s
+SWV061+1.p success 	0m0.056s
+SWV062+1.p success 	0m0.040s
+SWV063+1.p success 	0m0.052s
+SWV064+1.p success 	0m0.080s
+SWV065+1.p success 	0m0.072s
+SWV066+1.p success 	0m0.060s
+SWV067+1.p success 	0m0.080s
+SWV068+1.p success 	0m0.048s
+SWV069+1.p success 	0m0.064s
+SWV070+1.p success 	0m0.044s
+SWV071+1.p success 	0m0.056s
+SWV072+1.p success 	0m0.048s
+SWV073+1.p success 	0m0.048s
+SWV074+1.p success 	0m0.048s
+SWV075+1.p success 	0m0.048s
+SWV076+1.p success 	0m0.044s
+SWV077+1.p success 	0m0.048s
+SWV078+1.p success 	0m0.060s
+SWV079+1.p fail
+SWV080+1.p success 	0m0.048s
+SWV081+1.p success 	0m0.060s
+SWV082+1.p success 	0m0.052s
+SWV083+1.p success 	0m0.044s
+SWV084+1.p success 	0m0.052s
+SWV085+1.p success 	0m0.056s
+SWV086+1.p success 	0m0.048s
+SWV087+1.p success 	0m0.064s
+SWV088+1.p success 	0m0.056s
+SWV089+1.p fail
+SWV090+1.p fail
+SWV091+1.p fail
+SWV092+1.p success 	0m0.088s
+SWV093+1.p fail
+SWV094+1.p fail
+SWV095+1.p fail
+SWV096+1.p fail
+SWV097+1.p fail
+SWV098+1.p fail
+SWV099+1.p fail
+SWV100+1.p fail
+SWV101+1.p fail
+SWV102+1.p fail
+SWV103+1.p fail
+SWV104+1.p fail
+SWV105+1.p success 	0m0.052s
+SWV106+1.p success 	0m0.052s
+SWV107+1.p success 	0m0.048s
+SWV108+1.p fail
+SWV109+1.p fail
+SWV110+1.p fail
+SWV111+1.p fail
+SWV112+1.p fail
+SWV113+1.p fail
+SWV114+1.p fail
+SWV115+1.p fail
+SWV116+1.p fail
+SWV117+1.p fail
+SWV118+1.p fail
+SWV119+1.p success 	0m0.052s
+SWV120+1.p fail
+SWV121+1.p success 	0m0.056s
+SWV122+1.p fail
+SWV123+1.p success 	0m0.048s
+SWV124+1.p fail
+SWV125+1.p fail
+SWV126+1.p success 	0m0.056s
+SWV127+1.p fail
+SWV128+1.p success 	0m0.060s
+SWV130+1.p fail
+SWV131+1.p success 	0m0.052s
+SWV132+1.p success 	0m0.060s
+SWV133+1.p success 	0m0.080s
+SWV134+1.p success 	0m0.080s
+SWV135+1.p success 	0m0.080s
+SWV136+1.p success 	0m0.072s
+SWV137+1.p success 	0m0.084s
+SWV138+1.p success 	0m0.076s
+SWV139+1.p success 	0m0.072s
+SWV140+1.p success 	0m0.080s
+SWV141+1.p success 	0m0.076s
+SWV142+1.p success 	0m0.068s
+SWV143+1.p success 	0m0.072s
+SWV144+1.p success 	0m0.076s
+SWV145+1.p success 	0m0.068s
+SWV146+1.p success 	0m0.064s
+SWV147+1.p success 	0m0.064s
+SWV148+1.p success 	0m0.068s
+SWV149+1.p success 	0m0.072s
+SWV150+1.p success 	0m0.068s
+SWV151+1.p success 	0m0.072s
+SWV152+1.p success 	0m0.076s
+SWV153+1.p success 	0m0.080s
+SWV154+1.p success 	0m0.076s
+SWV155+1.p success 	0m0.064s
+SWV156+1.p success 	0m0.100s
+SWV157+1.p success 	0m0.084s
+SWV158+1.p success 	0m0.068s
+SWV159+1.p success 	0m0.072s
+SWV160+1.p success 	0m0.124s
+SWV161+1.p success 	0m0.084s
+SWV162+1.p success 	0m0.076s
+SWV163+1.p success 	0m0.072s
+SWV164+1.p success 	0m0.112s
+SWV165+1.p success 	0m0.076s
+SWV166+1.p success 	0m0.068s
+SWV167+1.p success 	0m0.088s
+SWV168+1.p success 	0m0.080s
+SWV169+1.p success 	0m0.072s
+SWV170+1.p success 	0m0.088s
+SWV171+1.p success 	0m0.072s
+SWV172+1.p success 	0m0.076s
+SWV173+1.p success 	0m0.068s
+SWV174+1.p success 	0m0.080s
+SWV175+1.p success 	0m0.072s
+SWV176+1.p success 	0m0.080s
+SWV177+1.p success 	0m0.080s
+SWV178+1.p success 	0m0.076s
+SWV179+1.p success 	0m0.084s
+SWV180+1.p success 	0m0.080s
+SWV181+1.p success 	0m0.088s
+SWV182+1.p success 	0m0.080s
+SWV183+1.p success 	0m0.080s
+SWV184+1.p success 	0m0.076s
+SWV185+1.p success 	0m0.072s
+SWV186+1.p success 	0m0.080s
+SWV187+1.p success 	0m0.076s
+SWV188+1.p success 	0m0.080s
+SWV189+1.p success 	0m0.076s
+SWV190+1.p success 	0m0.068s
+SWV191+1.p success 	0m0.076s
+SWV192+1.p success 	0m0.080s
+SWV193+1.p success 	0m0.076s
+SWV194+1.p success 	0m0.072s
+SWV195+1.p success 	0m0.076s
+SWV196+1.p success 	0m0.072s
+SWV197+1.p success 	0m0.068s
+SWV198+1.p fail
+SWV199+1.p success 	0m0.104s
+SWV200+1.p success 	0m0.076s
+SWV201+1.p success 	0m0.080s
+SWV202+1.p success 	0m0.156s
+SWV203+1.p success 	0m0.172s
+SWV204+1.p fail
+SWV205+1.p fail
+SWV206+1.p success 	0m0.076s
+SWV208+1.p fail
+SWV209+1.p fail
+SWV210+1.p success 	0m0.076s
+SWV211+1.p success 	0m0.076s
+SWV212+1.p success 	0m0.076s
+SWV213+1.p success 	0m0.064s
+SWV214+1.p success 	0m0.080s
+SWV215+1.p success 	0m0.080s
+SWV216+1.p success 	0m0.084s
+SWV217+1.p success 	0m0.084s
+SWV218+1.p success 	0m0.068s
+SWV219+1.p success 	0m0.068s
+SWV220+1.p success 	0m0.076s
+SWV221+1.p success 	0m0.084s
+SWV222+1.p success 	0m0.080s
+SWV223+1.p success 	0m0.084s
+SWV224+1.p success 	0m0.080s
+SWV225+1.p success 	0m0.072s
+SWV226+1.p success 	0m0.084s
+SWV227+1.p success 	0m0.076s
+SWV228+1.p success 	0m0.084s
+SWV229+1.p success 	0m0.068s
+SWV230+1.p success 	0m0.076s
+SWV231+1.p success 	0m0.080s
+SWV232+1.p success 	0m0.072s
+SWV448+1.p fail
+SWV449+1.p fail
+SWV450+1.p fail
+SWV451+1.p fail
+SWV452+1.p fail
+SWV453+1.p fail
+SWV454+1.p fail
+SWV455+1.p fail
+SWV456+1.p fail
+SWV457+1.p fail
+SWV458+1.p fail
+SWV459+1.p fail
+SWV460+1.p fail
+SWV461+1.p success 	0m0.164s
+SWV462+1.p fail
+SWV463+1.p success 	0m0.036s
+SWV464+1.p success 	0m0.040s
+SWV465+1.p fail
+SWV466+1.p fail
+SWV467+1.p fail
+SWV468+1.p success 	0m3.732s
+SWV469+1.p fail
+SWV470+1.p fail
+SWV471+1.p fail
+SWV472+1.p fail
+SWV473+1.p fail
+SWV474+1.p fail
+SWV475+1.p success 	0m0.060s
+SWV476+1.p success 	0m1.220s
+SWV477+1.p success 	0m0.432s
+SWV478+1.p success 	0m0.056s
+SWV479+1.p success 	0m1.012s
+SWV480+1.p success 	0m0.968s
+SWV481+1.p fail

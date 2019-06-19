@@ -1,0 +1,69 @@
+false X<= {reflexive, reflexive^~} Xtransitive X<= {euclidean, antisymmetric}
+false X<= {reflexive, asymmetric} Xtransitive X<= {euclidean, euclidean^~}
+false X<= {total, reflexive^~} Xtransitive X<= {total, euclidean^^}
+false X<= {total, asymmetric} Xtransitive X<= {asymmetric, euclidean^^}
+reflexive X<= {total} Xtransitive X<= {symmetric, euclidean^^}
+euclidean X<= {symmetric, asymmetric} Xtransitive X<= {asymmetric, euclidean^~^}
+euclidean X<= {total, symmetric} Xtransitive X<= {antisymmetric, euclidean^~^}
+euclidean X<= {antisymmetric, coreflexive^~} Xtransitive X<= {euclidean, reflexive}
+euclidean X<= {transitive, euclidean^~} Xtransitive X<= {euclidean, euclidean^~^}
+euclidean X<= {antisymmetric, euclidean^~} Xtransitive X<= {euclidean, euclidean^^}
+euclidean X<= {reflexive, coreflexive^~} Xtransitive X<= {antisymmetric, euclidean^^}
+euclidean X<= {reflexive, euclidean^~} Xtransitive X<= {euclidean^^, antisymmetric^~}
+euclidean X<= {coreflexive} Xtransitive X<= {euclidean^~, euclidean^^}
+euclidean X<= {total, coreflexive^~} Xtotal X<= {reflexive, coreflexive^~}
+euclidean X<= {reflexive^~, euclidean^^} Xtotal X<= {reflexive, euclidean^~^}
+euclidean X<= {reflexive, euclidean^~^} Xtotal X<= {reflexive, euclidean^~}
+euclidean X<= {asymmetric, euclidean^^} Xtotal X<= {reflexive, antisymmetric^~}
+euclidean X<= {symmetric, antisymmetric} Xtotal X<= {reflexive, transitive^~}
+euclidean X<= {transitive, reflexive^~, euclidean^~^} Xsymmetric X<= {coreflexive^~}
+euclidean X<= {total, euclidean^~} Xsymmetric X<= {euclidean^~, reflexive^~}
+euclidean X<= {transitive, coreflexive^~} Xsymmetric X<= {euclidean, reflexive^~}
+euclidean X<= {asymmetric, coreflexive^~} Xsymmetric X<= {coreflexive}
+euclidean X<= {asymmetric, euclidean^~} Xsymmetric X<= {total, euclidean^~}
+euclidean X<= {total, euclidean^~^} Xsymmetric X<= {total, euclidean}
+euclidean X<= {antisymmetric, reflexive^~, euclidean^~^} Xsymmetric X<= {euclidean, asymmetric}
+euclidean X<= {asymmetric, euclidean^~^} Xsymmetric X<= {asymmetric, euclidean^~}
+euclidean X<= {symmetric, transitive} Xsymmetric X<= {reflexive, euclidean^~^}
+euclidean X<= {euclidean^~, euclidean^^} Xsymmetric X<= {reflexive, euclidean^^}
+euclidean X<= {symmetric, euclidean^^} Xsymmetric X<= {reflexive^~, euclidean^^}
+euclidean X<= {reflexive, euclidean^^} Xsymmetric X<= {reflexive^~, euclidean^~^}
+euclidean X<= {reflexive, symmetric, antisymmetric^~} Xsymmetric X<= {total, euclidean^~^}
+euclidean X<= {reflexive, symmetric, transitive^~} Xsymmetric X<= {asymmetric, euclidean^^}
+euclidean X<= {total, euclidean^^} Xsymmetric X<= {euclidean^~, euclidean^^}
+euclidean X<= {euclidean^^, coreflexive^~} Xsymmetric X<= {total, euclidean^^}
+antisymmetric X<= {coreflexive} Xsymmetric X<= {euclidean, euclidean^~^}
+antisymmetric X<= {asymmetric} Xsymmetric X<= {euclidean, euclidean^^}
+antisymmetric X<= {transitive, reflexive^~} Xsymmetric X<= {euclidean, reflexive}
+antisymmetric X<= {reflexive^~, euclidean^^} Xsymmetric X<= {asymmetric, euclidean^~^}
+antisymmetric X<= {euclidean, reflexive^~} Xsymmetric X<= {euclidean^~, euclidean^~^}
+transitive X<= {symmetric, asymmetric} Xsymmetric X<= {reflexive, euclidean^~}
+transitive X<= {total, symmetric} Xcoreflexive X<= {symmetric, asymmetric}
+transitive X<= {antisymmetric, coreflexive^~} Xcoreflexive X<= {antisymmetric, coreflexive^~}
+transitive X<= {coreflexive} Xcoreflexive X<= {transitive, euclidean^~, reflexive^~}
+transitive X<= {euclidean, transitive^~} Xcoreflexive X<= {asymmetric, coreflexive^~}
+transitive X<= {symmetric, antisymmetric} Xcoreflexive X<= {euclidean, reflexive^~}
+transitive X<= {reflexive, euclidean^~} Xcoreflexive X<= {reflexive, antisymmetric, euclidean^~}
+transitive X<= {euclidean, reflexive^~} Xcoreflexive X<= {asymmetric, euclidean^~}
+transitive X<= {total, euclidean^~} Xcoreflexive X<= {euclidean, asymmetric}
+transitive X<= {reflexive, coreflexive^~} Xcoreflexive X<= {symmetric, antisymmetric}
+transitive X<= {asymmetric, coreflexive^~} Xcoreflexive X<= {total, antisymmetric, euclidean^~}
+transitive X<= {asymmetric, euclidean^~} Xcoreflexive X<= {reflexive, antisymmetric, euclidean^~^}
+transitive X<= {asymmetric, transitive^~} Xcoreflexive X<= {reflexive, antisymmetric, euclidean^^}
+transitive X<= {antisymmetric, transitive^~} Xcoreflexive X<= {symmetric, transitive, reflexive^~}
+transitive X<= {euclidean^^, euclidean^~^} Xcoreflexive X<= {transitive, reflexive^~, coreflexive^~}
+transitive X<= {euclidean, coreflexive^~} Xcoreflexive X<= {antisymmetric, euclidean^~, euclidean^^}
+transitive X<= {total, coreflexive^~} Xcoreflexive X<= {total, antisymmetric, euclidean^^}
+transitive X<= {euclidean, asymmetric} Xcoreflexive X<= {total, euclidean, antisymmetric}
+transitive X<= {total, euclidean} Xcoreflexive X<= {total, antisymmetric, euclidean^~^}
+transitive X<= {reflexive, euclidean^~^} Xcoreflexive X<= {antisymmetric, reflexive^~, euclidean^~^}
+transitive X<= {euclidean^^, transitive^~} Xcoreflexive X<= {reflexive^~, euclidean^^}
+transitive X<= {euclidean, symmetric} Xcoreflexive X<= {antisymmetric, euclidean^~, reflexive^~}
+transitive X<= {reflexive^~, euclidean^^} Xcoreflexive X<= {asymmetric, euclidean^^}
+transitive X<= {antisymmetric, euclidean^~} Xcoreflexive X<= {asymmetric, euclidean^~^}
+transitive X<= {total, euclidean^~^} Xcoreflexive X<= {antisymmetric, euclidean^~, euclidean^~^}
+transitive X<= {euclidean, antisymmetric^~} Xcoreflexive X<= {euclidean, antisymmetric, euclidean^~^}
+transitive X<= {reflexive, euclidean^^} Xcoreflexive X<= {euclidean, antisymmetric, euclidean^^}
+transitive X<= {reflexive, symmetric, antisymmetric^~} Xcoreflexive X<= {euclidean, reflexive, antisymmetric}
+transitive X<= {euclidean^^, coreflexive^~} Xcoreflexive X<= {transitive, reflexive^~, euclidean^~^}
+transitive X<= {reflexive, symmetric, transitive^~} 

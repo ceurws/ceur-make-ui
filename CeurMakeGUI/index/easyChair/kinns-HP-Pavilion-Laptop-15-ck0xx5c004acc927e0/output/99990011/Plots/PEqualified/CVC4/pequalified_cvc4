@@ -1,0 +1,117 @@
+CAT001-3.p fail
+CAT001-4.p fail
+CAT002-3.p success 	0m0.008s
+CAT002-4.p success 	0m0.008s
+CAT003-3.p fail
+CAT003-4.p fail
+CAT004-3.p success 	0m0.012s
+CAT004-4.p success 	0m0.004s
+CAT005-3.p success 	0m0.012s
+CAT005-4.p success 	0m0.004s
+CAT006-3.p success 	0m0.012s
+CAT006-4.p success 	0m0.008s
+CAT009-3.p success 	0m0.016s
+CAT009-4.p success 	0m0.012s
+CAT010-4.p success 	0m0.004s
+CAT011-3.p success 	0m0.008s
+CAT011-4.p success 	0m0.004s
+CAT012-3.p success 	0m0.000s
+CAT012-4.p success 	0m0.004s
+CAT013-3.p success 	0m0.008s
+CAT013-4.p success 	0m0.000s
+CAT014-3.p success 	0m0.004s
+CAT014-4.p success 	0m0.008s
+CAT016-3.p success 	0m0.004s
+CAT016-4.p success 	0m0.004s
+CAT017-3.p success 	0m0.004s
+CAT017-4.p success 	0m0.000s
+CAT018-3.p success 	0m0.060s
+CAT018-4.p success 	0m0.036s
+CAT019-3.p fail
+FLD003-1.p success 	0m0.060s
+FLD004-1.p success 	0m0.076s
+FLD005-1.p fail
+FLD006-1.p success 	0m0.036s
+FLD007-1.p fail
+FLD008-2.p fail
+FLD009-1.p fail
+FLD010-1.p success 	0m0.024s
+FLD011-1.p fail
+FLD012-2.p fail
+FLD013-1.p fail
+FLD013-2.p fail
+FLD014-1.p fail
+FLD015-1.p fail
+FLD016-1.p fail
+FLD017-1.p success 	0m0.024s
+FLD018-1.p success 	0m0.048s
+FLD019-1.p success 	0m0.460s
+FLD020-1.p fail
+FLD021-1.p success 	0m0.064s
+FLD022-1.p fail
+FLD023-1.p success 	0m0.060s
+FLD024-1.p fail
+FLD025-1.p fail
+FLD025-2.p fail
+FLD026-1.p fail
+FLD027-1.p fail
+FLD028-1.p fail
+FLD029-1.p fail
+FLD030-1.p success 	0m0.016s
+FLD030-2.p success 	0m0.024s
+FLD031-1.p success 	0m0.056s
+FLD032-1.p success 	0m0.864s
+FLD033-1.p success 	1m54.127s
+FLD034-1.p success 	0m0.076s
+FLD035-1.p fail
+FLD036-1.p fail
+FLD037-1.p success 	0m0.080s
+FLD038-1.p fail
+FLD039-1.p success 	0m0.008s
+FLD040-1.p fail
+FLD041-1.p fail
+FLD041-2.p fail
+FLD043-1.p fail
+FLD044-2.p fail
+FLD049-1.p fail
+FLD049-2.p fail
+FLD050-1.p fail
+FLD050-2.p fail
+FLD055-1.p success 	0m0.756s
+FLD056-1.p success 	0m0.020s
+FLD057-1.p fail
+FLD058-1.p success 	0m0.052s
+FLD059-1.p fail
+FLD059-2.p fail
+FLD060-1.p fail
+FLD060-2.p fail
+FLD061-1.p fail
+FLD061-2.p fail
+FLD062-1.p fail
+FLD063-1.p fail
+FLD064-1.p fail
+FLD065-1.p fail
+FLD066-1.p fail
+FLD067-1.p fail
+FLD067-2.p fail
+FLD068-1.p fail
+FLD068-2.p fail
+FLD069-1.p fail
+FLD070-1.p fail
+FLD070-2.p fail
+FLD071-1.p success 	0m0.016s
+FLD071-2.p success 	0m0.900s
+FLD072-2.p fail
+FLD088-1.p fail
+FLD090-1.p fail
+GEO167+1.p fail
+GEO168+1.p fail
+GEO169+1.p success 	0m2.472s
+MSC006-1.p fail
+SET055-6.p fail
+SET055-7.p fail
+SET581+3.p fail
+SET628+3.p fail
+SET637+3.p fail
+SYN726-1.p fail
+SYN919+1.p success 	0m0.000s

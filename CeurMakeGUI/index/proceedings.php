@@ -1,4 +1,6 @@
 <?php
+	include_once '_inc/common.php';
+	
 	$page_title = 'Ceur Make';
 	
 	include_once '_inc/header.php';

@@ -1,0 +1,55 @@
+\usepackage[ruled,vlined,linesnumbered]{algorithm2e}
+
+% *************** algorithm2e
+
+% Do not make stuff italic
+\SetArgSty{textrm}
+\SetFuncSty{textrm}
+% \SetProcNameSty{textrm}
+
+% space between and after float
+% \setlength{\intextsep}{1\baselineskip}
+
+% do while construct: do{<end condition>}{<body>}
+\SetKwRepeat{Do}{do}{while}
+
+% \SetKwIF{Let}{}{}{let}{\{}}
+% \SetKwIF{If}{ElseIf}{Else}{if}{\{}{elif}{else\{}{}%
+
+% match block; use \lCase for inline case
+\SetKwSwitch{Match}{Case}{Other}{match}{:}{}{otherwise}{}
+
+\SetKwSwitch{Let}{Case}{Other}{let}{in}{}{otherwise}{}
+
+% match function block; works the same way
+\SetKwSwitch{MatchFunc}{Case}{Other}{func}{:}{}{otherwise}{}
+
+% general algorithm construct: \alg{\function{<args>}}{<body>}{???}
+\SetKwProg{alg}{proc}{}{}
+
+\SetKwProg{func}{func}{}
+% \SetKw{func}{func}{}
+
+
+\let\oldnl\nl% Store \nl in \oldnl
+\newcommand{\nonl}{\renewcommand{\nl}{\let\nl\oldnl}}% Remove line number for one line
+
+% put comments in small colored font; \tcp* for inline, \tcc for block
+\newcommand\mycommfont[1]{\footnotesize\ttfamily\textcolor{black}{#1}}
+\SetCommentSty{mycommfont}
+
+% defines algorithm environment to put caption below while still ruled
+\makeatletter
+\newenvironment{Ualgorithm}[1][htpb]
+  {\def\@algocf@post@ruled{\kern\interspacealgoruled\hrule  height\algoheightrule\kern3pt\relax}%
+    \def\@algocf@capt@ruled{under}
+    \begin{algorithm}[#1]}
+  {\end{algorithm}}
+\makeatother
+
+\renewcommand*{\algorithmcfname}{Fig.}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
