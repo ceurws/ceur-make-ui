@@ -45,18 +45,28 @@
 		$password 	= $DB->real_escape_string( $password );
 		
 		//-- query the db
-		$result = $DB->query( "SELECT `first_name`, `user_id` FROM `tblUsers` WHERE `email` = '$email' AND `password` = SHA1('$password') LIMIT 1");
+		$result = $DB->query( "SELECT `first_name`, `user_id`, `status` FROM `tblUsers` WHERE `email` = '$email' AND `password` = SHA1('$password') LIMIT 1");
 		
 		if( $result->num_rows > 0 ) 	//-- check if its successful
 		{
 			$row = $result->fetch_assoc();
 			
-			//-- store it in session
-			$_SESSION['user_id'] 	= $row['user_id'];
-			$_SESSION['first_name'] = $row['first_name'];
-			$_SESSION['login_type'] = 'EMAIL';	
+			if( $row['status'] == '0' )
+			{	
+				$error_msg = "Please click on the verification link in the email received. Check SPAM folder, if you couldn't find it!";
+			
+				//-- redirect to login page
+				redirect( 'login.php?error=' . urlencode( $error_msg ) );
+			}
+			else
+			{	
+				//-- store it in session
+				$_SESSION['user_id'] 	= $row['user_id'];
+				$_SESSION['first_name'] = $row['first_name'];
+				$_SESSION['login_type'] = 'EMAIL';	
 
-			redirect( 'index.php' );	
+				redirect( 'index.php' );	
+			}
 		} 
 		else 
 		{
@@ -114,6 +124,12 @@
 				<div class="center">
 					<input type="hidden" name="security_token" value="<?php echo $_SESSION['security_token']; ?>" />
 					<button name="login" value="1" type="submit" class="waves-effect waves-light btn-small">Login</button>
+				</div>
+				
+				<br>
+				
+				<div class="center">
+					<a href="forgot_pwd.php">Forgot password ?</a>
 				</div>
 			</form>
 			<!-- /Login Box -->

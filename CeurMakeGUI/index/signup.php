@@ -25,7 +25,7 @@
 			redirect( 'signup.php?error=' . urlencode( $error_msg ) );			
 		}
 		
-		//-- check whether we have this email id already registered in our database
+		//-- check whether we have this email id is already registered in our database
 		if( is_email_exists( $email ) )
 		{
 			$error_msg = "Email already exists! Please login.";
@@ -43,8 +43,34 @@
 		$result = $DB->query( "INSERT INTO `tblUsers`(`email`, `password`, `first_name`, `last_name`) VALUES('$email', SHA1('$password'), '$first_name', '$last_name') ");
 		
 		if( $result ) 	//-- check if its successful
-		{			
-			$msg = "Registration was successful!";
+		{
+			//-- get the user_id of this newly created User
+			$user_id = $DB->insert_id;
+			
+			//-- verification link
+			$verification_code = sha1( time() . $first_name . time() . $email . time() );
+			$verification_link = BASE_URL . '/verify_email.php?email=' . urlencode( $email ) . '&code=' . $verification_code;
+			
+			//-- update the user row with the verification code, in database
+			$DB->query( "UPDATE `tblUsers` SET `status` = '0', `email_verification_code` = '". $verification_code ."' WHERE `user_id` = '". $user_id ."' LIMIT 1");
+			
+			//-- send email with verification link			
+			$headers  = 'MIME-Version: 1.0' . "\r\n";
+			$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+			$headers .= 'From: hello@http://vishnunandakumar.com' . "\r\n" .
+				'Reply-To: hello@http://vishnunandakumar.com' . "\r\n" .
+				'X-Mailer: PHP/' . phpversion();
+
+			$subject = 'Account Verification Email - CEUR Make';
+			$message = '
+				Dear '. $first_name .',<br>
+				Thank you for registering an account with CEUR Make. <br><br>
+				Please click on the following link to verify your email account: ' . $verification_link;
+						
+			
+			mail( $email, $subject, $message, $headers );
+			
+			$msg = "Registration is successful. Please check your email and click on the link to activate";
 			
 			redirect( 'login.php?success=' . urlencode( $msg ) );	
 		} 

@@ -1,0 +1,12 @@
+[02-Jul-2019 20:40:04 UTC] PHP Warning:  include(inc/pdfparser/vendor/autoload.php): failed to open stream: No such file or directory in /home/u459209384/domains/vishnunandakumar.com/public_html/paper/upload.php on line 68
+[02-Jul-2019 20:40:04 UTC] PHP Warning:  include(inc/pdfparser/vendor/autoload.php): failed to open stream: No such file or directory in /home/u459209384/domains/vishnunandakumar.com/public_html/paper/upload.php on line 68
+[02-Jul-2019 20:40:04 UTC] PHP Warning:  include(): Failed opening 'inc/pdfparser/vendor/autoload.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/u459209384/domains/vishnunandakumar.com/public_html/paper/upload.php on line 68
+[02-Jul-2019 20:40:04 UTC] PHP Fatal error:  Uncaught Error: Class 'Smalot\PdfParser\Parser' not found in /home/u459209384/domains/vishnunandakumar.com/public_html/paper/upload.php:69
+Stack trace:
+#0 /home/u459209384/domains/vishnunandakumar.com/public_html/paper/upload.php(55): get_pdf_prop('files/156210000...')
+#1 {main}
+  thrown in /home/u459209384/domains/vishnunandakumar.com/public_html/paper/upload.php on line 69
+[02-Jul-2019 20:51:31 UTC] PHP Notice:  Undefined index: fileToUpload in /home/u459209384/domains/vishnunandakumar.com/public_html/paper/upload.php on line 39
+[05-Jul-2019 17:58:02 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/u459209384/domains/vishnunandakumar.com/public_html/paper/upload.php:79) in /home/u459209384/domains/vishnunandakumar.com/public_html/paper/upload.php on line 31
+[16-Jul-2019 14:50:39 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/u459209384/domains/vishnunandakumar.com/public_html/paper/upload.php:79) in /home/u459209384/domains/vishnunandakumar.com/public_html/paper/upload.php on line 31
+[17-Jul-2019 14:12:33 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/u459209384/domains/vishnunandakumar.com/public_html/paper/upload.php:79) in /home/u459209384/domains/vishnunandakumar.com/public_html/paper/upload.php on line 31

@@ -7,9 +7,9 @@ $APP_CONFIG = array(
 	'fb_app_secret'		=> 'cac38e0893e1e5511ae4eadfe68eb92c',
 	'google_client_id' 	=> '1030278216844-ec137nd08f8iers4v7ujvc9ul4e8qvnr.apps.googleusercontent.com',
 	'db_host'			=> 'localhost',
-	'db_user'			=> 'root',
-	'db_pwd'			=> '',
-	'db_name'			=> 'ceur'
+	'db_user'			=> 'u459209384_ceur',
+	'db_pwd'			=> '0W4ee40MGPTM',
+	'db_name'			=> 'u459209384_ceur'
 );
 
 session_start();

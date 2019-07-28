@@ -2,12 +2,13 @@
 	include_once '_inc/common.php';
 	
 	$page_title = 'Ceur Make';
-
+	
 	include_once '_inc/header.php';
 ?>
 <!--This view generates stepwise wizard for publishing proceedings using CEUR Make Workflow. The workflow in which user is required to create
     Table of Contents and Workshop artifact and based on that artifacts we generate standard submission artifacts.
--->
+-->  
+
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
     <div class="row">
@@ -22,23 +23,83 @@
       <div class="row">
         <div class="row" >
         <div id="uniquename">
-            <div class="col s6">
+		
+			<!-- Create Workshop - Main Card -->
+            <div id="card_createworkshop_main" class="col s6">
               <div class="card grey lighten-3">
               <div class="card-content black-text">
-              <span class="card-title">
+				<span class="card-title">
                       <a class="btn-floating btn-small waves-effect waves-light green disabled" onClick="" id="workshopLink"><i class="material-icons">check</i></a>  Create Workshop</span>
                       <div class="divider"></div>
                       <br/>
-              <p>Simple easy to use step by step form for creating Workshop. Contains all the necessary elements to be added
-              in workshop.</p>
+				<p>Simple easy to use step by step form for creating Workshop. Contains all the necessary elements to be added in workshop.</p>
+				
               </div>
               <div class="card-action">
-                      <a class="waves-effect waves-light btn " id="createWorkshop" href="javascript:showContentForWorkshop('uniquename')">Generate</a>
+                      <a class="waves-effect waves-light btn " id="createWorkshop" href="#">Generate</a>
                       <a class="waves-effect waves-light btn disabled" id="downloadWorkshop" href="">Download</a>
               </div>
               </div>
             </div>
-            <div class="col s6">
+			<!-- /Create Workshop - Main Card -->
+			
+			<!-- Create Workshop - Submenu Card -->
+            <div id="card_createworkshop_submenu" class="col s6" style="display: none;">
+				<div class="card grey lighten-3">
+					<div class="card-content black-text">				
+						<div class="divider"></div>
+						<br/>
+						
+						<a href="javascript:showContentForWorkshop('uniquename')" 
+							style="text-align: center; display: block; font-size: 23px;"> + Create a New Workshop </a>
+					</div>
+					
+					<div class="card-action">
+                    
+					</div>
+				</div>
+            </div>
+			<!-- /Create Workshop - Submenu Card -->
+			
+			<?php //if( is_logged_in() ): ?>
+			<!-- ################## Saved Workshops ##################### -->			
+			<div id="saved_workshops" class="col s6" style="display: none;">
+				<div class="card grey lighten-3">
+					<div class="card-content black-text">
+						<span class="card-title">
+							<a class="btn-floating btn-small waves-effect waves-light green disabled " onClick="" id="tocLink"><i class="material-icons">check</i></a>  Recent Workshops
+							
+							<i class="material-icons right tooltipped" data-position="bottom" data-tooltip="Choose a recent workshop to re-edit and submit">help_outline</i>
+						</span>
+						<div class="divider"></div>
+						<br/>
+						
+						<p> <!-- Do not delete this <p> tag -->	</p>
+						
+						<style>									
+							.workshops_list a{
+								display: block;
+								border-bottom: 1px solid #d5eaef;
+								padding-bottom: 5px;
+								margin: 6px 0;
+							}	
+						</style>
+							
+						<div class="workshops_list">
+							
+						</div>
+						
+				
+					</div>
+					<div class="card-action"></div>     
+				</div>
+			</div>           	
+			<!-- ######################################################## -->
+			<?php //endif; ?>
+			
+			
+			<!-- Table of Contents - Card -->
+            <div id="card_tableofcontents" class="col s6">
               <div class="card grey lighten-3">
               <div class="card-content black-text">
               <span class="card-title">
@@ -54,6 +115,8 @@
               </div>
               </div>
             </div>
+			<!-- /Table of Contents - Card -->
+			
         </div>
         </div>
         <div class="row" >
@@ -152,64 +215,93 @@
                                         </div>
                                 </div>
                                 </div>
-
+								
+								<!-- Add Papers -->
                                 <h1>Add Papers</h1>
                                 <div>
-                                        <div class="row">
-                                                <div class="col s10">
-                                                        <h5>Add Papers and Associated Details for Table of Contents</h5>
-                                                </div>
-                                                <div class="col s1">
-                                                        <a class="btn-floating btn-large waves-effect waves-light green" onClick="addPaper('dynamicInputPapers');"><i class="material-icons">add</i></a>
-                                                </div>
-                                                <div class="col s1">
-                                                        <a class="btn-floating btn-large waves-effect waves-light red" onClick="removePaper('dynamicInputPapers');"><i class="material-icons">remove</i></a>
-                                                </div>
-                                        </div>
-                                        <div class="Papers" id="dynamicInputPapers">
-                                                <div id="Paper0">
-                                                        <fieldset>
-                                                        <legend>Paper 0 </legend>
-                                                             <div class="input-field col s12">
-                                                                <select id="ses0">
-                                                                <option value="1">Option 1</option>
-                                                                </select>
-                                                                <label>Session *(optional)</label>
-                                                             </div>
-                                                             <div class="row">
-                                                                <div class="input-field col s7">
-                                                                <input id="paperTitle0" type="text" data-paper_index="0" class="tableofcontents_paper_title autocomplete validate">
-                                                                <label for="paperTitle0">Paper Title </label>
-                                                                <span id="paperTitleError0" style="display:none" class="error">Paper title can contain only Alphanumeric Characters (A-Z) and (0-9).</span>
-                                                             </div>
-                                                             <div class="input-field col s1">
-                                                             <h6>Page Number</h6>
-                                                             </div>
-                                                             <div class="input-field col s2">
-                                                                <input id="paperFrom0" type="text" class="tableofcontents_page_from validate" >
-                                                                <label for="paperFrom0"  >From</label>
-                                                                <span id="paperFromError0" style="display:none" class="error">Enter Number</span>
-                                                             </div>
-                                                             <div class="input-field col s2">
-                                                                <input id="paperTo0" type="text" class="tableofcontents_page_to validate" >
-                                                                <label for="paperTo0" >To</label>
-                                                                <span id="errorTo0" style="display:none" class="error">Enter Number</span>
-                                                             </div>
-                                                             </div>
-                                                             <fieldset>
-                                                                <legend>Authors of the Paper <span>   <a class="btn-floating btn-small waves-effect waves-light green" onClick="addAuthor('authors0');"><i class="material-icons">add</i></a> <a class="btn-floating btn-small waves-effect waves-light red" onClick="removeAuthor('authors0');"><i class="material-icons">remove</i></a></span></legend>
-                                                                <div class="input-field col s7" id="authors0" >
-																	<input id="0author0" type="text" class="validate">
-																	<label for="0author0" >Author 0</label>
-																	<span id="0authorError0" style="display:none" class="error">Please add valid author name.</span>
-																</div>
-                                                             </fieldset>
-                                                             <br/>
-                                                        </fieldset>
-                                                        <br/>
-                                                </div>
-
-                                        </div>
+									<div class="row">
+										<div class="col s10">
+											<h5>Add Papers and Associated Details for Table of Contents</h5>
+										</div>
+										<div class="col s1">
+											<a class="btn-floating btn-large waves-effect waves-light green" onClick="addPaper('dynamicInputPapers');"><i class="material-icons">add</i></a>
+										</div>
+										<div class="col s1">
+											<a class="btn-floating btn-large waves-effect waves-light red" onClick="removePaper('dynamicInputPapers');"><i class="material-icons">remove</i></a>
+										</div>
+									</div>
+									
+									<!-- Dynamic Papers -->
+									<div class="Papers" id="dynamicInputPapers">
+										<!-- Paper -->
+										<div id="Paper0">
+											<fieldset>
+												<legend>Paper 0 </legend>
+												<div class="row" style="margin: 0;">
+													<div class="input-field col s12">
+														<select id="ses0">
+															<option value="1">Option 1</option>
+														</select>
+														<label>Session *(optional)</label>
+													</div>
+												</div>
+												
+												<!-- Upload Paper -->
+												<div class="row" style="margin: 0;">																										
+													<div class="file-field input-field col s12">
+														<div class="btn">
+															<span>Upload Paper</span>
+															<input type="file" id="paperFile0" class="tablecontents_paper_file" >
+														</div>
+														<div class="file-path-wrapper">
+															<input class="file-path validate" type="text">
+														</div>
+													</div>													
+												</div>
+												<!-- /Upload Paper -->
+												
+												<div class="row">
+													<div class="input-field col s7">
+														<input id="paperTitle0" type="text" data-paper_index="0" class="tableofcontents_paper_title autocomplete validate">
+														<label for="paperTitle0">Paper Title </label>
+														<span id="paperTitleError0" style="display:none" class="error">Paper title can contain only Alphanumeric Characters (A-Z) and (0-9).</span>
+													</div>
+												
+													<div class="input-field col s1">
+														<h6>Page Number</h6>
+													</div>
+													
+													<div class="input-field col s2">
+														<input id="paperFrom0" type="text" class="tableofcontents_page_from validate" >
+														<label for="paperFrom0"  >From</label>
+														<span id="paperFromError0" style="display:none" class="error">Enter Number</span>
+													</div>
+												 
+													<div class="input-field col s2">
+														<input id="paperTo0" type="text" class="tableofcontents_page_to validate" >
+														<label for="paperTo0" >To</label>
+														<span id="errorTo0" style="display:none" class="error">Enter Number</span>
+													</div>
+												 
+												</div>
+												
+												<fieldset>
+													<legend>Authors of the Paper <span>   <a class="btn-floating btn-small waves-effect waves-light green" onClick="addAuthor('authors0');"><i class="material-icons">add</i></a> <a class="btn-floating btn-small waves-effect waves-light red" onClick="removeAuthor('authors0');"><i class="material-icons">remove</i></a></span></legend>
+													<div class="input-field col s7" id="authors0" >
+														<input id="0author0" type="text" class="validate tableofcontents_paper_author">
+														<label for="0author0" >Author 0</label>
+														<span id="0authorError0" style="display:none" class="error">Please add valid author name.</span>
+													</div>
+												</fieldset>
+												<br/>
+											</fieldset>
+											<br/>
+										</div>
+										<!-- /Paper -->
+										
+									</div>
+									<!-- /Dynamic Papers -->
+									
                                 </div>
 
                         </div>
@@ -443,7 +535,6 @@
 
   //regularExpression Variables-----------
 
-				// TODO: This can be completely moved to helper JS 
         var alphaNumeric = new RegExp(/^[a-z\d\-_\s]+$/i);
         var alphaNumericNotMust = new RegExp(/^[a-z\d\-_\s]*$/i);
         var alpha = new RegExp(/^[A-Za-z\s]+$/);
@@ -466,7 +557,7 @@
           //Initializers
 
                 $(document).ready(function() {
-
+					
 					//-- non-deletable "vol-" text in Volume Number field
 					$("#volumeNumber").keydown(function(e) {
 						var oldvalue=$(this).val();
@@ -474,10 +565,10 @@
 						setTimeout(function () {
 							if(field.value.indexOf('vol-') !== 0) {
 								$(field).val(oldvalue);
-							}
+							} 
 						}, 1);
 					});
-
+					
 					//-- function to move the cursor to the end of the string
 					function SetCaretAtEnd(elem) {
 						var elemLen = elem.value.length;
@@ -499,15 +590,15 @@
 							elem.selectionEnd = elemLen;
 							elem.focus();
 						} // if
-					}
-
+					} 
+	
 					//-- move cursor to the end of the text, when the input field gets focus (eg: during Tab press)
 					$("#volumeNumber").on('focus', function(e) {
 						SetCaretAtEnd(this);
 					});
-
+					
 					//-------------------------------------------------------------
-
+					
                     $('.modal-trigger').modal();
                     document.getElementById('uniquename2').style.display = "none";
                     document.getElementById('uniquename0').style.display = "none";
@@ -1093,6 +1184,7 @@
                                                 homepage: homePage,
                                                 language: languageStr,
                                                 location: location,
+												locationlink: linkLocation,			//-- ### added on 24 Jul 2019
                                                 date: date
                                         });
 
@@ -1198,7 +1290,8 @@
                                             number: tempTitleTab[0].number,
                                             homepage: tempTitleTab[0].homepage,
                                             language: tempTitleTab[0].language,
-                                            location: tempTitleTab[0].location,
+                                            location: tempTitleTab[0].location,	
+											locationlink: tempTitleTab[0].locationlink,		//-- ### Added on 24 Jul 2019										
                                             date: tempTitleTab[0].date,
                                             conference:tempConferenceTab[0],
                                             editors: finalEditorsArray,
@@ -1221,8 +1314,14 @@
                                                 jsondata = xhr.responseText;
                                                 console.log(jsondata);
                                                 //after Workshop Creation
-
-
+												
+												console.log('sending for storage..');
+												//--##########################################
+												//-- store this data in database for later use 												
+												send_to_db_storage( data );
+												//--##########################################
+												
+												
                                                 if( boolFromTOCToWorkshop == 1 )
                                                 {
                                                         scriptGenerator( ) ;
@@ -1319,7 +1418,22 @@
                           authorArray.push(0);
                           var newdiv = document.createElement('div');
                           newdiv.id ="Paper"+(counterPaper+1);
-                          newdiv.innerHTML = "<fieldset><legend>Paper"+(counterPaper+1)+"</legend><div class='input-field col s12'><select id='ses"+(counterPaper+1) +"'><option value='1'>Option 1</option></select><label>Session *(optional)</label></div><div class='row'><div class='input-field col s7'><input id='paperTitle"+(counterPaper+1)+"' type='text' data-paper_index='"+(counterPaper+1) +"' class='tableofcontents_paper_title autocomplete validate'><label for='paperTitle"+(counterPaper+1)+"'>Paper Title </label><span id='paperTitleError"+(counterPaper+1)+"' style='display:none' class='error'>Paper title can contain only Alphanumeric Characters (A-Z) and (0-9).</span></div><div class='input-field col s1'><h6>Page Number</h6></div><div class='input-field col s2'><input id='paperFrom"+(counterPaper+1)+"' type='text' class='validate'><label for='paperFrom"+(counterPaper+1)+"'>From</label><span id='paperFromError"+(counterPaper+1)+"' style='display:none' class='error'>Enter Number</span></div><div class='input-field col s2'><input id='paperTo"+(counterPaper+1)+"' type='text' class='validate'><label for='paperTo"+(counterPaper+1)+"'>To</label>                                <span id='errorTo"+(counterPaper+1)+"' style='display:none' class='error'>Enter Number</span></div></div><fieldset><legend>Authors of the Paper <span><a class='btn-floating btn-small waves-effect waves-light green' onClick='addAuthor(&quot;authors"+(counterPaper + 1)+"&quot;);'><i class='material-icons'>add</i></a></span><a class='btn-floating btn-small waves-effect waves-light red' onClick='removeAuthor(&quot;authors"+(counterPaper + 1)+"&quot;);'><i class='material-icons'>remove</i></a></legend><div class='input-field col s7' id='authors"+(counterPaper + 1)+"' ><input id='"+(counterPaper+1)+"author"+authorArray[counterPaper+1]+"' type='text' class='validate'><label for='"+(counterPaper+1)+"author"+authorArray[counterPaper+1]+"'>Author "+authorArray[counterPaper+1]+"</label><span id='"+(counterPaper+1)+"authorError"+(authorArray[counterPaper+1])+"' style='display:none' class='error'>Please add valid author name.</span></div></fieldset><br/></fieldset><br/>";
+                          newdiv.innerHTML = " " +
+											"<fieldset><legend>Paper"+(counterPaper+1)+"</legend>" + 
+											"<div class='row' style='margin: 0'><div class='input-field col s12'><select id='ses"+(counterPaper+1) +"'><option value='1'>Option 1</option></select><label>Session *(optional)</label></div></div>" + 											
+											'<div class="row" style="margin: 0;">' +
+											'	<div class="file-field input-field col s12">' +
+											'		<div class="btn">' +
+											'			<span>Upload Paper</span>' +
+											'			<input type="file" id="paperFile'+(counterPaper + 1)+'" class="tablecontents_paper_file" >' +
+											'		</div>' +
+											'		<div class="file-path-wrapper">' +
+											'			<input class="file-path validate" type="text">' +
+											'		</div>' +
+											'	</div>' +													
+											'</div>' +											
+											"<div class='row'><div class='input-field col s7'><input id='paperTitle"+(counterPaper+1)+"' type='text' data-paper_index='"+(counterPaper+1) +"' class='tableofcontents_paper_title autocomplete validate'><label for='paperTitle"+(counterPaper+1)+"'>Paper Title </label><span id='paperTitleError"+(counterPaper+1)+"' style='display:none' class='error'>Paper title can contain only Alphanumeric Characters (A-Z) and (0-9).</span></div><div class='input-field col s1'><h6>Page Number</h6></div><div class='input-field col s2'><input id='paperFrom"+(counterPaper+1)+"' type='text' class='validate tableofcontents_page_from'><label for='paperFrom"+(counterPaper+1)+"'>From</label><span id='paperFromError"+(counterPaper+1)+"' style='display:none' class='error'>Enter Number</span></div><div class='input-field col s2'><input id='paperTo"+(counterPaper+1)+"' type='text' class='validate tableofcontents_page_to'><label for='paperTo"+(counterPaper+1)+"'>To</label>                                <span id='errorTo"+(counterPaper+1)+"' style='display:none' class='error'>Enter Number</span></div></div>" + 
+											"<fieldset><legend>Authors of the Paper <span><a class='btn-floating btn-small waves-effect waves-light green' onClick='addAuthor(&quot;authors"+(counterPaper + 1)+"&quot;);'><i class='material-icons'>add</i></a></span><a class='btn-floating btn-small waves-effect waves-light red' onClick='removeAuthor(&quot;authors"+(counterPaper + 1)+"&quot;);'><i class='material-icons'>remove</i></a></legend><div class='input-field col s7' id='authors"+(counterPaper + 1)+"' ><input id='"+(counterPaper+1)+"author"+authorArray[counterPaper+1]+"' type='text' class='validate tableofcontents_paper_author'><label for='"+(counterPaper+1)+"author"+authorArray[counterPaper+1]+"'>Author "+authorArray[counterPaper+1]+"</label><span id='"+(counterPaper+1)+"authorError"+(authorArray[counterPaper+1])+"' style='display:none' class='error'>Please add valid author name.</span></div></fieldset><br/></fieldset><br/>";
 
                           document.getElementById(divName).appendChild(newdiv);
                           var selectId = '#ses'+(counterPaper+1);
@@ -1376,8 +1490,8 @@
                     authorArray[positionOfPapersDiv] = authorArray[positionOfPapersDiv] - 1 ;
                 }
 			}
-
-
+			
+			
        //-----------------------------------------------------------------------------------------
        //Editors -- Workshop Creation ------------------------------------------------------------
 
@@ -1534,7 +1648,7 @@
 
 					  }
 				  }
-
+				  
                   return boolTemp ;
 
           }
@@ -1546,7 +1660,7 @@
 
                 for( var i = 0 ; i < editorCounter +1 ; i++ )
                 {
-
+					
                     //if ( !( alphaNumeric.test( document.getElementById('nameEditor'+i).value )) )
 					if ( jQuery.trim( document.getElementById('nameEditor'+i).value ) == '' )	//-- checks whether the Editor name is empty or not.
                     {
@@ -1618,8 +1732,8 @@
                     var xobj = new XMLHttpRequest();
                         xobj.overrideMimeType("application/json");
                     //xobj.open('GET', 'json/countries.json', true); // Replace 'my_data' with the path to your file
-					xobj.open('GET', 'https://restcountries.eu/rest/v2/all?fields=name', true);
-
+					xobj.open('GET', 'https://restcountries.eu/rest/v2/all?fields=name', true); 
+					
                     xobj.onreadystatechange = function () {
                           if (xobj.readyState == 4 && xobj.status == "200") {
                             // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
@@ -1746,12 +1860,13 @@
     //---------------------------------------------------------------------------------------------
   </script>
 
-<<<<<<< HEAD
 	
 	<!--<script src="js/tableofcontents_page.js"></script>-->
-=======
-
-	<script src="js/tableofcontents_page.js"></script>
->>>>>>> e651f194a9fbd1069350a572770f0bc8adee9b0a
+	
+	<script src="js/tableofcontents_upload.js"></script>
+	
+	<!-- For storage of Workshop data -->
+	<script src="js/workshop_storage.js"></script>
+	
   </body>
 </html>

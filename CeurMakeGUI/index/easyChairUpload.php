@@ -2,7 +2,7 @@
 	include_once '_inc/common.php';
 	
 	$page_title = 'Ceur Make';
-
+	
 	include_once '_inc/header.php';
 ?>
   <div class="section no-pad-bot" id="index-banner">
@@ -302,7 +302,7 @@
 	<!-- Footer -->
 	<?php include_once '_inc/footer.php'; ?>
 	<!-- /Footer -->
-
+	
   <script>
   //Variables:
 
@@ -340,7 +340,7 @@
    //----------------------------------
 
   //regularExpression Variables-----------
-				// TODO: This can be put to helper JS
+
         var alphaNumeric = new RegExp(/^[a-z\d\-_\s]+$/i);
         var alphaNumericNotMust = new RegExp(/^[a-z\d\-_\s]*$/i);
         var alpha = new RegExp(/^[A-Za-z\s]+$/i);
@@ -1145,7 +1145,7 @@
                         xobj.overrideMimeType("application/json");
                     //xobj.open('GET', 'json/countries.json', true); // Replace 'my_data' with the path to your file
 					xobj.open('GET', 'https://restcountries.eu/rest/v2/all?fields=name', true);
-
+					
                     xobj.onreadystatechange = function () {
                           if (xobj.readyState == 4 && xobj.status == "200") {
                             // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode

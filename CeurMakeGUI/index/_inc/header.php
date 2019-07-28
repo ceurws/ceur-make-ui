@@ -34,7 +34,7 @@
 
       </ul>
 	  
-	  <ul class="top_right_menus hide-on-med-and-down">
+	  <ul class="right hide-on-med-and-down">
 		<?php if( is_logged_in() ) { ?>
 			<li><a href="logout.php"> <i class="tiny material-icons menu_icon">lock</i> Logout</a></li>
 		<?php } else { ?>		
@@ -72,3 +72,21 @@
 	<div class="success_box"><strong>SUCCESS:</strong>  <?php echo $_GET['success']; ?></div>
   <?php } ?>
   <!-- /Display success -->
+  
+  	<!-- Full Screen Loader -->
+	<div id="fullscreen_loader" class="main-loader">
+	  <div class="preloader-wrapper big active">
+		<div class="spinner-layer spinner-blue-only">
+		  <div class="circle-clipper left">
+			<div class="circle"></div>
+		  </div>
+		  <div class="gap-patch">
+			<div class="circle"></div>
+		  </div>
+		  <div class="circle-clipper right">
+			<div class="circle"></div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<!-- /Full Screen Loader -->  
