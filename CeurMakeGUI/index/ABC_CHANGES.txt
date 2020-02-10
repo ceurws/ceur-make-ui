@@ -1,0 +1,24 @@
+- updated to latest materializecss (v1.0)
+- Materialize.Toast() changed to M.toast()	==>	eg: M.toast({html:'Workshop Contents Has Been Successfully Created!', displayLength: 3000, classes: 'rounded'}) ;
+- leanmodal() changed to modal()
+- material_select() changed to formSelect()
+- updated in classes and attributes in HTML for the sidenav() function to work
+- added datepicker with yyyy-mm-dd format ==> classname: "datepicker"
+- dynamic fetching of COUNTRIES through API	==>	xobj.open('GET', 'https://restcountries.eu/rest/v2/all?fields=name', true);
+- removed ".DS_store" files, which has the Mac attributes in it
+- converted all HTML pages to PHP and separated header & footer sections (which were common to all the UI pages)
+- removed some unwanted files (still there are some, which will be removed later)
+- auto completion(and filling) of publication in "Table of Contents" page. Eg API request: https://dblp.org/search/publ/api?format=json&q=sanjeev
+- arranged the top header section, moved the nav to the center, added login & signup on the right
+
+
+******************************************
+FRONT UI PAGES
+******************************************
+- index.php
+- proceedings.php
+- publishPage.php
+- uploadResources.php
+- easyChairUpload.php
+- issue.php
+

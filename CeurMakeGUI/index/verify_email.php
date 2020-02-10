@@ -31,9 +31,14 @@ if( $result->num_rows > 0 ) 	//-- check if its successful
 	//-- update the user row with the verification code, in database
 	$DB->query( "UPDATE `tblUsers` SET `status` = '1', `email_verification_code` = '' WHERE `user_id` = '". $row['user_id'] ."' LIMIT 1");
 	
-	$msg = "Email account verified. Please login!";
-		
-	redirect( 'login.php?success=' . urlencode( $msg ) );	
+	$msg = "Email account verified!";
+	
+	//-- store it in session (auto login)
+	$_SESSION['user_id'] 	= $row['user_id'];
+	$_SESSION['first_name'] = $row['first_name'];
+	$_SESSION['login_type'] = 'EMAIL';	
+
+	redirect( 'index.php?success=' . urlencode( $msg ) );		
 }		
 else
 {

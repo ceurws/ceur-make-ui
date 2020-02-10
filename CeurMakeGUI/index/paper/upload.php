@@ -69,9 +69,7 @@ function get_pdf_prop( $file )
 	$pdf    = $parser->parseFile( $file );
 	 
 	$details  = $pdf->getDetails();
-	//------------------------------------
-	
-	//var_dump( $details); 
+	 
 	$page = $pdf->getPages()[0];
 
 	//-- Extract the text of the first page
@@ -86,17 +84,16 @@ function get_pdf_prop( $file )
 	//echo $text;		
 	//var_dump ( $details);
 	
-	//-------------------------------------------
-	
 	/*
-	//-- display meta info
 	foreach ($details as $property => $value) {
 		if (is_array($value)) {
 			$value = implode(', ', $value);
 		}
 		echo $property . ' => ' . $value . "\n";
 	}
-*/
+	*/
+
+	//-------------------------------------------
 	
 	
 	return array(

@@ -104,3 +104,13 @@ legend{
   
   display: none;
 }
+
+.login_btns_container{
+  position: absolute;
+  right: 0;
+  top:0;
+}
+
+.top_main_menu_container{
+  min-width: 350px;
+}

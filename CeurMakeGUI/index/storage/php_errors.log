@@ -1,0 +1,65 @@
+[27-Aug-2019 18:07:41 Asia/Kolkata] PHP Notice:  Use of undefined constant src_file - assumed 'src_file' in C:\wamp\www\vishnugermany\storage\save.php on line 60
+[27-Aug-2019 18:07:41 Asia/Kolkata] PHP Stack trace:
+[27-Aug-2019 18:07:41 Asia/Kolkata] PHP   1. {main}() C:\wamp\www\vishnugermany\storage\save.php:0
+[27-Aug-2019 18:07:41 Asia/Kolkata] PHP   2. generate_workshop_series() C:\wamp\www\vishnugermany\storage\save.php:27
+[27-Aug-2019 18:07:41 Asia/Kolkata] PHP Notice:  Use of undefined constant dest_file - assumed 'dest_file' in C:\wamp\www\vishnugermany\storage\save.php on line 60
+[27-Aug-2019 18:07:41 Asia/Kolkata] PHP Stack trace:
+[27-Aug-2019 18:07:41 Asia/Kolkata] PHP   1. {main}() C:\wamp\www\vishnugermany\storage\save.php:0
+[27-Aug-2019 18:07:41 Asia/Kolkata] PHP   2. generate_workshop_series() C:\wamp\www\vishnugermany\storage\save.php:27
+[27-Aug-2019 18:07:41 Asia/Kolkata] PHP Warning:  copy(src_file): failed to open stream: No such file or directory in C:\wamp\www\vishnugermany\storage\save.php on line 60
+[27-Aug-2019 18:07:41 Asia/Kolkata] PHP Stack trace:
+[27-Aug-2019 18:07:41 Asia/Kolkata] PHP   1. {main}() C:\wamp\www\vishnugermany\storage\save.php:0
+[27-Aug-2019 18:07:41 Asia/Kolkata] PHP   2. generate_workshop_series() C:\wamp\www\vishnugermany\storage\save.php:27
+[27-Aug-2019 18:07:41 Asia/Kolkata] PHP   3. copy() C:\wamp\www\vishnugermany\storage\save.php:60
+[27-Aug-2019 18:09:59 Asia/Kolkata] PHP Warning:  copy(../userDirectories//output/put-form.odt): failed to open stream: No such file or directory in C:\wamp\www\vishnugermany\storage\save.php on line 60
+[27-Aug-2019 18:09:59 Asia/Kolkata] PHP Stack trace:
+[27-Aug-2019 18:09:59 Asia/Kolkata] PHP   1. {main}() C:\wamp\www\vishnugermany\storage\save.php:0
+[27-Aug-2019 18:09:59 Asia/Kolkata] PHP   2. generate_workshop_series() C:\wamp\www\vishnugermany\storage\save.php:27
+[27-Aug-2019 18:09:59 Asia/Kolkata] PHP   3. copy() C:\wamp\www\vishnugermany\storage\save.php:60
+[27-Aug-2019 18:10:12 Asia/Kolkata] PHP Warning:  copy(../userDirectories//output/put-form.odt): failed to open stream: No such file or directory in C:\wamp\www\vishnugermany\storage\save.php on line 60
+[27-Aug-2019 18:10:12 Asia/Kolkata] PHP Stack trace:
+[27-Aug-2019 18:10:12 Asia/Kolkata] PHP   1. {main}() C:\wamp\www\vishnugermany\storage\save.php:0
+[27-Aug-2019 18:10:12 Asia/Kolkata] PHP   2. generate_workshop_series() C:\wamp\www\vishnugermany\storage\save.php:27
+[27-Aug-2019 18:10:12 Asia/Kolkata] PHP   3. copy() C:\wamp\www\vishnugermany\storage\save.php:60
+[27-Aug-2019 18:12:17 Asia/Kolkata] PHP Notice:  Undefined index: fileName in C:\wamp\www\vishnugermany\storage\save.php on line 45
+[27-Aug-2019 18:12:17 Asia/Kolkata] PHP Stack trace:
+[27-Aug-2019 18:12:17 Asia/Kolkata] PHP   1. {main}() C:\wamp\www\vishnugermany\storage\save.php:0
+[27-Aug-2019 18:12:17 Asia/Kolkata] PHP   2. generate_workshop_series() C:\wamp\www\vishnugermany\storage\save.php:17
+[27-Aug-2019 18:12:17 Asia/Kolkata] PHP Notice:  Undefined index: workshop_series in C:\wamp\www\vishnugermany\storage\save.php on line 47
+[27-Aug-2019 18:12:17 Asia/Kolkata] PHP Stack trace:
+[27-Aug-2019 18:12:17 Asia/Kolkata] PHP   1. {main}() C:\wamp\www\vishnugermany\storage\save.php:0
+[27-Aug-2019 18:12:17 Asia/Kolkata] PHP   2. generate_workshop_series() C:\wamp\www\vishnugermany\storage\save.php:17
+[27-Aug-2019 18:12:17 Asia/Kolkata] PHP Notice:  Undefined index: workshop_series in C:\wamp\www\vishnugermany\storage\save.php on line 51
+[27-Aug-2019 18:12:17 Asia/Kolkata] PHP Stack trace:
+[27-Aug-2019 18:12:17 Asia/Kolkata] PHP   1. {main}() C:\wamp\www\vishnugermany\storage\save.php:0
+[27-Aug-2019 18:12:17 Asia/Kolkata] PHP   2. generate_workshop_series() C:\wamp\www\vishnugermany\storage\save.php:17
+[27-Aug-2019 18:12:17 Asia/Kolkata] PHP Warning:  copy(../userDirectories//output/put-form.odt): failed to open stream: No such file or directory in C:\wamp\www\vishnugermany\storage\save.php on line 60
+[27-Aug-2019 18:12:17 Asia/Kolkata] PHP Stack trace:
+[27-Aug-2019 18:12:17 Asia/Kolkata] PHP   1. {main}() C:\wamp\www\vishnugermany\storage\save.php:0
+[27-Aug-2019 18:12:17 Asia/Kolkata] PHP   2. generate_workshop_series() C:\wamp\www\vishnugermany\storage\save.php:17
+[27-Aug-2019 18:12:17 Asia/Kolkata] PHP   3. copy() C:\wamp\www\vishnugermany\storage\save.php:60
+[27-Aug-2019 18:13:10 Asia/Kolkata] PHP Notice:  Undefined index: fileName in C:\wamp\www\vishnugermany\storage\save.php on line 45
+[27-Aug-2019 18:13:10 Asia/Kolkata] PHP Stack trace:
+[27-Aug-2019 18:13:10 Asia/Kolkata] PHP   1. {main}() C:\wamp\www\vishnugermany\storage\save.php:0
+[27-Aug-2019 18:13:10 Asia/Kolkata] PHP   2. generate_workshop_series() C:\wamp\www\vishnugermany\storage\save.php:17
+[27-Aug-2019 18:13:10 Asia/Kolkata] PHP Notice:  Undefined index: workshop_series in C:\wamp\www\vishnugermany\storage\save.php on line 47
+[27-Aug-2019 18:13:10 Asia/Kolkata] PHP Stack trace:
+[27-Aug-2019 18:13:10 Asia/Kolkata] PHP   1. {main}() C:\wamp\www\vishnugermany\storage\save.php:0
+[27-Aug-2019 18:13:10 Asia/Kolkata] PHP   2. generate_workshop_series() C:\wamp\www\vishnugermany\storage\save.php:17
+[27-Aug-2019 18:13:10 Asia/Kolkata] PHP Notice:  Undefined index: workshop_series in C:\wamp\www\vishnugermany\storage\save.php on line 51
+[27-Aug-2019 18:13:10 Asia/Kolkata] PHP Stack trace:
+[27-Aug-2019 18:13:10 Asia/Kolkata] PHP   1. {main}() C:\wamp\www\vishnugermany\storage\save.php:0
+[27-Aug-2019 18:13:10 Asia/Kolkata] PHP   2. generate_workshop_series() C:\wamp\www\vishnugermany\storage\save.php:17
+[27-Aug-2019 18:13:10 Asia/Kolkata] PHP Warning:  copy(../userDirectories//output/put-form.odt): failed to open stream: No such file or directory in C:\wamp\www\vishnugermany\storage\save.php on line 60
+[27-Aug-2019 18:13:10 Asia/Kolkata] PHP Stack trace:
+[27-Aug-2019 18:13:10 Asia/Kolkata] PHP   1. {main}() C:\wamp\www\vishnugermany\storage\save.php:0
+[27-Aug-2019 18:13:10 Asia/Kolkata] PHP   2. generate_workshop_series() C:\wamp\www\vishnugermany\storage\save.php:17
+[27-Aug-2019 18:13:10 Asia/Kolkata] PHP   3. copy() C:\wamp\www\vishnugermany\storage\save.php:60
+[27-Aug-2019 18:13:31 Asia/Kolkata] PHP Notice:  Undefined index: workshop_series in C:\wamp\www\vishnugermany\storage\save.php on line 47
+[27-Aug-2019 18:13:31 Asia/Kolkata] PHP Stack trace:
+[27-Aug-2019 18:13:31 Asia/Kolkata] PHP   1. {main}() C:\wamp\www\vishnugermany\storage\save.php:0
+[27-Aug-2019 18:13:31 Asia/Kolkata] PHP   2. generate_workshop_series() C:\wamp\www\vishnugermany\storage\save.php:17
+[27-Aug-2019 18:13:31 Asia/Kolkata] PHP Notice:  Undefined index: workshop_series in C:\wamp\www\vishnugermany\storage\save.php on line 51
+[27-Aug-2019 18:13:31 Asia/Kolkata] PHP Stack trace:
+[27-Aug-2019 18:13:31 Asia/Kolkata] PHP   1. {main}() C:\wamp\www\vishnugermany\storage\save.php:0
+[27-Aug-2019 18:13:31 Asia/Kolkata] PHP   2. generate_workshop_series() C:\wamp\www\vishnugermany\storage\save.php:17

@@ -24,6 +24,8 @@ jQuery(document).ready(function($){
 					$(parent).find('.tableofcontents_page_from').val('').focus();
 					$(parent).find('.tableofcontents_page_to').val('').focus();
 					
+					$(parent).find('.tableofcontents_page_to').data('total_pages', '0');	//-- store total pages count
+					
 					alert( response.msg );
 				}
 				else	//-- if successful
@@ -32,9 +34,12 @@ jQuery(document).ready(function($){
 					$(parent).find('.tableofcontents_page_to').val( response.data.total_pages ).focus();	//-- page : to					
 					$(parent).find('.tableofcontents_paper_title').val( response.data.paper_title ).focus();//-- paper title
 					$(parent).find('.tableofcontents_paper_author').val( response.data.author ).focus();//-- paper title
+					
+					$(parent).find('.tableofcontents_page_to').data('total_pages', response.data.total_pages);	//-- store total pages count
 				}
 			  
-			  
+				re_calculate_pages_to_from();	//-- to re-calculate the to & from page counts
+				
 				$('#fullscreen_loader').hide();
 			},
 			error: function(jqXHR, textStatus, errorMessage) {
@@ -45,4 +50,31 @@ jQuery(document).ready(function($){
 			}
 		});
 	}  
-});
+});	
+	
+//-- recalculates the to & from page numbers for all the papers, based on the total number of pages
+function re_calculate_pages_to_from()
+{
+	var page_start = 1;
+	for( var i = 0; i < $('.tablecontents_paper_file').length; i++ )
+	{
+		var total_pages = $('#paperTo' + i).data('total_pages');
+		
+		if( total_pages === undefined )
+		{
+			$('#paperFrom' + i).val('');
+			$('#paperTo' + i).val('');
+			
+			return;
+		}
+		
+		total_pages = parseInt( total_pages );
+		
+		var page_end = ( page_start + total_pages ) - 1;
+		
+		$('#paperFrom' + i).val( page_start );
+		$('#paperTo' + i).val( page_end );
+		
+		page_start += total_pages;
+	}
+}

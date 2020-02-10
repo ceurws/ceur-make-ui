@@ -1,0 +1,34 @@
+[05-Jul-2019 17:56:19 Asia/Kolkata] PHP Parse error:  syntax error, unexpected 'use' (T_USE) in C:\wamp\www\vishnugermany\paper\upload.php on line 81
+[05-Jul-2019 17:56:38 Asia/Kolkata] PHP Parse error:  syntax error, unexpected 'use' (T_USE) in C:\wamp\www\vishnugermany\paper\upload.php on line 81
+[05-Jul-2019 17:56:56 Asia/Kolkata] PHP Parse error:  syntax error, unexpected '?' in C:\wamp\www\vishnugermany\paper\inc\pdf-to-text\src\Pdf.php on line 19
+[05-Jul-2019 17:56:56 Asia/Kolkata] PHP Stack trace:
+[05-Jul-2019 17:56:56 Asia/Kolkata] PHP   1. {main}() C:\wamp\www\vishnugermany\paper\upload.php:0
+[05-Jul-2019 17:56:56 Asia/Kolkata] PHP   2. get_pdf_prop() C:\wamp\www\vishnugermany\paper\upload.php:54
+[05-Jul-2019 18:15:22 Asia/Kolkata] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 25247553 bytes) in C:\wamp\www\vishnugermany\paper\inc\pdfparser\pdfparser-0.14.0\src\Smalot\PdfParser\PDFObject.php on line 143
+[05-Jul-2019 18:15:22 Asia/Kolkata] PHP Stack trace:
+[05-Jul-2019 18:15:22 Asia/Kolkata] PHP   1. {main}() C:\wamp\www\vishnugermany\paper\upload.php:0
+[05-Jul-2019 18:15:22 Asia/Kolkata] PHP   2. get_pdf_prop() C:\wamp\www\vishnugermany\paper\upload.php:54
+[05-Jul-2019 18:15:22 Asia/Kolkata] PHP   3. Smalot\PdfParser\Page->getText() C:\wamp\www\vishnugermany\paper\upload.php:76
+[05-Jul-2019 18:15:22 Asia/Kolkata] PHP   4. Smalot\PdfParser\PDFObject->getText() C:\wamp\www\vishnugermany\paper\inc\pdfparser\pdfparser-0.14.0\src\Smalot\PdfParser\Page.php:220
+[05-Jul-2019 18:15:22 Asia/Kolkata] PHP   5. Smalot\PdfParser\XObject\Form->getText() C:\wamp\www\vishnugermany\paper\inc\pdfparser\pdfparser-0.14.0\src\Smalot\PdfParser\PDFObject.php:391
+[05-Jul-2019 18:15:22 Asia/Kolkata] PHP   6. Smalot\PdfParser\PDFObject->getText() C:\wamp\www\vishnugermany\paper\inc\pdfparser\pdfparser-0.14.0\src\Smalot\PdfParser\XObject\Form.php:54
+[05-Jul-2019 18:15:22 Asia/Kolkata] PHP   7. Smalot\PdfParser\PDFObject->getText() C:\wamp\www\vishnugermany\paper\inc\pdfparser\pdfparser-0.14.0\src\Smalot\PdfParser\PDFObject.php:391
+[05-Jul-2019 18:15:22 Asia/Kolkata] PHP   8. Smalot\PdfParser\PDFObject->getSectionsText() C:\wamp\www\vishnugermany\paper\inc\pdfparser\pdfparser-0.14.0\src\Smalot\PdfParser\PDFObject.php:250
+[05-Jul-2019 18:15:22 Asia/Kolkata] PHP   9. Smalot\PdfParser\PDFObject->cleanContent() C:\wamp\www\vishnugermany\paper\inc\pdfparser\pdfparser-0.14.0\src\Smalot\PdfParser\PDFObject.php:208
+[05-Jul-2019 18:15:22 Asia/Kolkata] PHP  10. str_replace() C:\wamp\www\vishnugermany\paper\inc\pdfparser\pdfparser-0.14.0\src\Smalot\PdfParser\PDFObject.php:143
+[05-Jul-2019 18:18:42 Asia/Kolkata] PHP Notice:  Array to string conversion in C:\wamp\www\vishnugermany\paper\upload.php on line 78
+[05-Jul-2019 18:18:42 Asia/Kolkata] PHP Stack trace:
+[05-Jul-2019 18:18:42 Asia/Kolkata] PHP   1. {main}() C:\wamp\www\vishnugermany\paper\upload.php:0
+[05-Jul-2019 18:18:42 Asia/Kolkata] PHP   2. get_pdf_prop() C:\wamp\www\vishnugermany\paper\upload.php:54
+[05-Jul-2019 18:20:08 Asia/Kolkata] PHP Notice:  Array to string conversion in C:\wamp\www\vishnugermany\paper\upload.php on line 79
+[05-Jul-2019 18:20:08 Asia/Kolkata] PHP Stack trace:
+[05-Jul-2019 18:20:08 Asia/Kolkata] PHP   1. {main}() C:\wamp\www\vishnugermany\paper\upload.php:0
+[05-Jul-2019 18:20:08 Asia/Kolkata] PHP   2. get_pdf_prop() C:\wamp\www\vishnugermany\paper\upload.php:54
+[05-Jul-2019 18:20:38 Asia/Kolkata] PHP Notice:  Array to string conversion in C:\wamp\www\vishnugermany\paper\upload.php on line 79
+[05-Jul-2019 18:20:38 Asia/Kolkata] PHP Stack trace:
+[05-Jul-2019 18:20:38 Asia/Kolkata] PHP   1. {main}() C:\wamp\www\vishnugermany\paper\upload.php:0
+[05-Jul-2019 18:20:38 Asia/Kolkata] PHP   2. get_pdf_prop() C:\wamp\www\vishnugermany\paper\upload.php:54
+[05-Jul-2019 18:21:09 Asia/Kolkata] PHP Notice:  Array to string conversion in C:\wamp\www\vishnugermany\paper\upload.php on line 80
+[05-Jul-2019 18:21:09 Asia/Kolkata] PHP Stack trace:
+[05-Jul-2019 18:21:09 Asia/Kolkata] PHP   1. {main}() C:\wamp\www\vishnugermany\paper\upload.php:0
+[05-Jul-2019 18:21:09 Asia/Kolkata] PHP   2. get_pdf_prop() C:\wamp\www\vishnugermany\paper\upload.php:54

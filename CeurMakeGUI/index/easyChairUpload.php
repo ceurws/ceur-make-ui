@@ -282,13 +282,16 @@
     <div id="loading">
         <div class="card grey lighten-5 card-custom">
           <div class="card-content ">
-               <br/>
-               <br/>
-               <div class="progress">
-                <div class="indeterminate"></div>
-                </div>
-               <br/>
-               <br/>
+			
+			<!-- ABC: Loading Box -->
+            <span id="abc_loading_text">Please wait while your request is being processed.. </span>
+			<span id="abc_loading_percentage" class="right"></span>
+			<!-- /ABC: Loading Box -->
+			
+			<br/>
+            <div class="progress">
+				<div class="indeterminate"></div>
+            </div>                              
           </div>
         </div>
     </div>
@@ -411,33 +414,72 @@
 
           //-----------------------------------------------------------------------------------------
 
-          //file Upload
+			//file Upload
 
-           function submitZip()
-          {
+			function submitZip()
+			{	
+				//-- check if file is selected or not
+				if ($('#sortpicture').get(0).files.length === 0) {
+					alert("Please select a file to upload");
+					return;
+				}
+				
                 var file_data = $('#sortpicture').prop('files')[0];
-
+				
                 var form_data = new FormData();
                 var fileName ;
                 form_data.append('file', file_data);
-
+				
+				//-- empty the percentage text
+				$('#abc_loading_text').text( 'Uploading file. Please wait...' );
+				$('#abc_loading_percentage').text( '' );
+						
+				//-- show loading box
+				$('#loader').show();
+				$('#uniquename').hide();
+				
                 console.log(form_data);
                 $.ajax({
-                url: 'extract.php', // point to server-side PHP script
-                dataType: 'text',  // what to expect back from the PHP script, if anything
-                cache: false,
-                contentType: false,
-                processData: false,
-                data:form_data,
-                type: 'post',
-                success: function(php_script_response){
+					//------------------------------------------
+					//--- To display the percentage while uploading the file..
+					xhr: function() {
+						var xhr = new window.XMLHttpRequest();
 
-                    console.log(php_script_response); // display response from the PHP script, if any
-                    fileName = php_script_response ;
-                    manageExtract( fileName ) ;
+						xhr.upload.addEventListener("progress", function(evt) {
+						  if (evt.lengthComputable) {
+							var percentComplete = evt.loaded / evt.total;
+							percentComplete = parseInt(percentComplete * 100);
+							//console.log(percentComplete);
+							$('#abc_loading_percentage').text( percentComplete + '%' );
 
-                    //console.log("dsadsasdsa"+fileName);
-                }
+							if (percentComplete === 100) {
+								$('#abc_loading_text').text( 'Uploading completed! Please wait while its processed...' );								
+							}
+
+						  }
+						}, false);
+
+						return xhr;
+					},
+					//------------------------------------------
+					url: 'extract.php', // point to server-side PHP script
+					dataType: 'text',  // what to expect back from the PHP script, if anything
+					cache: false,
+					contentType: false,
+					processData: false,
+					data:form_data,
+					type: 'post',
+					success: function(php_script_response){
+						
+						//-- hide loading box
+						$('#loader').hide();
+											
+						console.log(php_script_response); // display response from the PHP script, if any
+						fileName = php_script_response ;
+						manageExtract( fileName ) ;
+
+						//console.log("dsadsasdsa"+fileName);
+					}
                 });
 
 
@@ -482,6 +524,8 @@
                                         resourceCreation( );
 
                                 }
+								
+								$('#abc_loading_text').text( 'Please wait while your request is being processed..' );	
                         }
                 }
 

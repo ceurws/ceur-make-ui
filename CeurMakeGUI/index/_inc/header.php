@@ -26,7 +26,7 @@
 <body>
   <nav class="blue-grey darken-1" role="navigation">
     <div class="nav-wrapper"><a id="logo-container" href="#" class="brand-logo">CEUR Make</a>
-      <ul class="nav_center_box hide-on-med-and-down">
+      <ul class="nav_center_box hide-on-med-and-down top_main_menu_container">
         <li><a href="index.php"> Home</a></li>
         <li><a href="proceedings.php"> Proceedings</a></li>
         <li><a href="publish.php"> Publish</a></li>
@@ -34,7 +34,7 @@
 
       </ul>
 	  
-	  <ul class="right hide-on-med-and-down">
+	  <ul class="right hide-on-med-and-down login_btns_container">
 		<?php if( is_logged_in() ) { ?>
 			<li><a href="logout.php"> <i class="tiny material-icons menu_icon">lock</i> Logout</a></li>
 		<?php } else { ?>		
@@ -73,7 +73,8 @@
   <?php } ?>
   <!-- /Display success -->
   
-  	<!-- Full Screen Loader -->
+  
+	<!-- Full Screen Loader -->
 	<div id="fullscreen_loader" class="main-loader">
 	  <div class="preloader-wrapper big active">
 		<div class="spinner-layer spinner-blue-only">

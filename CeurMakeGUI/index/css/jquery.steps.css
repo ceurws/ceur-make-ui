@@ -389,35 +389,3 @@ display: none;
 
 /*-----------------------------------------------*/
 
-.wizard > .content > .body label{
-	margin-left: 10px;
-}
-
-.wizard > .content{
-	min-height: 44em;
-}
-
-.select-wrapper input.select-dropdown{
-	padding-left: 10px;
-}	
-
-.wizard > .content > .body label[for="language"]{
-	margin-left: 0;
-}
-
-.wizard > .content > .body input {
-    border: 1px solid #dedede;
-    border-radius: 3px;	
-}
-
-.wizard > .content {
-    background: #f9f9f9;
-}
-
-fieldset {
-    border: 1px solid #dcdcdc;
-}
-
-legend{
-	color: #675e5e;
-}

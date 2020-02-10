@@ -1,6 +1,6 @@
 <?php
 	include_once '_inc/common.php';
-	
+
 	$page_title = 'Ceur Make';
 	
 	include_once '_inc/header.php';
@@ -8,6 +8,10 @@
 <!--This view generates stepwise wizard for publishing proceedings using CEUR Make Workflow. The workflow in which user is required to create
     Table of Contents and Workshop artifact and based on that artifacts we generate standard submission artifacts.
 -->  
+
+<script>
+	var is_USER_logged_in = <?php echo is_logged_in() ? 'true' : 'false'; ?>
+</script>
 
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
@@ -22,46 +26,8 @@
       </div>
       <div class="row">
         <div class="row" >
-        <div id="uniquename">
 		
-			<!-- Create Workshop - Main Card -->
-            <div id="card_createworkshop_main" class="col s6">
-              <div class="card grey lighten-3">
-              <div class="card-content black-text">
-				<span class="card-title">
-                      <a class="btn-floating btn-small waves-effect waves-light green disabled" onClick="" id="workshopLink"><i class="material-icons">check</i></a>  Create Workshop</span>
-                      <div class="divider"></div>
-                      <br/>
-				<p>Simple easy to use step by step form for creating Workshop. Contains all the necessary elements to be added in workshop.</p>
-				
-              </div>
-              <div class="card-action">
-                      <a class="waves-effect waves-light btn " id="createWorkshop" href="#">Generate</a>
-                      <a class="waves-effect waves-light btn disabled" id="downloadWorkshop" href="">Download</a>
-              </div>
-              </div>
-            </div>
-			<!-- /Create Workshop - Main Card -->
-			
-			<!-- Create Workshop - Submenu Card -->
-            <div id="card_createworkshop_submenu" class="col s6" style="display: none;">
-				<div class="card grey lighten-3">
-					<div class="card-content black-text">				
-						<div class="divider"></div>
-						<br/>
-						
-						<a href="javascript:showContentForWorkshop('uniquename')" 
-							style="text-align: center; display: block; font-size: 23px;"> + Create a New Workshop </a>
-					</div>
-					
-					<div class="card-action">
-                    
-					</div>
-				</div>
-            </div>
-			<!-- /Create Workshop - Submenu Card -->
-			
-			<?php //if( is_logged_in() ): ?>
+			<?php if( is_logged_in() ): ?>
 			<!-- ################## Saved Workshops ##################### -->			
 			<div id="saved_workshops" class="col s6" style="display: none;">
 				<div class="card grey lighten-3">
@@ -69,7 +35,7 @@
 						<span class="card-title">
 							<a class="btn-floating btn-small waves-effect waves-light green disabled " onClick="" id="tocLink"><i class="material-icons">check</i></a>  Recent Workshops
 							
-							<i class="material-icons right tooltipped" data-position="bottom" data-tooltip="Choose a recent workshop to re-edit and submit">help_outline</i>
+							<i class="material-icons right tooltipped" data-position="bottom" data-tooltip="Choose a recent workshop to re-edit and submit">info_outline</i>
 						</span>
 						<div class="divider"></div>
 						<br/>
@@ -95,7 +61,53 @@
 				</div>
 			</div>           	
 			<!-- ######################################################## -->
-			<?php //endif; ?>
+			<?php endif; ?>
+			
+			
+        <div id="uniquename">
+		
+			
+			<!-- Create Workshop - Main Card -->
+            <div id="card_createworkshop_main" class="col s6">
+              <div class="card grey lighten-3">
+              <div class="card-content black-text">
+				<span class="card-title">
+                      <a class="btn-floating btn-small waves-effect waves-light green disabled" onClick="" id="workshopLink"><i class="material-icons">check</i></a>  Create Workshop</span>
+                      <div class="divider"></div>
+                      <br/>
+				<p>Simple easy to use step by step form for creating Workshop. Contains all the necessary elements to be added in workshop.</p>
+				
+              </div>
+              <div class="card-action">
+                      <a class="waves-effect waves-light btn " id="createWorkshop" href="#">Generate</a>
+                      <a class="waves-effect waves-light btn disabled" id="downloadWorkshop" href="">Download</a>
+              </div>
+              </div>
+            </div>			
+			<!-- /Create Workshop - Main Card -->
+			
+			
+			<?php if( is_logged_in() ): ?>
+			<!-- ######################################################## -->
+			<!-- Create Workshop - Submenu Card -->
+            <div id="card_createworkshop_submenu" class="col s6" style="display: none;">
+				<div class="card grey lighten-3">
+					<div class="card-content black-text">				
+						<div class="divider"></div>
+						<br/>
+						
+						<a href="javascript:check_auto_save()" 
+							style="text-align: center; display: block; font-size: 23px; padding: 42px 0;"> + Create a New Workshop </a>
+					</div>
+					
+					<div class="card-action">
+                    
+					</div>
+				</div>
+            </div>
+			<!-- ######################################################## -->
+			<!-- /Create Workshop - Submenu Card -->
+			<?php endif; ?>
 			
 			
 			<!-- Table of Contents - Card -->
@@ -135,6 +147,26 @@
               </div>
               </div>
             </div>
+			
+			
+			<!-- ######################## PUT-FORM ################# -->
+			<div class="col s6" id="putform_card" style="display: none;">
+				<div class="card grey lighten-3">
+					<div class="card-content black-text">
+						<span class="card-title"><a class="btn-floating btn-small waves-effect waves-light green" onClick=""><i class="material-icons">check</i></a>  Put-Form</span>
+						<div class="divider"></div>
+						<br/>
+						<p>Click here to download the generated put-form.</p>
+					</div>
+					
+					<div class="card-action">
+						  <a class="waves-effect waves-light btn "  id="putformDownload"  href="#">Download</a>
+					</div>
+				</div>
+            </div>
+			<!-- ################################################### -->
+			
+			
             <div class="col s6" id="uniquename2">
               <div class="card grey lighten-3">
                <div class="card-content black-text">
@@ -308,19 +340,58 @@
                     </div>
                </div>
       </div>
-     <div id= "workshopForm">
-      <div class="card grey lighten-5 card-custom">
-        <div class="card-content ">
-                        <span class="card-title">Generate Workshop For Proceedings</span>
-                        <p>I am a very simple card. I am good at containing small bits of information.
-                               I am convenient because I require little markup to use effectively.</p>
-                        <br/>
+	  
+      <div id= "workshopForm">
+		<div class="card grey lighten-5 card-custom">
+			<div class="card-content ">
+				<span class="card-title">
+					Generate Workshop For Proceedings
+					
+					<!-- Clear All Button -->
+					<a id="btnClearAll" href="#" class="right">Clear</a>
+					
+					<style>
+						#btnClearAll {
+							font-size: 16px;
+							background: #ca4040;
+							color: white;
+							padding: 0 20px;
+							border-radius: 2px;
+						}	
+						
+						#btnClearAll:hover {
+						    background: #d20404;
+						}
+					</style>					
+					<!-- /Clear All Button -->
+				</span>
+				
+				<p>
+					<!--I am a very simple card. I am good at containing small bits of information.
+				   I am convenient because I require little markup to use effectively.-->
+				</p>
+				<br/>
+					
                         <div id="wizard2">
                                 <h1>Metadata</h1>
                                 <div id="metadata">
                                    <div id="titleMetadata">
                                      <fieldset>
                                        <legend> Workshop Metadata</legend>
+										
+										<!-- ################# Workshop Series ###################### -->
+										<div class="row">
+                                            <div class="input-field col s6">
+                                              <select id="workshop_series" type="text" class="validate">
+												<option value="">- default -</option>
+												<option value="AIIA">AI*IA</option>
+												<option value="IAOA">IAOA</option>
+											  </select>
+                                              <label for="workshop_series">Workshop Series</label>                                              
+                                            </div>
+										</div>
+										<!-- ###################################################### -->
+										
                                         <fieldset>
                                          <legend>Title Description</legend>
 
@@ -461,13 +532,12 @@
     <div id="loading">
         <div class="card grey lighten-5 card-custom">
           <div class="card-content ">
-               <br/>
+               Please wait while your request is being processed..
                <br/>
                <div class="progress">
-                <div class="indeterminate"></div>
-                </div>
-               <br/>
-               <br/>
+					<div class="indeterminate"></div>
+               </div>
+               
           </div>
         </div>
     </div>
@@ -650,10 +720,11 @@
 
         function HideContent(d) {
 
-        document.getElementById(d).style.display = "none";
-        document.getElementById('tocForm').style.display ="initial";
-        document.getElementById('loader').style.display = "none" ;
-        document.getElementById('uniquename0').style.display = "none" ;
+			document.getElementById(d).style.display = "none";
+			document.getElementById('tocForm').style.display ="initial";
+			document.getElementById('loader').style.display = "none" ;
+			document.getElementById('uniquename0').style.display = "none" ;
+			document.getElementById('putform_card').style.display = "none" ;
 
         }
 
@@ -683,11 +754,13 @@
            document.getElementById('uniquename').style.display = "initial" ;
            if( uniquenameZero == 1 )
            {
-                   document.getElementById('uniquename0').style.display = "initial" ;
+				document.getElementById('uniquename0').style.display = "initial" ;
+				document.getElementById('putform_card').style.display = "initial" ;
            }
+		   $('#card_tableofcontents .card-title a').removeClass('disabled');
            document.getElementById('tocForm').style.display = "none" ;
            document.getElementById('workshopForm').style.display = "none" ;
-           document.getElementById('loader').style.display = "none" ;
+           document.getElementById('loader').style.display = "none" ;		   
            document.getElementById('tocLink').className = "btn-floating btn-small waves-effect waves-light green";
            document.getElementById('downloadToc').className = "waves-effect waves-light btn" ;
            document.getElementById('createToc').className = "waves-effect waves-light btn disabled" ;
@@ -1285,7 +1358,7 @@
 
                                     //making the whole dataToSendVariable
                                     workshopArray.push({
-
+											workshop_series: $('#workshop_series').val(),	//-- ### Added on 27 Aug 2019
                                             title: tempTitleMetaData[0],
                                             number: tempTitleTab[0].number,
                                             homepage: tempTitleTab[0].homepage,
@@ -1412,8 +1485,8 @@
                 {
                     if (counterPaper == limitPaper)  {
                           alert("You have reached the limit of adding " + counterPaper + " inputs");
-                     }
-                     else {
+                    }
+                    else {
 
                           authorArray.push(0);
                           var newdiv = document.createElement('div');
@@ -1439,23 +1512,23 @@
                           var selectId = '#ses'+(counterPaper+1);
                           refreshSelect(selectId);
                           counterPaper++;
-
-
-                     }
-
+						
+                    }
+										
                 }
                 function removePaper(divName)
                 {
-                     if (counterPaper == 0 )  {
-                          alert("You have only one Paper element which is compulsory");
-                     }
-                     else {
+                    if (counterPaper == 0 )  {
+                        alert("You have only one Paper element which is compulsory");
+                    }
+                    else {
 
-                          var div = document.getElementById("Paper" + counterPaper);
-                          div.parentNode.removeChild(div);
-                          counterPaper--;
-                          authorArray.pop() ;
-                     }
+                        var div = document.getElementById("Paper" + counterPaper);
+                        div.parentNode.removeChild(div);
+                        counterPaper--;
+                        authorArray.pop() ;
+						  						
+                    }
                 }
 
        //-----------------------------------------------------------------------------------------
@@ -1867,6 +1940,9 @@
 	
 	<!-- For storage of Workshop data -->
 	<script src="js/workshop_storage.js"></script>
+	
+	<!-- For searching acronyms in Create Workshop -->
+	<script src="js/workshop_acronymsearch.js"></script>
 	
   </body>
 </html>

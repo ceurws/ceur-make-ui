@@ -1,0 +1,42 @@
+[26-May-2019 17:39:16 Asia/Kolkata] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 25247553 bytes) in C:\wamp\www\vishnugermany\pdf\pdfparser-master\src\Smalot\PdfParser\PDFObject.php on line 143
+[26-May-2019 17:39:16 Asia/Kolkata] PHP Stack trace:
+[26-May-2019 17:39:16 Asia/Kolkata] PHP   1. {main}() C:\wamp\www\vishnugermany\pdf\index.php:0
+[26-May-2019 17:39:16 Asia/Kolkata] PHP   2. Smalot\PdfParser\Document->getText() C:\wamp\www\vishnugermany\pdf\index.php:8
+[26-May-2019 17:39:16 Asia/Kolkata] PHP   3. Smalot\PdfParser\Page->getText() C:\wamp\www\vishnugermany\pdf\pdfparser-master\src\Smalot\PdfParser\Document.php:268
+[26-May-2019 17:39:16 Asia/Kolkata] PHP   4. Smalot\PdfParser\PDFObject->getText() C:\wamp\www\vishnugermany\pdf\pdfparser-master\src\Smalot\PdfParser\Page.php:220
+[26-May-2019 17:39:16 Asia/Kolkata] PHP   5. Smalot\PdfParser\XObject\Form->getText() C:\wamp\www\vishnugermany\pdf\pdfparser-master\src\Smalot\PdfParser\PDFObject.php:391
+[26-May-2019 17:39:16 Asia/Kolkata] PHP   6. Smalot\PdfParser\PDFObject->getText() C:\wamp\www\vishnugermany\pdf\pdfparser-master\src\Smalot\PdfParser\XObject\Form.php:54
+[26-May-2019 17:39:16 Asia/Kolkata] PHP   7. Smalot\PdfParser\PDFObject->getText() C:\wamp\www\vishnugermany\pdf\pdfparser-master\src\Smalot\PdfParser\PDFObject.php:391
+[26-May-2019 17:39:16 Asia/Kolkata] PHP   8. Smalot\PdfParser\PDFObject->getSectionsText() C:\wamp\www\vishnugermany\pdf\pdfparser-master\src\Smalot\PdfParser\PDFObject.php:250
+[26-May-2019 17:39:16 Asia/Kolkata] PHP   9. Smalot\PdfParser\PDFObject->cleanContent() C:\wamp\www\vishnugermany\pdf\pdfparser-master\src\Smalot\PdfParser\PDFObject.php:208
+[26-May-2019 17:39:16 Asia/Kolkata] PHP  10. str_replace() C:\wamp\www\vishnugermany\pdf\pdfparser-master\src\Smalot\PdfParser\PDFObject.php:143
+[26-May-2019 17:43:57 Asia/Kolkata] PHP Warning:  require(pdf-to-text/PdfToText.phpcass): failed to open stream: No such file or directory in C:\wamp\www\vishnugermany\pdf\index.php on line 13
+[26-May-2019 17:43:57 Asia/Kolkata] PHP Stack trace:
+[26-May-2019 17:43:57 Asia/Kolkata] PHP   1. {main}() C:\wamp\www\vishnugermany\pdf\index.php:0
+[26-May-2019 17:43:57 Asia/Kolkata] PHP Fatal error:  require(): Failed opening required 'pdf-to-text/PdfToText.phpcass' (include_path='.;C:\php\pear') in C:\wamp\www\vishnugermany\pdf\index.php on line 13
+[26-May-2019 17:43:57 Asia/Kolkata] PHP Stack trace:
+[26-May-2019 17:43:57 Asia/Kolkata] PHP   1. {main}() C:\wamp\www\vishnugermany\pdf\index.php:0
+[26-May-2019 17:44:22 Asia/Kolkata] PHP Notice:  Undefined index: font in C:\wamp\www\vishnugermany\pdf\pdf-to-text\PdfToText.phpclass on line 6897
+[26-May-2019 17:44:22 Asia/Kolkata] PHP Stack trace:
+[26-May-2019 17:44:22 Asia/Kolkata] PHP   1. {main}() C:\wamp\www\vishnugermany\pdf\index.php:0
+[26-May-2019 17:44:22 Asia/Kolkata] PHP   2. PdfToText->__construct() C:\wamp\www\vishnugermany\pdf\index.php:15
+[26-May-2019 17:44:22 Asia/Kolkata] PHP   3. PdfToText->Load() C:\wamp\www\vishnugermany\pdf\pdf-to-text\PdfToText.phpclass:1600
+[26-May-2019 17:44:22 Asia/Kolkata] PHP   4. PdfToText->__load() C:\wamp\www\vishnugermany\pdf\pdf-to-text\PdfToText.phpclass:1667
+[26-May-2019 17:44:22 Asia/Kolkata] PHP   5. PdfTexterFontTable->Add() C:\wamp\www\vishnugermany\pdf\pdf-to-text\PdfToText.phpclass:1915
+[26-May-2019 17:44:22 Asia/Kolkata] PHP   6. PdfTexterFont->__construct() C:\wamp\www\vishnugermany\pdf\pdf-to-text\PdfToText.phpclass:6600
+[26-May-2019 17:44:22 Asia/Kolkata] PHP Notice:  Undefined index: font in C:\wamp\www\vishnugermany\pdf\pdf-to-text\PdfToText.phpclass on line 6897
+[26-May-2019 17:44:22 Asia/Kolkata] PHP Stack trace:
+[26-May-2019 17:44:22 Asia/Kolkata] PHP   1. {main}() C:\wamp\www\vishnugermany\pdf\index.php:0
+[26-May-2019 17:44:22 Asia/Kolkata] PHP   2. PdfToText->__construct() C:\wamp\www\vishnugermany\pdf\index.php:15
+[26-May-2019 17:44:22 Asia/Kolkata] PHP   3. PdfToText->Load() C:\wamp\www\vishnugermany\pdf\pdf-to-text\PdfToText.phpclass:1600
+[26-May-2019 17:44:22 Asia/Kolkata] PHP   4. PdfToText->__load() C:\wamp\www\vishnugermany\pdf\pdf-to-text\PdfToText.phpclass:1667
+[26-May-2019 17:44:22 Asia/Kolkata] PHP   5. PdfTexterFontTable->Add() C:\wamp\www\vishnugermany\pdf\pdf-to-text\PdfToText.phpclass:1915
+[26-May-2019 17:44:22 Asia/Kolkata] PHP   6. PdfTexterFont->__construct() C:\wamp\www\vishnugermany\pdf\pdf-to-text\PdfToText.phpclass:6600
+[26-May-2019 17:44:22 Asia/Kolkata] PHP Notice:  Undefined index: font in C:\wamp\www\vishnugermany\pdf\pdf-to-text\PdfToText.phpclass on line 6897
+[26-May-2019 17:44:22 Asia/Kolkata] PHP Stack trace:
+[26-May-2019 17:44:22 Asia/Kolkata] PHP   1. {main}() C:\wamp\www\vishnugermany\pdf\index.php:0
+[26-May-2019 17:44:22 Asia/Kolkata] PHP   2. PdfToText->__construct() C:\wamp\www\vishnugermany\pdf\index.php:15
+[26-May-2019 17:44:22 Asia/Kolkata] PHP   3. PdfToText->Load() C:\wamp\www\vishnugermany\pdf\pdf-to-text\PdfToText.phpclass:1600
+[26-May-2019 17:44:22 Asia/Kolkata] PHP   4. PdfToText->__load() C:\wamp\www\vishnugermany\pdf\pdf-to-text\PdfToText.phpclass:1667
+[26-May-2019 17:44:22 Asia/Kolkata] PHP   5. PdfTexterFontTable->Add() C:\wamp\www\vishnugermany\pdf\pdf-to-text\PdfToText.phpclass:1915
+[26-May-2019 17:44:22 Asia/Kolkata] PHP   6. PdfTexterFont->__construct() C:\wamp\www\vishnugermany\pdf\pdf-to-text\PdfToText.phpclass:6600

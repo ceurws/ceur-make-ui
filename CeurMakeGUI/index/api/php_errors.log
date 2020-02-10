@@ -1,0 +1,18 @@
+[26-Aug-2019 22:40:53 Asia/Kolkata] PHP Notice:  Undefined index: hit in C:\wamp\www\vishnugermany\api\acronym_search.php on line 30
+[26-Aug-2019 22:40:53 Asia/Kolkata] PHP Stack trace:
+[26-Aug-2019 22:40:53 Asia/Kolkata] PHP   1. {main}() C:\wamp\www\vishnugermany\api\acronym_search.php:0
+[26-Aug-2019 22:42:28 Asia/Kolkata] PHP Notice:  Undefined index: hit in C:\wamp\www\vishnugermany\api\acronym_search.php on line 30
+[26-Aug-2019 22:42:28 Asia/Kolkata] PHP Stack trace:
+[26-Aug-2019 22:42:28 Asia/Kolkata] PHP   1. {main}() C:\wamp\www\vishnugermany\api\acronym_search.php:0
+[26-Aug-2019 22:43:03 Asia/Kolkata] PHP Notice:  Undefined index: hit in C:\wamp\www\vishnugermany\api\acronym_search.php on line 29
+[26-Aug-2019 22:43:03 Asia/Kolkata] PHP Stack trace:
+[26-Aug-2019 22:43:03 Asia/Kolkata] PHP   1. {main}() C:\wamp\www\vishnugermany\api\acronym_search.php:0
+[26-Aug-2019 22:43:03 Asia/Kolkata] PHP Notice:  Undefined index: hit in C:\wamp\www\vishnugermany\api\acronym_search.php on line 30
+[26-Aug-2019 22:43:03 Asia/Kolkata] PHP Stack trace:
+[26-Aug-2019 22:43:03 Asia/Kolkata] PHP   1. {main}() C:\wamp\www\vishnugermany\api\acronym_search.php:0
+[26-Aug-2019 22:44:36 Asia/Kolkata] PHP Notice:  Undefined index: hit in C:\wamp\www\vishnugermany\api\acronym_search.php on line 29
+[26-Aug-2019 22:44:36 Asia/Kolkata] PHP Stack trace:
+[26-Aug-2019 22:44:36 Asia/Kolkata] PHP   1. {main}() C:\wamp\www\vishnugermany\api\acronym_search.php:0
+[26-Aug-2019 22:44:36 Asia/Kolkata] PHP Notice:  Undefined index: hit in C:\wamp\www\vishnugermany\api\acronym_search.php on line 30
+[26-Aug-2019 22:44:36 Asia/Kolkata] PHP Stack trace:
+[26-Aug-2019 22:44:36 Asia/Kolkata] PHP   1. {main}() C:\wamp\www\vishnugermany\api\acronym_search.php:0
