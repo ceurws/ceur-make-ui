@@ -27,6 +27,8 @@ Following steps are essential before the software is completely running on your 
 + Create two empty folders at [index](https://github.com/ceurws/ceur-make-ui/tree/master/CeurMakeGUI/index) folder of the code by the name of *userDirectories* and *easyChair*. Grant these folders write access.
 + In order for CEUR Make and CEUR Make GUI to be able to write files on server, you should own everything in htdocs/www folder. Please follow sample [link](http://constant.co.za/fix-permissions-on-xampp-osx/) for Mac OSX.
 + In order for you as a user who is owning everything at htdocs/www, you should grant sudo access to yourself, One way to do this is to give yourself root level rights using the following terminal level command: superuser ALL=(ALL) NOPASSWD:ALL . Possilble alternatives could be to grant sudo to php scripts or particular commands.
++ In order to completely use the CEUR make GUI features we need to import the database tables to the local setup. 
+For that, you should go to the AMP stack home page by typing localhost/dashboard in the browser. From the homepage click on the PHPMyAdmin option and import the u459209384_ceur.sql file which is in the cloned repository.
 
 ## How to Play with the Code
 Previous section described the technique to get started with the code and in this section we will describe the advanced techniques to play with different files in the code. First we discuss the external libraries used in the project, than we describe the general software architecture of the ceur-make-ui and than we will discuss the file structure in different layers of the application along with the code blocks programmers can start to play with.
