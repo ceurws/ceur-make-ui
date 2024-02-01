@@ -123,9 +123,10 @@ The storage layer is divided into three main parent directories described below:
 + **EasyChair**: This directory maintains the sessions of the users while they use EasyChair resources based workflow for creating workshop proceedings.
 
 ## Contributors
-[Rohan Asmat](https://www.linkedin.com/in/rohanasmat?trk=nav_responsive_tab_profile)
 
 [Dr. Christoph Lange](https://langec.wordpress.com/)
+
+… plus former University of Bonn students (listed anonymously here, on their request)
 
 ## License
 This code is licensed under [GPL version 3](https://github.com/ceurws/ceur-make-ui/blob/master/LICENSE) or any later version.

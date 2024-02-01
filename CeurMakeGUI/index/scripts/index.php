@@ -56,10 +56,10 @@ function getCurl($url, $USERNAME, $PASSWORD) {
     return $content;
 }
 
-$USERNAME = "RohanAsmat";
+$USERNAME = "JohnDoe";
 $PASSWORD = "******";
 
-$owner = "RohanAsmat";
+$owner = "JohnDoe";
 $repo = "test";
 
 
